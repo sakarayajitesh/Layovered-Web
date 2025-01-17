@@ -1,0 +1,134 @@
+.container {
+    border: solid px;
+}
+
+#R1 {
+    margin-top: 50px;
+
+}
+
+#i1 {
+    width: 462px;
+    height: 550px;
+    top: 458.19px;
+    left: 885px;
+    gap: 0px;
+    border-radius: 16px;
+    opacity: 0px;
+
+}
+
+#R1 button {
+    background-color: #FA8443;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 32px 12px 32px;
+    width: Hug(155px);
+    height: Hug(46px);
+    gap: 2px;
+    border: none;
+}
+
+#Name {
+    font-family: "Ruslan Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #42A7C3;
+
+}
+
+#R2 {
+
+    margin-top: 100px;
+}
+
+pre {
+    width: 615px;
+    height: 72px;
+    top: 803.19px;
+    left: 118px;
+    font-family: cursive;
+}
+
+#src {
+    width: 320px;
+    height: 46px;
+    border-radius: 8px;
+}
+
+#R2 button {
+    background-color: #FA8443;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 32px 12px 32px;
+    width: Hug(155px);
+    height: Hug(46px);
+    gap: 2px;
+    border: none;
+}
+
+#p {
+    width: 523px;
+    height: 20px;
+}
+
+#features {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 50px;
+}
+
+#feature {
+
+    text-align: center;
+    background-color: #f3fcff;
+}
+
+#feature h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#feature p {
+    color: #666;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+#feature img {
+
+    margin-top: 20px;
+}
+
+
+#R3 {
+    margin-top: 100px;
+    background-color: #E2F6FC;
+    padding: 55px;
+}
+
+#scr {
+    width: 320px;
+    height: 46px;
+    border-radius: 8px;
+}
+
+#R3 button {
+    background-color: #FA8443;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 32px 12px 32px;
+    width: Hug(155px);
+    height: Hug(46px);
+    gap: 2px;
+    border: none;
+}
+
+#R4 {
+    margin-top: 100px;
+}
+
+#cr {
+    text-align: center;
+}
