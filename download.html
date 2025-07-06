@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download Layovered App</title>
+  <script>
+    window.onload = function() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        // Redirect to Google Play Store
+        window.location.href = "http://play.google.com/store/apps/details?id=com.layovered";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        // Redirect to Apple App Store
+        window.location.href = "https://apps.apple.com/us/app/layovered/id6602894094";
+      } else {
+        // Redirect to main site or show manual download options
+        window.location.href = "https://layovered.com";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting to the app store...</p>
+</body>
+</html>
