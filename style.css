@@ -221,10 +221,10 @@ main .button .b1 a img {
 }
 
 .view-4 {
-  padding: 2.5rem;
+  padding: 3rem;
 }
 .view-4 .travel h1 {
-  font-size: 2.625rem;
+  font-size: 2.4rem;
   font-weight: 600;
   line-height: 1.3;
 }
@@ -262,25 +262,28 @@ main .button .b1 a img {
 }
 .view-4 .images {
   margin-top: 2rem;
+  display: grid;
+  grid-template-areas: "c" "b" "a";
+  justify-items: center;
 }
 .view-4 .images .layover img {
-  height: 110px;
-  width: 100%;
+  height: 91.66px;
+  width: 311px;
   margin-top: 2rem;
 }
 .view-4 .images .phoneinhand {
   margin-top: 1rem;
 }
 .view-4 .images .phoneinhand img {
-  height: 270px;
-  width: 100%;
+  height: 225.17px;
+  width: 311px;
 }
 .view-4 .images .notification {
   margin-top: 1rem;
 }
 .view-4 .images .notification img {
-  height: 370px;
-  width: 100%;
+  height: 347px;
+  width: 311px;
 }
 
 .view-5 {
@@ -448,6 +451,11 @@ main .button .b1 a img {
   height: 18px;
 }
 
+.line {
+  height: 1px;
+  background-color: #c2c2c2;
+}
+
 .view-9 {
   background-color: #ffffff;
   padding: 2rem;
@@ -596,4 +604,115 @@ main .button .b1 a img {
 }
 .view-9 .footer-container .footer-bottom .footer-social a:hover {
   color: #ff4d1c;
+}
+
+/*
+  MAX-WIDTH MEDIA QUERY (for screens <= 1020px)
+  These styles will be applied to laptops, tablets, and mobile phones.
+*/
+@media (min-width: 1020px) {
+  nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    margin-top: 0;
+  }
+  nav .nav-brand {
+    margin-top: 1rem;
+  }
+  nav .nav-brand p {
+    font-size: 23.58px;
+  }
+  nav .nav-content {
+    margin-top: 1.4rem;
+    margin-left: -2rem;
+  }
+  .view-1 {
+    display: block;
+    padding: 4rem;
+  }
+  .view-1 .title {
+    width: 50%;
+  }
+  .view-1 .users-saved-section {
+    padding-left: 2.5rem;
+    margin-top: 1rem;
+  }
+  .view-1 .users-saved-section .text-content {
+    display: flex;
+    justify-content: row;
+  }
+  .view-4 {
+    display: block;
+    padding: 2.5rem;
+  }
+  .view-4 .travel h1 {
+    font-size: 2.625rem;
+  }
+  .view-4 .features {
+    margin-top: 1rem;
+  }
+  .view-4 .images {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-areas: "a b" "c c";
+  }
+  .view-4 .images .notification img {
+    width: 489.54px;
+    height: 547.99px;
+    margin-top: 2rem;
+  }
+  .view-4 .images .phoneinhand img {
+    width: 754.06px;
+    height: 545.95px;
+    margin-top: 2rem;
+  }
+  .view-4 .images .layover img {
+    width: 1280px;
+    height: 386px;
+  }
+  .view-4 .images .img-a,
+  .view-4 .images .img-b,
+  .view-4 .images .img-c {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+  }
+  .view-8 .b1 {
+    padding-bottom: 1rem;
+  }
+  .view-8 .b1 a {
+    padding-bottom: 1rem;
+  }
+  .view-6 p {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.06em;
+  }
+  .view-7 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.06em;
+  }
+  .view-7 .container {
+    max-width: 800px; /* Adjust max-width for a better desktop view */
+  }
+  .view-7 .row {
+    flex-direction: row; /* Side-by-side layout for desktop */
+    align-items: center;
+    padding: 15px 25px; /* Adjust padding for desktop */
+  }
+  .view-7 .row .info-title {
+    flex: 2; /* Give more space to the title */
+    text-align: left; /* Align text to the left for desktop */
+    margin-bottom: 0;
+    padding-right: 20px;
+  }
+  .view-7 .row .ticks-row {
+    flex: 1; /* Give less space to the ticks */
+    justify-content: space-between; /* Adjust spacing of ticks */
+    padding: 0 10px;
+  }
 }
