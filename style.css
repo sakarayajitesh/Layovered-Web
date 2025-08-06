@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*
+  Global and Variable Definitions
+  --------------------------------
+*/
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +18,10 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+/*
+  Navigation Bar
+  --------------------------------
+*/
 nav {
   display: flex;
   justify-content: space-around;
@@ -45,16 +53,15 @@ nav .nav-content {
 nav .nav-content a {
   text-decoration: none;
   color: #1f271b;
-  padding: 0 0.5rem; /* 0 for top/bottom, 0.75rem for left/right */
+  padding: 0 0.5rem;
 }
 
+/*
+  Main Content Sections (view-1 to view-8)
+  --------------------------------
+*/
 main {
   margin-top: 3rem;
-  /* User Avatars Container */
-  /* Individual Avatar Image */
-  /* Text Content Container */
-  /* "Users have saved" paragraph */
-  /* "₹50,232 today" heading */
 }
 main .view-1 {
   display: block;
@@ -77,20 +84,16 @@ main .view-1 .heading h1 {
 main .users-saved-section {
   padding-left: 2.5rem;
   display: flex;
-  flex-direction: row; /* Stack items vertically by default */
-  align-items: center; /* Center items horizontally */
-  gap: 1rem; /* Space between flex items */
-  width: 100%; /* Take full width of parent */
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
   max-width: 48rem;
-  margin-top: 1rem; /* Equivalent to max-w-2xl for desktop */
+  margin-top: 1rem;
 }
 main .user-avatars {
   display: flex;
-  /* Negative margin for overlapping effect */
-  margin-left: -0.75rem; /* Adjust as needed for desired overlap */
-  /* Ensure the first avatar doesn't have a negative margin pushing it left */
-  /* This makes the overlap consistent from the second avatar onwards */
-  /* Basic RTL support for overlapping */
+  margin-left: -0.75rem;
 }
 main .user-avatars > *:first-child {
   margin-left: 0;
@@ -103,33 +106,32 @@ main .user-avatars > *:first-child {
   margin-right: 0;
 }
 main .avatar {
-  width: 3rem; /* 48px */
-  height: 3rem; /* 48px */
-  border-radius: 50%; /* Make it perfectly circular */
-  border: 2px solid white; /* White border */
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid white;
   -o-object-fit: cover;
-     object-fit: cover; /* Ensure image covers the area without distortion */
-  /* Apply negative margin to subsequent avatars for overlap */
+     object-fit: cover;
 }
 main .avatar:not(:first-child) {
-  margin-left: -0.75rem; /* -12px */
+  margin-left: -0.75rem;
 }
 main .text-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center text horizontally on small screens */
-  text-align: center; /* Center text on small screens */
+  align-items: center;
+  text-align: center;
 }
 main .saved-text {
-  color: #4b5563; /* Dark gray */
-  font-size: 1.125rem; /* 18px */
-  font-weight: 500; /* Medium weight */
+  color: #4b5563;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 main .amount-text {
-  color: #1f2937; /* Even darker gray */
-  font-size: 1.5rem; /* 24px */
-  font-weight: 700; /* Bold weight */
-  margin-top: 0.25rem; /* 4px space from the paragraph above */
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
 }
 main .button {
   display: flex;
@@ -289,8 +291,8 @@ main .button .b1 a img {
 .view-5 {
   height: 847px;
   background-color: #ececec;
-  display: flex; /* Make .view-5 a flex container */
-  justify-content: center; /* Horizontally centers its direct children (the img) */
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .view-5 img {
@@ -312,98 +314,95 @@ main .button .b1 a img {
   font-size: 3.5rem;
 }
 
-.view-7 {
-  background-color: white;
-  height: 920px;
-  padding: 2.5rem;
+.layovered-wins-section {
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.layovered-wins-container {
+  max-width: 80rem;
+  width: 100%;
+  margin: auto;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+}
+.section-header h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+.section-header p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
   color: #1f271b;
 }
-.view-7 h1 {
-  font-size: 2.6rem;
+
+.comparison-table-wrapper {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: none;
+}
+
+.table-header {
+  display: none;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 600;
-  line-height: 1.3;
+  color: #1f2937;
 }
-.view-7 p {
-  margin-top: 1rem;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.5;
+
+.comparison-table-body {
+  display: grid;
 }
-.view-7 .container {
-  width: 311px;
-  margin-top: 2rem;
-  background: #fff;
-  height: 640px;
-  line-height: 2.5;
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
-.view-7 .container .header {
-  display: flex;
-  border-bottom: 1px solid #3c3f3a;
+
+.table-row-feature,
+.table-row-status {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
 }
-.view-7 .container .header .tab {
-  flex: 1;
-  padding: 18px 0;
-  text-align: center;
+
+.table-row-feature {
   font-weight: 500;
-  font-size: 1.07rem;
-  cursor: pointer;
-  background: #fff;
 }
-.view-7 .container .header .tab.active {
-  font-weight: bold;
-  position: relative;
-}
-.view-7 .container .header .tab img {
-  vertical-align: middle;
-  width: 27.73px;
-  height: 25.92px;
-  margin-right: 5px;
-}
-.view-7 .container .row {
-  border-bottom: 1px solid #3c3f3a;
+
+.table-row-status {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  padding: 15px 0 12px 0;
-  background: #fff;
-}
-.view-7 .container .row:last-child {
-  border-bottom: none;
-}
-.view-7 .container .row .info-title {
-  text-align: center;
-  margin-bottom: 8px;
-  font-size: 1.09rem;
-  color: #333;
-  font-weight: 500;
-  letter-spacing: 0.2px;
-  padding: 0 15px;
-}
-.view-7 .container .row .ticks-row {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding: 0 15px;
+  justify-content: center;
 }
-.view-7 .container .row .ticks-row .col {
-  flex: 1;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 0 5px;
+.table-row-status .icon {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
-.view-7 .container .row .ticks-row .divider {
-  width: 1px;
-  height: 24px;
-  background: #3c3f3a;
-  flex-shrink: 0;
+.table-row-status .icon-success {
+  color: #10b981;
 }
-.view-7 .fa-check {
-  color: #4caf50;
-  font-size: 1.44rem;
-}
-.view-7 .fa-xmark {
-  color: #ef3b47;
-  font-size: 1.44rem;
+.table-row-status .icon-fail {
+  color: #ef4444;
 }
 
 .view-8 {
@@ -456,160 +455,202 @@ main .button .b1 a img {
   background-color: #c2c2c2;
 }
 
-.view-9 {
-  background-color: #ffffff;
-  padding: 2rem;
-}
-.view-9 .layoveredabout {
+/*
+  Footer
+  --------------------------------
+*/
+.main-container {
   display: flex;
   flex-direction: column;
-}
-.view-9 .layoveredtext {
-  display: flex;
-}
-.view-9 .layoveredtext img {
-  height: 33px;
-  width: 35.31px;
-}
-.view-9 .layoveredtext h1 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  padding-left: 0.5rem;
-}
-.view-9 .sub-heading {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
-}
-.view-9 .sub-heading a {
-  text-decoration: none;
-  color: #1f271b;
-  line-height: 2;
-  font-size: 1rem;
-  font-weight: 400;
-}
-.view-9 .footer-container {
-  padding: 1rem 1rem 0rem 0rem;
-  max-width: 400px;
-  margin: 0 auto;
-  margin-top: 1rem;
-  height: 400px;
-}
-.view-9 .footer-container .newsletter {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.view-9 .footer-container .newsletter h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #232323;
-}
-.view-9 .footer-container .newsletter .newsletter-form {
-  display: flex;
-  flex-direction: column; /* Changed to column */
-  width: 100%;
-  margin-bottom: 0.5rem;
-  /* Target the div containing the button if you want to center it */
-}
-.view-9 .footer-container .newsletter .newsletter-form input[type=email] {
-  /* Keep existing styles */
-  flex: 1; /* This will still work for sizing the input */
-  margin-right: 0; /* Remove right margin as it's no longer next to the button */
-  margin-bottom: 0.8rem; /* Add bottom margin to separate from the button */
-  padding: 0.9rem 1rem;
-  border: 1.5px solid #ddd;
-  border-radius: 10px;
-  font-size: 1.05rem;
-  background: #f6f6f6;
-  outline: none;
-  transition: border 0.15s;
-}
-.view-9 .footer-container .newsletter .newsletter-form input[type=email]:focus {
-  border-color: #ff4d1c;
-}
-.view-9 .footer-container .newsletter .newsletter-form div {
-  display: flex;
-  width: 100%;
-}
-.view-9 .footer-container .newsletter .newsletter-form button {
-  background: #ff4d1c;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  padding: 1rem 2.2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.view-9 .footer-container .newsletter .newsletter-form button:hover, .view-9 .footer-container .newsletter .newsletter-form button:focus {
-  background: rgb(255, 57.0044052863, 2.5);
-}
-.view-9 .footer-container .newsletter .newsletter-policy {
-  font-size: 0.8rem;
-  color: #444;
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-  line-height: 1.5;
-  font-weight: 400;
-}
-.view-9 .footer-container .newsletter .newsletter-policy a {
-  color: #232323;
-  text-decoration: underline;
-}
-.view-9 .footer-container .newsletter .newsletter-policy a:hover {
-  color: #ff4d1c;
-}
-.view-9 .footer-container hr {
-  border: none;
-  border-top: 1px solid #e5e5e5;
-  margin: 2rem 0 1.5rem 0;
-}
-.view-9 .footer-container .footer-bottom {
-  display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  gap: 0.75rem;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
 }
-.view-9 .footer-container .footer-bottom .copyright {
-  font-size: 1rem;
-  color: #444;
-  margin-bottom: 0.7rem;
+
+.footer-section {
+  width: 100%;
 }
-.view-9 .footer-container .footer-bottom .footer-links {
+
+.top-section {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
-  margin-bottom: 1rem;
+  padding-bottom: 2rem;
 }
-.view-9 .footer-container .footer-bottom .footer-links a {
-  color: #232323;
-  font-size: 1.07rem;
-  text-decoration: underline;
-}
-.view-9 .footer-container .footer-bottom .footer-links a:hover {
-  color: #ff4d1c;
-}
-.view-9 .footer-container .footer-bottom .footer-social {
+
+.footer-nav {
   display: flex;
-  gap: 1.4rem;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-.view-9 .footer-container .footer-bottom .footer-social a {
-  color: #232323;
-  font-size: 1.8rem;
-  transition: color 0.15s;
-  width: 24px;
-  height: 24px;
+.footer-nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
-.view-9 .footer-container .footer-bottom .footer-social a:hover {
-  color: #ff4d1c;
+.footer-nav .nav-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-nav .nav-link {
+  color: #1f2937;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.newsletter-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.newsletter-form-wrapper .form-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.newsletter-form-wrapper .form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.newsletter-form-wrapper .input-field {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.newsletter-form-wrapper .subscribe-btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+.newsletter-form-wrapper .privacy-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+.bottom-section .copyright {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+.bottom-section .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+.bottom-section .social-icon {
+  color: #1f2937;
+  font-size: 1.25rem;
 }
 
 /*
-  MAX-WIDTH MEDIA QUERY (for screens <= 1020px)
-  These styles will be applied to laptops, tablets, and mobile phones.
+  Media Queries
+  --------------------------------
 */
+@media (min-width: 640px) {
+  .layovered-wins-section {
+    padding: 4rem 2rem;
+  }
+  .section-header h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  .section-header p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .comparison-table-wrapper {
+    padding: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .main-container {
+    padding: 2rem 4rem;
+  }
+  .top-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .newsletter-form-wrapper .form-content {
+    flex-direction: row;
+    align-items: center;
+  }
+  .newsletter-form-wrapper .input-field {
+    width: 20rem;
+  }
+  .newsletter-form-wrapper .subscribe-btn {
+    width: auto;
+  }
+  .newsletter-form-wrapper .privacy-text {
+    align-self: flex-end;
+  }
+  .bottom-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bottom-section .copyright-links {
+    display: flex;
+    gap: 1rem;
+  }
+  .table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem;
+  }
+  .table-header div:first-child {
+    border: none;
+  }
+  .table-header div:nth-child(2) {
+    border-right: 1px solid #e5e7eb;
+  }
+  .comparison-table-body {
+    gap: 0;
+  }
+  .table-row {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .table-row:last-child {
+    border-bottom: none;
+  }
+  .table-row-feature {
+    padding: 1.5rem 1rem;
+    border-bottom: none;
+    border-right: 1px solid #e5e7eb;
+  }
+  .table-row-status {
+    padding: 1.5rem 1rem;
+    border-bottom: none;
+  }
+  .table-row-status:first-child {
+    border-right: 1px solid #e5e7eb;
+  }
+}
 @media (min-width: 1020px) {
   nav {
     justify-content: space-between;
@@ -642,15 +683,49 @@ main .button .b1 a img {
     display: flex;
     justify-content: row;
   }
+  .view-3 .feature-heading {
+    text-align: left;
+    max-width: 33% !important;
+    padding: 30px;
+  }
+  .view-3 .feature-heading h1 {
+    font-size: 2.6rem;
+  }
+  .view-3 .feature-para {
+    text-align: right;
+    max-width: 26% !important;
+    display: inline-block;
+    padding: 0 30px;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+  }
+  .view-3 .feature-para p {
+    font-size: 1.25rem;
+  }
+  .view-3 .av {
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+  }
   .view-4 {
     display: block;
     padding: 2.5rem;
+    max-width: 1440px;
+  }
+  .view-4 .travelsection {
+    display: flex;
+  }
+  .view-4 .travel {
+    padding: 4rem;
+    max-width: 32%;
   }
   .view-4 .travel h1 {
     font-size: 2.625rem;
   }
   .view-4 .features {
-    margin-top: 1rem;
+    margin-top: 3.5rem;
+    padding-left: 5rem;
+    gap: 0rem;
   }
   .view-4 .images {
     margin-top: 2rem;
@@ -658,31 +733,27 @@ main .button .b1 a img {
     grid-template-areas: "a b" "c c";
   }
   .view-4 .images .notification img {
-    width: 489.54px;
-    height: 547.99px;
+    width: 430px;
+    height: 460px;
     margin-top: 2rem;
+    margin-right: 33rem;
   }
   .view-4 .images .phoneinhand img {
-    width: 754.06px;
-    height: 545.95px;
+    width: 470px;
+    height: 460px;
     margin-top: 2rem;
+    margin-left: -32rem;
   }
   .view-4 .images .layover img {
-    width: 1280px;
+    width: 1220px;
     height: 386px;
   }
   .view-4 .images .img-a,
   .view-4 .images .img-b,
   .view-4 .images .img-c {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-  }
-  .view-8 .b1 {
-    padding-bottom: 1rem;
-  }
-  .view-8 .b1 a {
-    padding-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
   }
   .view-6 p {
     font-size: 5rem;
@@ -697,22 +768,90 @@ main .button .b1 a img {
     letter-spacing: -0.06em;
   }
   .view-7 .container {
-    max-width: 800px; /* Adjust max-width for a better desktop view */
+    max-width: 800px;
   }
   .view-7 .row {
-    flex-direction: row; /* Side-by-side layout for desktop */
+    flex-direction: row;
     align-items: center;
-    padding: 15px 25px; /* Adjust padding for desktop */
+    padding: 15px 25px;
   }
   .view-7 .row .info-title {
-    flex: 2; /* Give more space to the title */
-    text-align: left; /* Align text to the left for desktop */
+    flex: 2;
+    text-align: left;
     margin-bottom: 0;
     padding-right: 20px;
   }
   .view-7 .row .ticks-row {
-    flex: 1; /* Give less space to the ticks */
-    justify-content: space-between; /* Adjust spacing of ticks */
+    flex: 1;
+    justify-content: space-between;
     padding: 0 10px;
+  }
+  .view-8 {
+    height: 120px;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .view-8 h1 {
+    margin: 1;
+    font-size: 1.25rem;
+    padding-right: 49rem;
+  }
+  .view-8 .button-2 {
+    margin-top: 0;
+  }
+  .view-8 .button-2 .b1 a {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .layovered-wins-section {
+    padding: 4rem 4rem;
+  }
+  .section-header h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+  }
+  .comparison-table-wrapper {
+    padding: 0rem;
+  }
+  .footer-nav {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .footer-nav .nav-links-wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  .newsletter-form-wrapper .form-content {
+    flex-direction: column;
+  }
+  .newsletter-form-wrapper .input-field {
+    width: 100%;
+  }
+  .newsletter-form-wrapper .subscribe-btn {
+    width: 100%;
+  }
+  .newsletter-form-wrapper .privacy-text {
+    align-self: flex-start;
+  }
+  .main-container {
+    padding: 2rem 8rem;
+  }
+}
+@media (min-width: 2048px) {
+  nav {
+    width: 80%;
+    margin: 0 auto !important;
+  }
+  main {
+    width: 80%;
+    margin: 0 auto !important;
   }
 }
