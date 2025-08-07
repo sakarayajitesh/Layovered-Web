@@ -14,7 +14,6 @@ body {
   width: 100%;
   height: 100%;
   color: #1f271b;
-  background-color: #faebe4;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -166,6 +165,10 @@ main .button .b1 a img {
   height: 18px;
 }
 
+.map-img img {
+  display: none;
+}
+
 .view-2 {
   margin-top: 4rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/airplane.jpg);
@@ -234,14 +237,12 @@ main .button .b1 a img {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  max-width: 600px;
   margin: 0 auto;
   margin-top: 1rem;
 }
 .view-4 .feature-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 .view-4 .feature-icon {
   flex-shrink: 0;
@@ -668,30 +669,53 @@ main .button .b1 a img {
     margin-top: 1.4rem;
     margin-left: -2rem;
   }
-  .view-1 {
-    display: block;
+  main {
+    margin-top: 0rem;
+  }
+  main .view-1 {
+    display: flex;
+    justify-content: space-between;
     padding: 4rem;
+    margin-top: 2rem;
   }
-  .view-1 .title {
-    width: 50%;
+  main .view-1 .title {
+    width: 38%;
   }
-  .view-1 .users-saved-section {
+  main .view-1 .savings {
+    display: flex;
+  }
+  main .view-1 .users-saved-section {
     padding-left: 2.5rem;
     margin-top: 1rem;
   }
-  .view-1 .users-saved-section .text-content {
+  main .view-1 .users-saved-section .text-content {
     display: flex;
     justify-content: row;
   }
-  .view-3 .feature-heading {
+  main .view-1 .button {
+    align-items: normal;
+  }
+  main .view-1 .button .b1 {
+    margin-top: 0rem;
+  }
+  main .map-img {
+    display: flex;
+    justify-content: center;
+  }
+  main .map-img img {
+    display: block;
+    width: 1280px;
+    height: 449px;
+  }
+  main .view-3 .feature-heading {
     text-align: left;
     max-width: 33% !important;
     padding: 30px;
   }
-  .view-3 .feature-heading h1 {
+  main .view-3 .feature-heading h1 {
     font-size: 2.6rem;
   }
-  .view-3 .feature-para {
+  main .view-3 .feature-para {
     text-align: right;
     max-width: 26% !important;
     display: inline-block;
@@ -699,94 +723,103 @@ main .button .b1 a img {
     margin-top: 2rem;
     line-height: 1.5rem;
   }
-  .view-3 .feature-para p {
+  main .view-3 .feature-para p {
     font-size: 1.25rem;
   }
-  .view-3 .av {
+  main .view-3 .av {
     display: flex;
     justify-content: center;
     margin-top: 0rem;
   }
-  .view-4 {
+  main .view-4 {
     display: block;
-    padding: 2.5rem;
+    padding: 0rem;
     max-width: 1440px;
   }
-  .view-4 .travelsection {
+  main .view-4 .travelsection {
     display: flex;
+    margin-top: 3rem;
   }
-  .view-4 .travel {
+  main .view-4 .travel {
     padding: 4rem;
-    max-width: 32%;
+    width: 50%;
+    padding-left: 8rem;
   }
-  .view-4 .travel h1 {
+  main .view-4 .travel h1 {
     font-size: 2.625rem;
+    width: 53%;
   }
-  .view-4 .features {
-    margin-top: 3.5rem;
-    padding-left: 5rem;
+  main .view-4 .features {
+    margin-top: 4rem;
+    width: 50%;
     gap: 0rem;
   }
-  .view-4 .images {
+  main .view-4 .feature-description {
+    font-size: 1.25rem;
+  }
+  main .view-4 .images {
     margin-top: 2rem;
     display: grid;
     grid-template-areas: "a b" "c c";
   }
-  .view-4 .images .notification img {
-    width: 430px;
-    height: 460px;
-    margin-top: 2rem;
-    margin-right: 33rem;
+  main .view-4 .notification img {
+    width: 489.54px;
+    height: 547.99px;
+    margin-top: -2rem;
+    margin-right: 37rem;
   }
-  .view-4 .images .phoneinhand img {
-    width: 470px;
-    height: 460px;
-    margin-top: 2rem;
-    margin-left: -32rem;
+  main .view-4 .phoneinhand img {
+    width: 754.06px;
+    height: 545.95px;
+    margin-top: -2rem;
+    margin-left: -45rem;
   }
-  .view-4 .images .layover img {
-    width: 1220px;
+  main .view-4 .layover img {
+    width: 1280px;
     height: 386px;
   }
-  .view-4 .images .img-a,
-  .view-4 .images .img-b,
-  .view-4 .images .img-c {
+  main .view-4 .img-a,
+  main .view-4 .img-b,
+  main .view-4 .img-c {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .view-6 p {
+  main .view-5 {
+    margin-top: 6rem;
+  }
+  main .view-6 p {
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -0.06em;
   }
-  .view-7 h1 {
+  main .view-7 h1 {
     font-size: 3rem;
     font-weight: 600;
     line-height: 1.3;
     letter-spacing: -0.06em;
   }
-  .view-7 .container {
+  main .view-7 .container {
     max-width: 800px;
   }
-  .view-7 .row {
+  main .view-7 .row {
     flex-direction: row;
     align-items: center;
     padding: 15px 25px;
   }
-  .view-7 .row .info-title {
+  main .view-7 .row .info-title {
     flex: 2;
     text-align: left;
     margin-bottom: 0;
     padding-right: 20px;
   }
-  .view-7 .row .ticks-row {
+  main .view-7 .row .ticks-row {
     flex: 1;
     justify-content: space-between;
     padding: 0 10px;
   }
-  .view-8 {
+  main .view-8 {
     height: 120px;
     padding: 0 3rem;
     display: flex;
@@ -795,15 +828,14 @@ main .button .b1 a img {
     align-items: center;
     text-align: left;
   }
-  .view-8 h1 {
+  main .view-8 h1 {
     margin: 1;
     font-size: 1.25rem;
-    padding-right: 49rem;
   }
-  .view-8 .button-2 {
+  main .view-8 .button-2 {
     margin-top: 0;
   }
-  .view-8 .button-2 .b1 a {
+  main .view-8 .button-2 .b1 a {
     font-size: 1.25rem;
   }
 }
