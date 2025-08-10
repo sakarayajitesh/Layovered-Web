@@ -52,17 +52,13 @@ body {
   --------------------------------
 */
 nav {
-
-  display: flex;
-  justify-content: space-around;
-  padding: 0.5rem;
   gap: 1rem;
   margin-top: 0.5rem;
 
   .nav-brand {
     display: flex;
-    justify-content: space-around;
     margin-top: 1rem;
+    padding: 2rem;
 
     p {
       text-align: center;
@@ -96,11 +92,12 @@ nav {
   --------------------------------
 */
 main {
-  margin-top: 3rem;
-
   .view-1 {
-    display: block;
-    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This pushes the title to the top and the button to the bottom */
+    height: 82vh;
+    padding: 2rem;
 
     .heading {
       h1 {
@@ -116,12 +113,13 @@ main {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        width: 82%;
       }
     }
   }
 
   .users-saved-section {
-    padding-left: 2.5rem;
+    padding-left: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -163,21 +161,14 @@ main {
   .text-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    // align-items: center;
+    // text-align: center;
+    width: 50%;
   }
 
   .saved-text {
-    color: #4b5563;
     font-size: 1.125rem;
     font-weight: 500;
-  }
-
-  .amount-text {
-    color: #1f2937;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-top: 0.25rem;
   }
 
   .button {
@@ -186,7 +177,7 @@ main {
     align-items: center;
 
     .b1 {
-      margin-top: 20rem;
+      // margin-top: 20rem;
 
       a {
         @include orange-button;
@@ -208,7 +199,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   min-width: 100%;
-  height: 812px;
+  height: 100vh;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -231,7 +222,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   min-width: 375px;
-  height: 812px;
+  height: 100vh;
 
   .text-1 {
     margin-top: 5rem;
@@ -360,7 +351,7 @@ main {
 
 .view-6 {
   background-color: #ffffff;
-  height: 840px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -407,6 +398,7 @@ main {
   border-radius: 0.75rem;
   padding: 1rem;
   border: 1px solid #e5e7eb;
+  // border-bottom: none;
   box-shadow: none;
 }
 
@@ -460,23 +452,28 @@ main {
   }
 }
 
+.line {
+  height: 1px;
+  background-color: #c2c2c2;
+}
+
 .view-8 {
   background-color: #ffffff;
   height: 224px;
 
-  .line {
-    height: 1px;
-    background-color: #c2c2c2;
+  .readytext {
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: center;
+      padding: 2rem;
+    }
   }
-
   .button-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  h1 {
-    margin: 2rem;
   }
 
   .b1 {
@@ -485,13 +482,9 @@ main {
 
     a {
       @include orange-button;
+      letter-spacing: -0.06em;
     }
   }
-}
-
-.line {
-  height: 1px;
-  background-color: #c2c2c2;
 }
 
 /*
@@ -565,11 +558,13 @@ main {
     background-color: #ff5722;
     color: white;
     padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
+    border-radius: 3.75rem;
+    font-weight: 500;
     cursor: pointer;
     border: none;
-    width: 100%;
+    width: 120px;
+    height: 48px;
+    font-size: 1rem;
   }
   .privacy-text {
     font-size: 0.875rem;
@@ -585,9 +580,17 @@ main {
   gap: 1.5rem;
   padding-top: 2rem;
   border-top: 1px solid #e5e7eb;
+  margin-bottom: 3rem;
   .copyright {
     font-size: 0.875rem;
-    color: #6b7280;
+    color: #1f271b;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    a {
+      color: #1f271b;
+    }
   }
   .social-icons {
     display: flex;
@@ -596,6 +599,10 @@ main {
   .social-icon {
     color: #1f2937;
     font-size: 1.25rem;
+  }
+  .copyright-links {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -623,6 +630,23 @@ main {
 }
 
 @media (min-width: 768px) {
+  main .view-1 {
+    height: 88vh;
+  }
+
+.map-img {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      img {
+        display: block;
+        width: 730px;
+        height: 256.07px;
+      }
+    }
+.view-3 .text-1 {
+    margin-top: 18rem;
+}
   .main-container {
     padding: 2rem 4rem;
   }
@@ -704,9 +728,13 @@ main {
     margin-top: 0;
 
     .nav-brand {
-      margin-top: 1rem;
+      padding: 0;
+      display: flex;
+      align-items: center;
       p {
-        font-size: 23.58px;
+        font-size: 1.658rem;
+        font-weight: 600;
+        letter-spacing: -0.099rem;
       }
     }
     .nav-content {
@@ -724,7 +752,16 @@ main {
       margin-top: 2rem;
 
       .title {
-        width: 38%;
+        width: 50%;
+
+        .heading {
+          h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.099rem;
+          }
+        }
       }
 
       .savings {
@@ -732,12 +769,18 @@ main {
       }
 
       .users-saved-section {
-        padding-left: 2.5rem;
-        margin-top: 1rem;
+        padding-left: 0rem;
+        margin-top: 2rem;
 
         .text-content {
-          display: flex;
-          justify-content: row;
+          display: contents;
+
+          p,
+          h1 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1.5;
+          }
         }
       }
 
@@ -746,6 +789,12 @@ main {
 
         .b1 {
           margin-top: 0rem;
+
+          a {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.5;
+          }
         }
       }
     }
@@ -753,10 +802,21 @@ main {
     .map-img {
       display: flex;
       justify-content: center;
+      margin-top: 1rem;
       img {
         display: block;
         width: 1280px;
         height: 449px;
+      }
+    }
+
+    .view-2 {
+      h1 {
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -0.099rem;
+        width: 60%;
       }
     }
 
@@ -766,7 +826,12 @@ main {
         max-width: 33% !important;
         padding: 30px;
         h1 {
-          font-size: 2.6rem;
+          font-size: 2.625rem;
+          font-weight: 600;
+          line-height: 1.3;
+          letter-spacing: -0.099rem;
+          width: 83%;
+          text-align: left;
         }
       }
       .feature-para {
@@ -779,6 +844,9 @@ main {
 
         p {
           font-size: 1.25rem;
+          font-weight: 400;
+          line-height: 1.5;
+          text-align: left;
         }
       }
 
@@ -899,7 +967,7 @@ main {
     }
 
     .view-8 {
-      height: 120px;
+      height: 112px;
       padding: 0 3rem;
       display: flex;
       flex-direction: row;
@@ -908,15 +976,18 @@ main {
       text-align: left;
 
       h1 {
-        margin: 1;
         font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.5;
         // padding-right: 49rem;
       }
 
       .button-2 {
-        margin-top: 0;
+        margin-top: 20px;
         .b1 a {
           font-size: 1.25rem;
+          font-weight: 600;
+          line-height: 1.5;
         }
       }
     }
@@ -930,13 +1001,26 @@ main {
   .section-header {
     h2 {
       font-size: 3rem;
-      line-height: 1.5;
+      line-height: 1.3;
       font-weight: 600;
       letter-spacing: -0.6px;
+
+      p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.5;
+      }
     }
   }
   .comparison-table-wrapper {
     padding: 0rem;
+
+    .text-center {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+    }
   }
   .footer-nav {
     flex-direction: row;
@@ -949,13 +1033,17 @@ main {
   }
   .newsletter-form-wrapper {
     .form-content {
-      flex-direction: column;
     }
     .input-field {
       width: 100%;
     }
     .subscribe-btn {
-      width: 100%;
+      width: 120px;
+      height: 48px;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+      text-align: center;
     }
     .privacy-text {
       align-self: flex-start;
