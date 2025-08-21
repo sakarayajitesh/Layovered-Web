@@ -5,6 +5,14 @@
 $orange: #ff4d1c;
 $gray: #f6f6f6;
 $black: #232323;
+$primary-bg: #ffffff;
+$secondary-bg: #f8f9fa;
+$header-bg: #343a40;
+$header-color: #ffffff;
+$text-color: #212529;
+$border-color: #dee2e6;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$mobile-breakpoint: 768px;
 
 @mixin orange-button {
   display: flex;
@@ -66,6 +74,7 @@ nav {
       font-size: 23.58px;
       margin-top: 0.1rem;
       font-weight: 600;
+      letter-spacing: -0.099rem;
     }
 
     img {
@@ -360,94 +369,141 @@ main {
   }
 }
 
-.layovered-wins-section {
-  min-height: 100vh;
-  padding: 4rem 1rem;
+.view-7 {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-}
-
-.layovered-wins-container {
-  max-width: 80rem;
-  width: 100%;
-  margin: auto;
-}
-
-.section-header {
-  margin-bottom: 3rem;
-  h2 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 0.5rem;
+  padding: 3rem 1rem;
+  h1 {
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.099rem;
   }
   p {
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 400;
-    color: #1f271b;
-  }
-}
-
-.comparison-table-wrapper {
-  background-color: #ffffff;
-  border-radius: 0.75rem;
-  padding: 1rem;
-  border: 1px solid #e5e7eb;
-  // border-bottom: none;
-  box-shadow: none;
-}
-
-.table-header {
-  display: none;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  color: #1f2937;
-}
-
-.comparison-table-body {
-  display: grid;
-}
-
-.table-row {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.table-row-feature,
-.table-row-status {
-  padding: 1rem;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.table-row-feature {
-  font-weight: 500;
-}
-.table-row-status {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .icon {
-    font-weight: 700;
     font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1rem;
   }
-  .icon-success {
-    color: #10b981;
+  .table-container {
+    width: 100%;
+    max-width: 900px;
+    background: $primary-bg;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px $shadow-color;
+    overflow: hidden;
+    background-color: #e9ecef;
+    color: #212529;
+    margin-top: 1rem;
   }
-  .icon-fail {
-    color: #ef4444;
+
+  /* --- Table Styles (Desktop) --- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      background-color: $header-bg;
+      color: $header-color;
+    }
+
+    th,
+    td {
+      padding: 16px 24px;
+      text-align: left;
+    }
+
+    th {
+      font-weight: 600;
+      letter-spacing: -0.099rem;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid $border-color;
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+
+    tbody tr:nth-of-type(even) {
+      background-color: $secondary-bg;
+    }
+
+    // Center the icons
+    td:nth-child(2),
+    td:nth-child(3),
+    th:nth-child(2),
+    th:nth-child(3) {
+      text-align: center;
+    }
+
+    // NEW: Align SVG icons vertically
+    svg {
+      vertical-align: middle;
+    }
+  }
+  .table-container {
+    width: 100%;
+    max-width: 900px;
+    background: $primary-bg;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px $shadow-color;
+    overflow: hidden;
+  }
+
+  /* --- Table Styles (Desktop) --- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      background-color: $header-bg;
+      color: $header-color;
+    }
+
+    th,
+    td {
+      padding: 16px 24px;
+      text-align: left;
+    }
+
+    th {
+      font-weight: 600;
+      font-size: 1.079rem;
+      letter-spacing: -0.05rem;
+      line-height: 1.5;
+    }
+
+    td {
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid $border-color;
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+
+    tbody tr:nth-of-type(even) {
+      background-color: $secondary-bg;
+    }
+
+    // Center the icons
+    td:nth-child(2),
+    td:nth-child(3),
+    th:nth-child(2),
+    th:nth-child(3) {
+      text-align: center;
+    }
+
+    // NEW: Align SVG icons vertically
+    svg {
+      vertical-align: middle;
+    }
   }
 }
 
@@ -507,7 +563,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-bottom: 2rem;
 }
 
 .footer-nav {
@@ -520,6 +575,7 @@ main {
     gap: 0.5rem;
     font-size: 1.25rem;
     font-weight: 600;
+    letter-spacing: -0.099rem;
   }
   .nav-links-wrapper {
     display: flex;
@@ -577,33 +633,31 @@ main {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  // padding-top: 2rem;
-  // border-top: 1px solid #e5e7eb;
-  margin-bottom: 3rem;
-  .copyright {
-    font-size: 0.875rem;
-    color: #1f271b;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    a {
-      color: #1f271b;
-    }
-  }
-  .social-icons {
-    display: flex;
-    gap: 1rem;
-  }
-  .social-icon {
-    color: #1f2937;
-    font-size: 1.25rem;
-  }
-  .copyright-links {
-    display: flex;
-    justify-content: space-around;
+}
+.bottom-section .copyright {
+  font-size: 0.875rem;
+  color: #1f271b;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bottom-section .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+.bottom-section .social-icon {
+  color: #1f2937;
+  font-size: 1.25rem;
+}
+.bottom-section .copyright-links {
+  display: flex;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    color: #ff4b00;
   }
 }
+
 .line2 {
   height: 1px;
   background-color: #c2c2c2;
@@ -631,17 +685,16 @@ main {
     padding: 2rem;
   }
 
-  .bottom-section {
+  bottom-section {
     border-top: none;
     padding: 0px;
   }
-
   .footer-section {
-  width: 100%;
-}
-.view-6{
-  padding: 2rem;
-}
+    width: 90%;
+  }
+  .view-6 {
+    padding: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -740,9 +793,66 @@ main {
     }
   }
 
-  .view-6{
-  padding: 2rem;
+  .view-6 {
+    padding: 2rem;
+  }
+
+  .top-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .bottom-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
+
+@media screen and (max-width: $mobile-breakpoint) {
+  table {
+    thead {
+      display: none; // Hide desktop headers
+    }
+
+    tr {
+      display: block;
+      border-bottom: 3px solid $header-bg;
+      margin-bottom: 1.5rem;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    td {
+      display: flex;
+      justify-content: space-between; // Pushes label and content apart
+      align-items: center;
+      text-align: right;
+      border-bottom: 1px solid $border-color;
+
+      // Use the data-label from HTML for the mobile view
+      &::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-align: left;
+        margin-right: 1rem;
+      }
+
+      // Style the first cell of each "block" as a header
+      &:first-child {
+        background-color: $secondary-bg;
+        font-weight: 700;
+        justify-content: center;
+        padding: 12px;
+
+        // Don't show a label for the feature description itself
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1020px) {
@@ -851,6 +961,9 @@ main {
     }
 
     .view-3 {
+      display: flex;
+      justify-content: center; // Horizontally centers the content
+      align-items: center;
       .text-1 {
         margin-top: 2rem;
       }
@@ -970,39 +1083,9 @@ main {
       }
     }
 
-    .view-7 {
-      h1 {
-        font-size: 3rem;
-        font-weight: 600;
-        line-height: 1.3;
-        letter-spacing: -0.06em;
-      }
-      .container {
-        max-width: 800px;
-      }
-      .row {
-        flex-direction: row;
-        align-items: center;
-        padding: 15px 25px;
-
-        .info-title {
-          flex: 2;
-          text-align: left;
-          margin-bottom: 0;
-          padding-right: 20px;
-        }
-
-        .ticks-row {
-          flex: 1;
-          justify-content: space-between;
-          padding: 0 10px;
-        }
-      }
-    }
-
     .view-8 {
       height: 112px;
-      padding: 0 3rem;
+      padding: 0 7rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -1059,6 +1142,9 @@ main {
   .footer-nav {
     flex-direction: row;
     gap: 2.5rem;
+    .logo {
+      font-size: 1.658rem;
+    }
     .nav-links-wrapper {
       flex-direction: row;
       align-items: center;
@@ -1082,9 +1168,6 @@ main {
     .privacy-text {
       align-self: flex-start;
     }
-  }
-  .main-container {
-    padding: 2rem 4rem;
   }
 }
 
