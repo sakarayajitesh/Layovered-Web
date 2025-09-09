@@ -24,6 +24,8 @@ body {
 nav {
   gap: 1rem;
   margin-top: 0rem;
+  display: flex;
+  justify-content: space-between;
 }
 nav .nav-brand {
   display: flex;
@@ -44,13 +46,13 @@ nav .nav-brand img {
   margin-right: 0.4rem;
 }
 nav .nav-content {
-  margin-top: 1.4rem;
+  margin-top: 2.4rem;
   margin-left: -2rem;
 }
 nav .nav-content a {
   text-decoration: none;
-  color: #1f271b;
-  padding: 0 0.5rem;
+  color: #ff4b00;
+  padding: 0 2.5rem;
 }
 
 /*
@@ -771,7 +773,7 @@ main .button .b1 a img {
   nav {
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     margin-top: 0;
   }
   nav .nav-brand {
@@ -785,7 +787,7 @@ main .button .b1 a img {
     letter-spacing: -0.099rem;
   }
   nav .nav-content {
-    margin-top: 1.4rem;
+    margin-top: -0.6rem;
     margin-left: -2rem;
   }
   main {
