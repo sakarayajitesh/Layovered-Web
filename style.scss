@@ -67,6 +67,8 @@ body {
 nav {
   gap: 1rem;
   margin-top: 0rem;
+  display: flex;
+  justify-content: space-between;
 
   .nav-brand {
     display: flex;
@@ -90,13 +92,13 @@ nav {
   }
 
   .nav-content {
-    margin-top: 1.4rem;
+    margin-top: 2.4rem;
     margin-left: -2rem;
 
     a {
-      text-decoration: none;
-      color: #1f271b;
-      padding: 0 0.5rem;
+     text-decoration: none;
+      padding: 0 2.5rem;
+      color: #1F271B;
     }
   }
 }
@@ -864,7 +866,7 @@ main {
   nav {
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     margin-top: 0;
 
     .nav-brand {
@@ -878,7 +880,7 @@ main {
       }
     }
     .nav-content {
-      margin-top: 1.4rem;
+      margin-top: -0.6rem;
       margin-left: -2rem;
     }
   }
