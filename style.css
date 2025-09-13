@@ -55,10 +55,10 @@ nav .nav-content {
   margin-top: 2.4rem;
   margin-left: -2rem;
 }
-nav .nav-content a {
+nav a {
   text-decoration: none;
-  padding: 0 2.5rem;
-  color: #1F271B;
+  padding-right: 1rem;
+  color: #1f271b;
 }
 
 /*
@@ -635,6 +635,9 @@ main .button .b1 a img {
   }
 }
 @media (min-width: 768px) {
+  nav .nav-content a {
+    padding-right: 2rem;
+  }
   main .view-1 {
     position: relative;
     height: 83vh;
@@ -796,6 +799,9 @@ main .button .b1 a img {
     margin-top: -0.6rem;
     margin-left: -2rem;
   }
+  nav .nav-content a {
+    padding-left: 1rem;
+  }
   main {
     margin-top: 0rem;
   }
@@ -840,6 +846,7 @@ main .button .b1 a img {
   }
   main .view-1 .button .b1 {
     margin-top: 0rem;
+    padding-right: 1.5rem;
   }
   main .view-1 .button .b1 a {
     font-size: 1.25rem;

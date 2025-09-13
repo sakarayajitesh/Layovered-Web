@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /*
   Global and Variable Definitions
@@ -94,12 +94,12 @@ nav {
   .nav-content {
     margin-top: 2.4rem;
     margin-left: -2rem;
+  }
 
-    a {
-     text-decoration: none;
-      padding: 0 2.5rem;
-      color: #1F271B;
-    }
+  a {
+    text-decoration: none;
+    padding-right: 1rem;
+    color: #1f271b;
   }
 }
 
@@ -705,6 +705,9 @@ main {
 }
 
 @media (min-width: 768px) {
+  nav .nav-content a {
+    padding-right: 2rem;
+  }
   main .view-1 {
     position: relative;
     height: 83vh;
@@ -882,6 +885,10 @@ main {
     .nav-content {
       margin-top: -0.6rem;
       margin-left: -2rem;
+
+      a {
+        padding-left: 1rem;
+      }
     }
   }
 
@@ -936,6 +943,7 @@ main {
 
         .b1 {
           margin-top: 0rem;
+          padding-right: 1.5rem;
 
           a {
             font-size: 1.25rem;
