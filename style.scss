@@ -119,7 +119,7 @@ main {
       h1 {
         font-size: 3rem;
         line-height: 1.3;
-        letter-spacing: -0.06em;
+        letter-spacing: -0.02em;
         -webkit-background-clip: text;
         background-clip: text;
         font-weight: 600;
@@ -142,7 +142,7 @@ main {
     gap: 1rem;
     width: 100%;
     max-width: 48rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .user-avatars {
@@ -207,7 +207,7 @@ main {
 }
 
 .view-2 {
-  margin-top: 4rem;
+  margin-top: 11rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(./images/airplane.jpg);
   background-size: cover;
@@ -713,7 +713,7 @@ main {
     height: 83vh;
     .button {
       position: absolute;
-      top: 16rem;
+      top: 19rem;
       right: 29rem;
     }
   }
@@ -819,6 +819,12 @@ main {
   }
 }
 
+@media (min-width: 820px){
+    main .view-1 .button {
+        right: 32rem;
+    }
+}
+
 @media screen and (max-width: $mobile-breakpoint) {
   table {
     thead {
@@ -903,7 +909,7 @@ main {
       height: 100vh;
 
       .title {
-        width: 70%;
+        width: 47%;
 
         .heading {
           h1 {
@@ -934,6 +940,7 @@ main {
           }
         }
       }
+
 
       .button {
         align-items: normal;
