@@ -4,10 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us — Layovered</title>
+    <title>About Us — Layovered | Our Mission & Team</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Meet the team behind Layovered. We are on a mission to turn frustrating airport layovers into memorable micro-vacations through visa-aware smart flight routing.">
+    <meta name="keywords" content="about layovered, travel startup, visa-aware flight routing, flight ticket booking, travel app developers">
+    <meta name="author" content="Layovered AI Systems Private Limited">
+    <link rel="canonical" href="https://layovered.app/about.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://layovered.app/about.html">
+    <meta property="og:title" content="About Us — Layovered | Our Mission & Team">
+    <meta property="og:description" content="Meet the team behind Layovered. We are on a mission to turn frustrating airport layovers into memorable micro-vacations.">
+    <meta property="og:image" content="https://layovered.app/icon.png">
+    <meta property="og:site_name" content="Layovered">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://layovered.app/about.html">
+    <meta property="twitter:title" content="About Us — Layovered | Our Mission & Team">
+    <meta property="twitter:description" content="Meet the team behind Layovered. We are on a mission to turn frustrating airport layovers into memorable micro-vacations.">
+    <meta property="twitter:image" content="https://layovered.app/icon.png">
+
+    <!-- Preconnect Resource Hints for Core Web Vitals -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="icon.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Layovered AI Systems Private Limited",
+        "url": "https://layovered.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://layovered.app/icon.png"
+        },
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Ajitesh Sakaray",
+            "jobTitle": "Founder & CEO"
+          }
+        ],
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "Ikeaba T. Adrian",
+            "jobTitle": "Android Engineer"
+          },
+          {
+            "@type": "Person",
+            "name": "Devansh Yadav",
+            "jobTitle": "Data Analyst"
+          },
+          {
+            "@type": "Person",
+            "name": "Pushti Sonawala",
+            "jobTitle": "Backend Engineer - Intern"
+          },
+          {
+            "@type": "Person",
+            "name": "Arshad Sirwal",
+            "jobTitle": "AI Engineer - Intern"
+          }
+        ]
+      }
+    }
+    </script>
     <style>
         :root {
             --orange: #FF4C00;
@@ -696,7 +768,7 @@
     <nav id="navbar">
         <div class="container flex-between">
             <a href="index.html" class="nav-logo">
-                <img src="./icon.png" alt="" width="30" height="30">
+                <img src="./icon.png" alt="Layovered Logo" width="30" height="30">
                 Layovered
             </a>
             <div class="nav-links">
@@ -774,8 +846,8 @@
                 <!-- Founder -->
                 <div class="glass-card reveal reveal-delay-3">
                     <div class="avatar-circle">
-                        <img src="./team members/1.jpg" alt=""
-                            onerror="this.style.display='none'; this.parentElement.textContent='R';">
+                        <img src="./team members/1.jpg" alt="Ajitesh Sakaray - Founder & CEO"
+                            onerror="this.style.display='none'; this.parentElement.textContent='AS';">
                     </div>
                     <div class="team-name">Ajitesh Sakaray</div>
                     <div class="team-role">Founder & CEO</div>
@@ -787,8 +859,8 @@
 
                 <div class="glass-card reveal reveal-delay-3">
                     <div class="avatar-circle">
-                        <img src="./team members/5.png" alt=""
-                            onerror="this.style.display='none'; this.parentElement.textContent='R';">
+                        <img src="./team members/5.png" alt="Ikeaba T. Adrian - Android Engineer"
+                            onerror="this.style.display='none'; this.parentElement.textContent='IA';">
                     </div>
                     <div class="team-name">Ikeaba T. Adrian</div>
                     <div class="team-role">Android Engineer</div>
@@ -801,7 +873,7 @@
                 <!-- Devansh -->
                 <div class="glass-card reveal reveal-delay-3">
     <div class="avatar-circle">
-        <img src="./team members/3p.png" alt="" onerror="this.style.display='none'; this.parentElement.textContent='R';">
+        <img src="./team members/3p.png" alt="Devansh Yadav - Data Analyst" onerror="this.style.display='none'; this.parentElement.textContent='DY';">
     </div>
     <div class="team-name">Devansh Yadav</div>
     <div class="team-role">Data Analyst
@@ -859,19 +931,19 @@
     <footer>
         <div class="container footer-inner">
             <a href="index.html" class="footer-logo">
-                <img src="./icon.png" alt="" width="30" height="30">
+                <img src="./icon.png" alt="Layovered Logo" width="30" height="30">
                 Layovered
             </a>
             <div class="footer-meta">
                 <div class="social-links">
-                    <a href="https://www.instagram.com/layovered.app" class="social-link" target="_blank"><i
+                    <a href="https://www.instagram.com/layovered.app" class="social-link" target="_blank" aria-label="Follow Layovered on Instagram"><i
                             class="fa-brands fa-instagram"></i></a>
-                    <a href="https://x.com/Layovered_app" class="social-link" target="_blank"><i
+                    <a href="https://x.com/Layovered_app" class="social-link" target="_blank" aria-label="Follow Layovered on X (Twitter)"><i
                             class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/layovered" class="social-link" target="_blank"><i
+                    <a href="https://www.linkedin.com/company/layovered" class="social-link" target="_blank" aria-label="Connect with Layovered on LinkedIn"><i
                             class="fa-brands fa-linkedin-in"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61577388000364" class="social-link"
-                        target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        target="_blank" aria-label="Follow Layovered on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
                 <div class="footer-copy">
                     <span>© 2026 Layovered AI Systems Private Limited. All rights reserved.</span>
