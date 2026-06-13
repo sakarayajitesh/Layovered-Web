@@ -26,7 +26,11 @@ const SITE_BASE = 'https://layovered.app';
 const DATA_FILE = path.join(ROOT, 'data', 'visa-data.json');
 
 // Placeholders — wired to the real Branch/Firebase link and ESP endpoint later.
-const APP_DEEPLINK_BASE = 'https://layovered.app/download.html'; // existing store-redirect page; harmlessly ignores ?passport/&country params
+// Relative so app/download links stay on whatever domain serves the page
+// (the live site is layovered.com per CNAME), matching the nav CTA. Swap for
+// the real absolute Branch/Firebase deep link when it's ready. The existing
+// download page harmlessly ignores the ?passport/&country params.
+const APP_DEEPLINK_BASE = '/download.html';
 const CAPTURE_ENDPOINT = '';                 // unused while email capture is disabled
 const ENABLE_EMAIL_CAPTURE = false;          // flip to true once an ESP/form endpoint is wired into CAPTURE_ENDPOINT
 
