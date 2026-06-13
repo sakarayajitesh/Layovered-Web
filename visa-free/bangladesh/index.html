@@ -32,8 +32,8 @@
   --transition:0.35s cubic-bezier(0.4,0,0.2,1); --font-display:"Plus Jakarta Sans",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:"Plus Jakarta Sans",sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
-.container{max-width:1080px;margin:0 auto;padding:0 22px}
+body{font-family:"Plus Jakarta Sans",sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;overflow-x:hidden}
+.container{max-width:1200px;margin:0 auto;padding:0 22px;width:100%}
 .flex-between{display:flex;align-items:center;justify-content:space-between}
 a{text-decoration:none;color:inherit}
 /* nav — mirrors the main site (index/about/contact) exactly */
@@ -73,7 +73,9 @@ select:focus{outline:none;border-color:var(--orange)}
 .chips{display:flex;gap:10px;flex-wrap:wrap}
 .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border:1.5px solid var(--line);border-radius:30px;font-weight:700;font-size:.9rem;cursor:pointer;user-select:none;transition:.18s;background:#fff}
 .chip i{font-size:.78rem;opacity:.5}
-.chip.on{border-color:var(--orange);background:#fff5f0;color:var(--orange)}
+.chip:hover{border-color:var(--orange);color:var(--orange)}
+.chip.on{border-color:var(--orange);background:var(--orange);color:#fff}
+.chip.on:hover{color:#fff}
 .chip.on i{opacity:1}
 .go{margin-top:22px;width:100%;background:var(--orange);color:#fff;border:none;padding:15px;border-radius:13px;font-family:inherit;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:.25s}
 .go:hover{background:var(--orange-dark)}
@@ -191,13 +193,13 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       </div>
     </div>
     <div class="visa-block">
-      <div class="field-label"><i class="fa-solid fa-id-card"></i> Visas you already hold (tap to add)</div>
+      <div class="field-label"><i class="fa-solid fa-id-card"></i> Select a visa you hold</div>
       <div class="chips" id="chips">
-        <span class="chip" data-slug="us" role="button" tabindex="0"><i class="fa-regular fa-circle"></i> US visa</span>
-        <span class="chip" data-slug="schengen" role="button" tabindex="0"><i class="fa-regular fa-circle"></i> Schengen visa</span>
-        <span class="chip" data-slug="uk" role="button" tabindex="0"><i class="fa-regular fa-circle"></i> UK visa</span>
-        <span class="chip" data-slug="canada" role="button" tabindex="0"><i class="fa-regular fa-circle"></i> Canada visa</span>
-        <span class="chip" data-slug="uae" role="button" tabindex="0"><i class="fa-regular fa-circle"></i> UAE visa</span>
+        <span class="chip" data-slug="us" role="button" tabindex="0" aria-pressed="false">US visa</span>
+        <span class="chip" data-slug="schengen" role="button" tabindex="0" aria-pressed="false">Schengen visa</span>
+        <span class="chip" data-slug="uk" role="button" tabindex="0" aria-pressed="false">UK visa</span>
+        <span class="chip" data-slug="canada" role="button" tabindex="0" aria-pressed="false">Canada visa</span>
+        <span class="chip" data-slug="uae" role="button" tabindex="0" aria-pressed="false">UAE visa</span>
       </div>
     </div>
     <button class="go" id="go"><i class="fa-solid fa-earth-asia"></i> Show where I can go</button>
@@ -1555,21 +1557,20 @@ var NAV={"passport":"bangladesh","hub":"/visa-free/bangladesh/","hubs":{"india":
 
   var sel=document.getElementById('passport');
   if(sel)sel.addEventListener('change',function(){var u=NAV.hubs[this.value];window.location=u||NAV.hub;});
-  var active={};
-  if(NAV.active)active[NAV.active]=1;
-  // 0 visas -> hub; 1 visa -> its pre-built variant page (or hub if that
-  // combo was not generated); multi-visa combos -> fall back to the hub.
-  function target(){var on=Object.keys(active);if(on.length===1)return NAV.visas[on[0]]||NAV.hub;return NAV.hub;}
+  // Single-select: clicking a visa navigates straight to its pre-built page
+  // (or the hub if that page wasn't built). Clicking the active visa clears
+  // the selection and returns to the hub. Picking another swaps in one click.
+  function go(slug){
+    if(!slug||slug===NAV.active)window.location=NAV.hub;
+    else window.location=NAV.visas[slug]||NAV.hub;
+  }
   var chips=document.querySelectorAll('.chip');
   for(var i=0;i<chips.length;i++){
-    chips[i].addEventListener('click',function(){
-      var s=this.getAttribute('data-slug');
-      if(active[s])delete active[s];else active[s]=1;
-      window.location=target();
-    });
+    chips[i].addEventListener('click',function(){go(this.getAttribute('data-slug'));});
+    chips[i].addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go(this.getAttribute('data-slug'));}});
   }
-  var go=document.getElementById('go');
-  if(go)go.addEventListener('click',function(){window.location=target();});
+  var goBtn=document.getElementById('go');
+  if(goBtn)goBtn.addEventListener('click',function(){var s=document.querySelector('.summary');if(s)s.scrollIntoView({behavior:'smooth',block:'start'});});
   var form=document.getElementById('cap-form');
   if(form)form.addEventListener('submit',function(e){
     e.preventDefault();
