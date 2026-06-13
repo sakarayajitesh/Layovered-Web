@@ -46,14 +46,16 @@ const TEASER_FIELDS = ['code', 'name', 'slug', 'region', 'access', 'durationDays
 const ACCESS = {
   visa_free: { group: 'free',  badge: 'b-free',  label: 'Visa-free' },
   voa:       { group: 'voa',   badge: 'b-voa',   label: 'Visa on arrival' },
-  evisa:     { group: 'evisa', badge: 'b-evisa', label: 'eVisa / eTA' },
-  eta:       { group: 'evisa', badge: 'b-evisa', label: 'eVisa / eTA' },
+  evisa:     { group: 'evisa', badge: 'b-evisa', label: 'eVisa' },
+  // eTA is treated as visa-free: no visa is issued, just a pre-travel form.
+  // Kept as its own access type so the country page can note the form.
+  eta:       { group: 'free',  badge: 'b-free',  label: 'Visa-free' },
 };
 
 const GROUPS = [
   { key: 'free',  title: 'Visa-free',        icon: 'fa-circle-check' },
   { key: 'voa',   title: 'Visa on arrival',  icon: 'fa-plane-arrival' },
-  { key: 'evisa', title: 'eVisa / eTA',      icon: 'fa-laptop' },
+  { key: 'evisa', title: 'eVisa',            icon: 'fa-laptop' },
 ];
 
 // §7 — unique regional body line per passport (verbatim from the brief).
@@ -530,7 +532,7 @@ ${links.map(([text, href]) => `      <li><a href="${esc(href)}">${esc(text)}</a>
 function hubFaqs(nat, total, n, ex) {
   return [
     [`How many countries can ${nat} passport holders visit without a visa?`,
-     `${nat} citizens can currently reach ${total} destinations without a prior visa — ${n.free} visa-free, ${n.voa} on arrival and ${n.evisa} via eVisa or eTA. Run the checker above for the live, full list.`],
+     `${nat} citizens can currently reach ${total} destinations without a prior visa — ${n.free} visa-free, ${n.voa} on arrival and ${n.evisa} via eVisa. Run the checker above for the live, full list.`],
     [`Which countries are visa-free for ${nat} citizens?`,
      `Popular visa-free destinations include ${ex[0]}, ${ex[1]} and ${ex[2]}, among others. The checker shows all ${n.free} visa-free countries with the stay allowed for each.`],
     [`Does a US or Schengen visa give ${nat} passport holders extra access?`,
@@ -538,7 +540,7 @@ function hubFaqs(nat, total, n, ex) {
     ['What is the difference between visa-free and visa-on-arrival?',
      'Visa-free means you need no visa at all. Visa-on-arrival means you obtain it at the airport or border on landing, sometimes for a fee. Both are shown above with cost and stay.'],
     ['Do I need to apply for anything before I fly?',
-     'Fully visa-free countries need nothing in advance; eVisa and eTA countries require a short online application before departure. Open any country in the Layovered app for the exact documents and the official application link.'],
+     'Most visa-free countries need nothing in advance. A few require a quick online travel authorization (eTA) — counted as visa-free here — and eVisa countries need a short online visa application before departure. Open any country in the Layovered app for the exact documents and the official application link.'],
     ['Is this list up to date?',
      'Visa data is maintained from IATA-grade sources, but government rules can change at short notice. Always confirm your specific trip’s requirements in the Layovered app before booking.'],
   ];
@@ -576,12 +578,12 @@ ${checkerBlock(pp, hubs, null, model.visas)}
 ${summaryBlock(total, `Your ${nat} passport`, [
     [n.free, 'Visa-free'],
     [n.voa, 'Visa on arrival'],
-    [n.evisa, 'eVisa / eTA'],
+    [n.evisa, 'eVisa'],
   ])}
 ${resultsBlock(pp, base, null, model.countryPageSlugs)}
 ${captureBlock(pp)}
   <div class="body-seo">
-    <p>Wondering where you can travel on a${/^[AEIOU]/i.test(nat) ? 'n' : ''} ${esc(nat)} passport without arranging a visa in advance? The free checker above shows all ${total} destinations open to ${esc(nat)} citizens — ${n.free} visa-free, ${n.voa} visa-on-arrival and ${n.evisa} via eVisa or eTA — each with the permitted length of stay and indicative cost. Popular visa-free picks include ${esc(ex[0])}, ${esc(ex[1])} and ${esc(ex[2])}.</p>
+    <p>Wondering where you can travel on a${/^[AEIOU]/i.test(nat) ? 'n' : ''} ${esc(nat)} passport without arranging a visa in advance? The free checker above shows all ${total} destinations open to ${esc(nat)} citizens — ${n.free} visa-free, ${n.voa} visa-on-arrival and ${n.evisa} via eVisa — each with the permitted length of stay and indicative cost. Popular visa-free picks include ${esc(ex[0])}, ${esc(ex[1])} and ${esc(ex[2])}.</p>
     <h2>How far does a${/^[AEIOU]/i.test(nat) ? 'n' : ''} ${esc(nat)} passport get you?</h2>
     <p>${esc(REGIONAL_LINE[pp.slug] || '')}</p>${model.variants.length ? `
     <h2>Add a visa you already hold</h2>
@@ -650,7 +652,7 @@ ${checkerBlock(pp, hubs, visa.slug, model.visas)}
 ${summaryBlock(total, `Your ${nat} passport + ${short} visa`, [
     [n.free, 'Visa-free'],
     [n.voa, 'Visa on arrival'],
-    [n.evisa, 'eVisa / eTA'],
+    [n.evisa, 'eVisa'],
     [unlockCount, `unlocked by your ${short} visa`, true],
   ])}
 ${resultsBlock(pp, list, visa, model.countryPageSlugs)}
@@ -689,12 +691,14 @@ function accessSentence(nat, c, visasByCode) {
   const stayTxt = stayPhrase(c);
   const cost = c.price || 'Free';
   let s;
-  if (a.group === 'free') {
+  if (c.access === 'eta') {
+    s = `Yes — ${nat} passport holders can enter ${c.name} visa-free, though a quick online travel authorization (eTA) must be completed before departure. You can stay ${stayTxt}. Indicative cost: ${cost}.`;
+  } else if (a.group === 'free') {
     s = `Yes — ${nat} passport holders can enter ${c.name} visa-free and stay ${stayTxt}. Indicative cost: ${cost}.`;
   } else if (a.group === 'voa') {
     s = `Yes — ${nat} passport holders can obtain a visa on arrival in ${c.name} and stay ${stayTxt}. Indicative cost: ${cost}.`;
   } else {
-    s = `Yes — ${nat} passport holders can enter ${c.name} with an eVisa or eTA arranged online before departure, staying ${stayTxt}. Indicative cost: ${cost}.`;
+    s = `Yes — ${nat} passport holders can enter ${c.name} with an eVisa arranged online before departure, staying ${stayTxt}. Indicative cost: ${cost}.`;
   }
   if (c.unlockedBy && c.unlockedBy.length) {
     const names = c.unlockedBy.map(code => (visasByCode[code] ? visaShortName(visasByCode[code]) : code)).join(' or ');
@@ -836,7 +840,16 @@ async function main() {
     const variants = data.visas
       .map(visa => ({ visa, unlocked: unlockedBy(pp, visa.code), url: `${hubUrl}with-${visa.slug}-visa/` }))
       .filter(v => v.unlocked.length >= MIN_VISA_UNLOCK);
-    const countryPages = pp.countries.filter(isAccessible).slice(0, MAX_COUNTRY_PAGES);
+    // Pick the top ~50 for country pages, ranked by presentation group
+    // (eTA counts as visa-free here, so it ranks alongside it), base first.
+    const pageRank = { free: 0, voa: 1, evisa: 2 };
+    const countryPages = pp.countries.filter(isAccessible).slice().sort((a, b) => {
+      const ab = a.unlockedBy.length ? 1 : 0, bb = b.unlockedBy.length ? 1 : 0;
+      if (ab !== bb) return ab - bb;
+      const ar = pageRank[ACCESS[a.access].group], br = pageRank[ACCESS[b.access].group];
+      if (ar !== br) return ar - br;
+      return a.name.localeCompare(b.name);
+    }).slice(0, MAX_COUNTRY_PAGES);
     models.push({
       pp, base, hubUrl, variants, countryPages,
       visas: data.visas,
