@@ -22,7 +22,7 @@ const path = require('path');
 /* ------------------------------------------------------------------ config */
 
 const ROOT = path.join(__dirname, '..');
-const SITE_BASE = 'https://layovered.app';
+const SITE_BASE = 'https://layovered.com';
 const DATA_FILE = path.join(ROOT, 'data', 'visa-data.json');
 
 // Placeholders — wired to the real Branch/Firebase link and ESP endpoint later.
