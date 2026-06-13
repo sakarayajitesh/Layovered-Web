@@ -1,0 +1,10 @@
+# Jekyll config for GitHub Pages.
+# Primary purpose: keep build inputs OUT of the published site so the visa
+# dataset and generator are never reachable at layovered.app/data/... etc.
+exclude:
+  - data
+  - scripts
+  - prototype
+  - node_modules
+  - .github
+  - README.md

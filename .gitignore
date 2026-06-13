@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+_site/
+.claude/
+
+# Real dataset exports stay private — only the committed sample
+# data/visa-data.json (India teaser fields) belongs in the repo.
+data/visa-data.private.json
+data/*.export.json

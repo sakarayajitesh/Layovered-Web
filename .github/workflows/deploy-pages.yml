@@ -1,0 +1,83 @@
+name: Deploy site (public files only)
+
+# Regenerates the visa pages at build time, then publishes ONLY public site
+# files. data/, scripts/ and prototype/ never reach the deployed artifact, so
+# /data/visa-data.json returns 404 on the live site.
+#
+# NOTE: for this workflow to take over deployment, set the repository's
+# Pages source to "GitHub Actions" (Settings → Pages → Build and deployment).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # Uncomment for a nightly data refresh once VISA_API_URL/VISA_API_KEY
+  # secrets are configured (remove data/visa-data.json so the API is used):
+  # schedule:
+  #   - cron: "30 2 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Pull fresh teaser-only data from the Layovered API (build machine only,
+      # never the browser). Skipped automatically if no token secret is set —
+      # the generator then falls back to the committed data/visa-data.json.
+      - name: Fetch visa data
+        if: ${{ secrets.VISA_API_TOKEN != '' }}
+        env:
+          VISA_API_BASE: ${{ secrets.VISA_API_BASE }}
+          VISA_API_TOKEN: ${{ secrets.VISA_API_TOKEN }}
+        run: node scripts/fetch-visa-data.js
+
+      - name: Generate visa pages
+        run: node scripts/gen-visa-pages.js
+
+      - name: Assemble public folder (exclude data, scripts, prototype)
+        run: |
+          mkdir -p /tmp/public
+          rsync -a \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude 'data' \
+            --exclude 'scripts' \
+            --exclude 'prototype' \
+            --exclude 'node_modules' \
+            --exclude '_site' \
+            --exclude '.DS_Store' \
+            ./ /tmp/public/
+
+      - name: Verify the dataset is not in the artifact
+        run: |
+          test ! -e /tmp/public/data/visa-data.json
+          test ! -d /tmp/public/scripts
+          test ! -d /tmp/public/prototype
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: /tmp/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
