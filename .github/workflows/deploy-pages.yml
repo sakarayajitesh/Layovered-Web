@@ -28,6 +28,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # secrets can't be read in a step-level `if`, so surface them as env here.
+    env:
+      VISA_API_BASE: ${{ secrets.VISA_API_BASE }}
+      VISA_API_TOKEN: ${{ secrets.VISA_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,10 +43,7 @@ jobs:
       # never the browser). Skipped automatically if no token secret is set —
       # the generator then falls back to the committed data/visa-data.json.
       - name: Fetch visa data
-        if: ${{ secrets.VISA_API_TOKEN != '' }}
-        env:
-          VISA_API_BASE: ${{ secrets.VISA_API_BASE }}
-          VISA_API_TOKEN: ${{ secrets.VISA_API_TOKEN }}
+        if: ${{ env.VISA_API_TOKEN != '' }}
         run: node scripts/fetch-visa-data.js
 
       - name: Generate visa pages
