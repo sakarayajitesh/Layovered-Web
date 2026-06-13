@@ -192,7 +192,8 @@ const CSS = `
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:"Plus Jakarta Sans",sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;overflow-x:hidden}
-.container{max-width:1200px;margin:0 auto;padding:0 22px;width:100%}
+.container{max-width:1200px;margin:0 auto;width:100%}
+.page{padding:0 5vw}
 .flex-between{display:flex;align-items:center;justify-content:space-between}
 a{text-decoration:none;color:inherit}
 /* nav — mirrors the main site (index/about/contact) exactly */
@@ -357,10 +358,10 @@ ${CSS}
   <a href="/download.html" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
 </div>
 
-<div class="container">
+<div class="page"><div class="container">
 ${body}
   <footer>© ${YEAR} Layovered · Visa data is indicative — always confirm requirements for your specific trip in the Layovered app before booking.</footer>
-</div>
+</div></div>
 
 ${pageScript(nav)}
 </body>

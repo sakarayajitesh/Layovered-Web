@@ -33,7 +33,8 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:"Plus Jakarta Sans",sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;overflow-x:hidden}
-.container{max-width:1200px;margin:0 auto;padding:0 22px;width:100%}
+.container{max-width:1200px;margin:0 auto;width:100%}
+.page{padding:0 5vw}
 .flex-between{display:flex;align-items:center;justify-content:space-between}
 a{text-decoration:none;color:inherit}
 /* nav — mirrors the main site (index/about/contact) exactly */
@@ -170,7 +171,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
   <a href="/download.html" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
 </div>
 
-<div class="container">
+<div class="page"><div class="container">
 
   <header class="head">
     <div class="crumb"><a href="/">Home</a> &nbsp;›&nbsp; <a href="/visa-free/india/">Visa-free</a> &nbsp;›&nbsp; <a href="/visa-free/india/">India</a> &nbsp;›&nbsp; Vanuatu</div>
@@ -220,7 +221,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
   </div>
   <footer>© 2026 Layovered · Visa data is indicative — always confirm requirements for your specific trip in the Layovered app before booking.</footer>
-</div>
+</div></div>
 
 <script>
 var APP_DEEPLINK_BASE="https://layovered.app/download.html";
