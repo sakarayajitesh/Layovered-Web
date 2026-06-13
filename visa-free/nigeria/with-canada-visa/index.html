@@ -20,28 +20,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://layovered.app/"},{"@type":"ListItem","position":2,"name":"Visa-free countries for Nigerian passport holders","item":"https://layovered.app/visa-free/nigeria/"},{"@type":"ListItem","position":3,"name":"With a Canada visa","item":"https://layovered.app/visa-free/nigeria/with-canada-visa/"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which countries can Nigerian passport holders enter with a Canada visa?","acceptedAnswer":{"@type":"Answer","text":"A valid Canada visa unlocks 83 additional destinations, on top of those already open visa-free. The checker marks each with an 'unlocked' tag."}},{"@type":"Question","name":"Does the Canada visa need to be currently valid?","acceptedAnswer":{"@type":"Answer","text":"Yes. Countries that admit you on the strength of a Canada visa generally require it to be valid. Check the specific country's rule in the Layovered app before you travel."}},{"@type":"Question","name":"What is the difference between visa-free and visa-on-arrival?","acceptedAnswer":{"@type":"Answer","text":"Visa-free means you need no visa at all. Visa-on-arrival means you obtain it at the airport or border on landing, sometimes for a fee. Both are shown above with cost and stay."}},{"@type":"Question","name":"Do I need to apply for anything before I fly?","acceptedAnswer":{"@type":"Answer","text":"Fully visa-free countries need nothing in advance; eVisa and eTA countries require a short online application before departure. Open any country in the Layovered app for the exact documents and the official application link."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which countries can Nigerian passport holders enter with a Canada visa?","acceptedAnswer":{"@type":"Answer","text":"A valid Canada visa unlocks 56 additional destinations, on top of those already open visa-free. The checker marks each with an 'unlocked' tag."}},{"@type":"Question","name":"Does the Canada visa need to be currently valid?","acceptedAnswer":{"@type":"Answer","text":"Yes. Countries that admit you on the strength of a Canada visa generally require it to be valid. Check the specific country's rule in the Layovered app before you travel."}},{"@type":"Question","name":"What is the difference between visa-free and visa-on-arrival?","acceptedAnswer":{"@type":"Answer","text":"Visa-free means you need no visa at all. Visa-on-arrival means you obtain it at the airport or border on landing, sometimes for a fee. Both are shown above with cost and stay."}},{"@type":"Question","name":"Do I need to apply for anything before I fly?","acceptedAnswer":{"@type":"Answer","text":"Fully visa-free countries need nothing in advance; eVisa and eTA countries require a short online application before departure. Open any country in the Layovered app for the exact documents and the official application link."}}]}</script>
 <style>
 :root{
   --orange:#ff4c00; --orange-dark:#e64a19; --ink:#1f271b; --muted:#6b7280;
   --line:#e5e7eb; --bg:#fafafa; --card:#ffffff; --green:#14a83b; --greenbg:#e9f8ee;
   --blue:#2563eb; --bluebg:#eef4ff; --amber:#b45309; --amberbg:#fff7e6; --red:#b91c1c; --redbg:#fdecec;
   --radius:18px; --shadow:0 10px 40px rgba(20,30,25,.08);
+  --gray-200:#E0DED9; --gray-600:#5C5A55; --black:#0A0A0A; --white:#FAFAF8;
+  --radius-pill:9999px; --shadow-orange:0 8px 32px rgba(255,76,0,.25);
+  --transition:0.35s cubic-bezier(0.4,0,0.2,1); --font-display:"Plus Jakarta Sans",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:"Plus Jakarta Sans",sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
 .container{max-width:1080px;margin:0 auto;padding:0 22px}
+.flex-between{display:flex;align-items:center;justify-content:space-between}
 a{text-decoration:none;color:inherit}
-nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:1.15rem}
-.logo .dot{width:26px;height:26px;border-radius:8px;background:var(--orange);display:grid;place-items:center;color:#fff;font-size:.8rem}
-.nav-links{display:flex;align-items:center;gap:26px;font-weight:600;font-size:.93rem}
-.nav-links .muted{color:var(--muted)}
-.nav-cta{background:var(--orange);color:#fff;padding:9px 17px;border-radius:11px;font-weight:700;transition:.25s}
-.nav-cta:hover{background:var(--orange-dark)}
-@media(max-width:640px){.nav-links a.muted{display:none}}
-.head{padding:34px 0 6px}
+/* nav — mirrors the main site (index/about/contact) exactly */
+nav{position:fixed;top:0;left:0;width:100%;z-index:999;padding:18px 5vw;transition:background var(--transition),backdrop-filter var(--transition),box-shadow var(--transition)}
+nav.scrolled{background:rgba(250,250,248,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--gray-200)}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:1.35rem;font-weight:700;text-decoration:none;color:var(--black);letter-spacing:-.02em}
+.nav-links{display:flex;gap:8px;align-items:center}
+.nav-link{padding:9px 22px;border:1.5px solid var(--gray-200);border-radius:var(--radius-pill);text-decoration:none;color:var(--gray-600);font-size:.9rem;font-weight:600;transition:all var(--transition)}
+.nav-link:hover,.nav-link.active{border-color:var(--orange);color:var(--orange)}
+.nav-cta{padding:9px 22px;background:var(--orange);border-radius:var(--radius-pill);text-decoration:none;color:#fff;font-size:.9rem;font-weight:700;transition:all var(--transition);box-shadow:var(--shadow-orange)}
+.nav-cta:hover{background:var(--orange-dark);transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;border:none;background:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--black);border-radius:2px;transition:all var(--transition)}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-menu{display:flex;flex-direction:column;gap:12px;position:fixed;top:72px;left:0;width:100%;background:var(--white);padding:24px 5vw;border-bottom:1px solid var(--gray-200);z-index:998;transform:translateY(-20px);opacity:0;visibility:hidden;pointer-events:none;transition:all var(--transition)}
+.mobile-menu.open{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto}
+.mobile-menu .nav-link,.mobile-menu .nav-cta{text-align:center;padding:14px}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}}
+.head{padding:104px 0 6px}
 .crumb{font-size:.8rem;color:var(--muted);font-weight:600;margin-bottom:14px}
 .crumb a:hover{color:var(--orange)}
 .tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:6px 13px;border-radius:30px;font-size:.78rem;font-weight:700;color:var(--orange);margin-bottom:14px}
@@ -130,16 +143,30 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
 </head>
 <body>
 
-<nav>
-  <div class="container nav-in">
-    <a class="logo" href="/"><span class="dot"><i class="fa-solid fa-plane"></i></span>Layovered</a>
+<nav id="navbar">
+  <div class="container flex-between">
+    <a href="/" class="nav-logo">
+      <img src="/icon.png" alt="Layovered Logo" width="30" height="30">
+      Layovered
+    </a>
     <div class="nav-links">
-      <a class="muted" href="/about.html">About us</a>
-      <a class="muted" href="/contact.html">Contact</a>
-      <a class="nav-cta" href="https://layovered.app/download.html">Download app <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="/about.html" class="nav-link">About us</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+      <a href="/visa-free/india/" class="nav-link active">Visa checker</a>
+      <a href="/download.html" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
     </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/about.html" class="nav-link">About us</a>
+  <a href="/contact.html" class="nav-link">Contact</a>
+  <a href="/visa-free/india/" class="nav-link active">Visa checker</a>
+  <a href="/download.html" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
+</div>
 
 <div class="container">
 
@@ -177,17 +204,17 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
   </section>
 
   <div class="summary">
-    <div class="big">120</div>
+    <div class="big">136</div>
     <div class="txt">destinations unlocked<span>Your Nigerian passport + Canada visa</span></div>
   </div>
   <div class="filters">
-    <span class="fpill"><b>106</b> Visa-free</span>
-    <span class="fpill"><b>3</b> Visa on arrival</span>
-    <span class="fpill"><b>11</b> eVisa / eTA</span>
-    <span class="fpill" style="color:var(--orange)"><b style="color:var(--orange)">83</b> unlocked by your Canada visa</span>
+    <span class="fpill"><b>79</b> Visa-free</span>
+    <span class="fpill"><b>11</b> Visa on arrival</span>
+    <span class="fpill"><b>46</b> eVisa / eTA</span>
+    <span class="fpill" style="color:var(--orange)"><b style="color:var(--orange)">56</b> unlocked by your Canada visa</span>
   </div>
 
-  <h2 class="group-h"><i class="fa-solid fa-circle-check"></i> Visa-free <span class="gcount">106 destinations</span></h2>
+  <h2 class="group-h"><i class="fa-solid fa-circle-check"></i> Visa-free <span class="gcount">79 destinations</span></h2>
   <div class="grid">
     <div class="cc">
       <div class="cc-top">
@@ -551,24 +578,8 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇦🇮</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/anguilla/">Anguilla</a><div class="cc-region">CARIBBEAN</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">220 USD</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=anguilla">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇦🇷</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/argentina/">Argentina</a><div class="cc-region">AMERICAS</div></div>
+        <div><div class="cc-name">Argentina</div><div class="cc-region">AMERICAS</div></div>
         <span class="badge b-free">Visa-free</span>
       </div>
       <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
@@ -584,7 +595,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     <div class="cc">
       <div class="cc-top">
         <span class="flag">🇦🇲</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/armenia/">Armenia</a><div class="cc-region">MIDDLE EAST</div></div>
+        <div><div class="cc-name">Armenia</div><div class="cc-region">MIDDLE EAST</div></div>
         <span class="badge b-free">Visa-free</span>
       </div>
       <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
@@ -599,40 +610,8 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇦🇺</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/australia/">Australia</a><div class="cc-region">OCEANIA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=australia">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇧🇸</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/bahamas/">Bahamas</a><div class="cc-region">CARIBBEAN</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=bahamas">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇧🇭</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/bahrain/">Bahrain</a><div class="cc-region">MIDDLE EAST</div></div>
+        <div><div class="cc-name">Bahrain</div><div class="cc-region">MIDDLE EAST</div></div>
         <span class="badge b-free">Visa-free</span>
       </div>
       <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
@@ -743,22 +722,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇧🇮</span>
-        <div><div class="cc-name">Burundi</div><div class="cc-region">AFRICA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=burundi">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇰🇭</span>
         <div><div class="cc-name">Cambodia</div><div class="cc-region">ASIA</div></div>
         <span class="badge b-free">Visa-free</span>
@@ -787,22 +750,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=canada">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇨🇱</span>
-        <div><div class="cc-name">Chile</div><div class="cc-region">AMERICAS</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=chile">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -851,22 +798,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=costa-rica">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇨🇺</span>
-        <div><div class="cc-name">Cuba</div><div class="cc-region">CARIBBEAN</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=cuba">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -935,22 +866,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇸🇻</span>
-        <div><div class="cc-name">El Salvador</div><div class="cc-region">AMERICAS</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=el-salvador">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇸🇿</span>
         <div><div class="cc-name">eSwatini</div><div class="cc-region">AFRICA</div></div>
         <span class="badge b-free">Visa-free</span>
@@ -979,22 +894,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=finland">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇬🇪</span>
-        <div><div class="cc-name">Georgia</div><div class="cc-region">EUROPE</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=georgia">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -1079,22 +978,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇯🇴</span>
-        <div><div class="cc-name">Jordan</div><div class="cc-region">MIDDLE EAST</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=jordan">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇱🇦</span>
         <div><div class="cc-name">Laos</div><div class="cc-region">ASIA</div></div>
         <span class="badge b-free">Visa-free</span>
@@ -1143,38 +1026,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇲🇼</span>
-        <div><div class="cc-name">Malawi</div><div class="cc-region">AFRICA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=malawi">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇲🇻</span>
-        <div><div class="cc-name">Maldives</div><div class="cc-region">ASIA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=maldives">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇲🇭</span>
         <div><div class="cc-name">Marshall Islands</div><div class="cc-region">OCEANIA</div></div>
         <span class="badge b-free">Visa-free</span>
@@ -1187,22 +1038,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=marshall-islands">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇲🇷</span>
-        <div><div class="cc-name">Mauritania</div><div class="cc-region">AFRICA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=mauritania">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -1251,22 +1086,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=montenegro">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇲🇿</span>
-        <div><div class="cc-name">Mozambique</div><div class="cc-region">AFRICA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=mozambique">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -1351,38 +1170,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇵🇰</span>
-        <div><div class="cc-name">Pakistan</div><div class="cc-region">ASIA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=pakistan">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇵🇼</span>
-        <div><div class="cc-name">Palau Islands</div><div class="cc-region">OCEANIA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=palau-islands">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇵🇦</span>
         <div><div class="cc-name">Panama</div><div class="cc-region">AMERICAS</div></div>
         <span class="badge b-free">Visa-free</span>
@@ -1395,22 +1182,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=panama">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇵🇬</span>
-        <div><div class="cc-name">Papua New Guinea</div><div class="cc-region">OCEANIA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=papua-new-guinea">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -1447,22 +1218,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇵🇭</span>
-        <div><div class="cc-name">Philippines</div><div class="cc-region">ASIA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">14 days</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=philippines">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇷🇴</span>
         <div><div class="cc-name">Romania</div><div class="cc-region">EUROPE</div></div>
         <span class="badge b-free">Visa-free</span>
@@ -1479,38 +1234,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇷🇼</span>
-        <div><div class="cc-name">Rwanda</div><div class="cc-region">AFRICA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=rwanda">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇼🇸</span>
-        <div><div class="cc-name">Samoa</div><div class="cc-region">OCEANIA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=samoa">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇸🇦</span>
         <div><div class="cc-name">Saudi Arabia</div><div class="cc-region">MIDDLE EAST</div></div>
         <span class="badge b-free">Visa-free</span>
@@ -1523,38 +1246,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=saudi-arabia">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇷🇸</span>
-        <div><div class="cc-name">Serbia</div><div class="cc-region">EUROPE</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=serbia">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇸🇨</span>
-        <div><div class="cc-name">Seychelles</div><div class="cc-region">AFRICA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=seychelles">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -1607,22 +1298,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇰🇳</span>
-        <div><div class="cc-name">St. Kitts and Nevis</div><div class="cc-region">CARIBBEAN</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=st-kitts-and-nevis">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇱🇨</span>
         <div><div class="cc-name">St. Lucia</div><div class="cc-region">CARIBBEAN</div></div>
         <span class="badge b-free">Visa-free</span>
@@ -1635,22 +1310,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=st-lucia">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇸🇷</span>
-        <div><div class="cc-name">Suriname</div><div class="cc-region">AMERICAS</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=suriname">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -1703,22 +1362,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇹🇿</span>
-        <div><div class="cc-name">Tanzania</div><div class="cc-region">AFRICA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=tanzania">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
         <span class="flag">🇹🇨</span>
         <div><div class="cc-name">Turks and Caicos Islands</div><div class="cc-region">CARIBBEAN</div></div>
         <span class="badge b-free">Visa-free</span>
@@ -1731,22 +1374,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=turks-and-caicos-islands">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇹🇻</span>
-        <div><div class="cc-name">Tuvalu</div><div class="cc-region">OCEANIA</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=tuvalu">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -1779,22 +1406,6 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=ukraine">Open in app</a>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-top">
-        <span class="flag">🇦🇪</span>
-        <div><div class="cc-name">United Arab Emirates</div><div class="cc-region">MIDDLE EAST</div></div>
-        <span class="badge b-free">Visa-free</span>
-      </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
-      <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
-      </div>
-      <div class="locked">
-        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=united-arab-emirates">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -1845,25 +1456,69 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=uzbekistan">Open in app</a>
       </div>
     </div>
+  </div>
+  <h2 class="group-h"><i class="fa-solid fa-plane-arrival"></i> Visa on arrival <span class="gcount">11 destinations</span></h2>
+  <div class="grid">
     <div class="cc">
       <div class="cc-top">
-        <span class="flag">🇻🇳</span>
-        <div><div class="cc-name">Vietnam</div><div class="cc-region">ASIA</div></div>
-        <span class="badge b-free">Visa-free</span>
+        <span class="flag">🇧🇮</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/burundi/">Burundi</a><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-voa">Visa on arrival</span>
       </div>
-      <span class="unlock"><i class="fa-solid fa-unlock"></i> Unlocked by your Canada visa</span>
       <div class="facts">
-        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
-        <div class="fact"><div class="k">Visa cost</div><div class="v">Free</div></div>
+        <div class="fact"><div class="k">Stay</div><div class="v">30 days</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
       </div>
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=vietnam">Open in app</a>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=burundi">Open in app</a>
       </div>
     </div>
-  </div>
-  <h2 class="group-h"><i class="fa-solid fa-plane-arrival"></i> Visa on arrival <span class="gcount">3 destinations</span></h2>
-  <div class="grid">
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇱🇧</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/lebanon/">Lebanon</a><div class="cc-region">MIDDLE EAST</div></div>
+        <span class="badge b-voa">Visa on arrival</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">1 month extendable to 3 months</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=lebanon">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇲🇬</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/madagascar/">Madagascar</a><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-voa">Visa on arrival</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">15 days</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=madagascar">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇲🇻</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/maldives/">Maldives</a><div class="cc-region">ASIA</div></div>
+        <span class="badge b-voa">Visa on arrival</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">30 days</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=maldives">Open in app</a>
+      </div>
+    </div>
     <div class="cc">
       <div class="cc-top">
         <span class="flag">🇲🇺</span>
@@ -1877,6 +1532,51 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=mauritius">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇵🇼</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/palau-islands/">Palau Islands</a><div class="cc-region">OCEANIA</div></div>
+        <span class="badge b-voa">Visa on arrival</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">30 days</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=palau-islands">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇷🇼</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/rwanda/">Rwanda</a><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-voa">Visa on arrival</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">30 days</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=rwanda">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇼🇸</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/samoa/">Samoa</a><div class="cc-region">OCEANIA</div></div>
+        <span class="badge b-voa">Visa on arrival</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">90 days</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=samoa">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -1896,6 +1596,21 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
+        <span class="flag">🇹🇻</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/tuvalu/">Tuvalu</a><div class="cc-region">OCEANIA</div></div>
+        <span class="badge b-voa">Visa on arrival</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">30 days</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=tuvalu">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
         <span class="flag">🇻🇺</span>
         <div><a class="cc-name" href="/can-i-enter/nigeria/vanuatu/">Vanuatu</a><div class="cc-region">OCEANIA</div></div>
         <span class="badge b-voa">Visa on arrival</span>
@@ -1910,8 +1625,23 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       </div>
     </div>
   </div>
-  <h2 class="group-h"><i class="fa-solid fa-laptop"></i> eVisa / eTA <span class="gcount">11 destinations</span></h2>
+  <h2 class="group-h"><i class="fa-solid fa-laptop"></i> eVisa / eTA <span class="gcount">46 destinations</span></h2>
   <div class="grid">
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇦🇱</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/albania/">Albania</a><div class="cc-region">EUROPE</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=albania">Open in app</a>
+      </div>
+    </div>
     <div class="cc">
       <div class="cc-top">
         <span class="flag">🇩🇿</span>
@@ -1944,6 +1674,51 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
+        <span class="flag">🇦🇮</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/anguilla/">Anguilla</a><div class="cc-region">CARIBBEAN</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">220 USD</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=anguilla">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇦🇺</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/australia/">Australia</a><div class="cc-region">OCEANIA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=australia">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇧🇸</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/bahamas/">Bahamas</a><div class="cc-region">CARIBBEAN</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=bahamas">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
         <span class="flag">🇧🇹</span>
         <div><a class="cc-name" href="/can-i-enter/nigeria/bhutan/">Bhutan</a><div class="cc-region">ASIA</div></div>
         <span class="badge b-evisa">eVisa / eTA</span>
@@ -1959,8 +1734,143 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
+        <span class="flag">🇨🇱</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/chile/">Chile</a><div class="cc-region">AMERICAS</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=chile">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇨🇺</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/cuba/">Cuba</a><div class="cc-region">CARIBBEAN</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=cuba">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇩🇯</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/djibouti/">Djibouti</a><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">86.65 USD</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=djibouti">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇸🇻</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/el-salvador/">El Salvador</a><div class="cc-region">AMERICAS</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=el-salvador">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇬🇶</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/equatorial-guinea/">Equatorial Guinea</a><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=equatorial-guinea">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇪🇹</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/ethiopia/">Ethiopia</a><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">142 USD</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=ethiopia">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇬🇪</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/georgia/">Georgia</a><div class="cc-region">EUROPE</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">30 calendar days</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=georgia">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇭🇰</span>
+        <div><a class="cc-name" href="/can-i-enter/nigeria/hong-kong-sar-china/">Hong Kong (SAR China)</a><div class="cc-region">ASIA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=hong-kong-sar-china">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇯🇴</span>
+        <div><div class="cc-name">Jordan</div><div class="cc-region">MIDDLE EAST</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=jordan">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
         <span class="flag">🇰🇿</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/kazakhstan/">Kazakhstan</a><div class="cc-region">ASIA</div></div>
+        <div><div class="cc-name">Kazakhstan</div><div class="cc-region">ASIA</div></div>
         <span class="badge b-evisa">eVisa / eTA</span>
       </div>
       <div class="facts">
@@ -1974,8 +1884,38 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
+        <span class="flag">🇰🇬</span>
+        <div><div class="cc-name">Kyrgyzstan</div><div class="cc-region">ASIA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=kyrgyzstan">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇲🇼</span>
+        <div><div class="cc-name">Malawi</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=malawi">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
         <span class="flag">🇲🇾</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/malaysia/">Malaysia</a><div class="cc-region">ASIA</div></div>
+        <div><div class="cc-name">Malaysia</div><div class="cc-region">ASIA</div></div>
         <span class="badge b-evisa">eVisa / eTA</span>
       </div>
       <div class="facts">
@@ -1989,8 +1929,53 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
+        <span class="flag">🇲🇷</span>
+        <div><div class="cc-name">Mauritania</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=mauritania">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇲🇩</span>
+        <div><div class="cc-name">Moldova</div><div class="cc-region">EUROPE</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=moldova">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇲🇿</span>
+        <div><div class="cc-name">Mozambique</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=mozambique">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
         <span class="flag">🇲🇲</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/myanmar/">Myanmar</a><div class="cc-region">ASIA</div></div>
+        <div><div class="cc-name">Myanmar</div><div class="cc-region">ASIA</div></div>
         <span class="badge b-evisa">eVisa / eTA</span>
       </div>
       <div class="facts">
@@ -2004,8 +1989,83 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
+        <span class="flag">🇵🇰</span>
+        <div><div class="cc-name">Pakistan</div><div class="cc-region">ASIA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=pakistan">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇵🇬</span>
+        <div><div class="cc-name">Papua New Guinea</div><div class="cc-region">OCEANIA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=papua-new-guinea">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇵🇭</span>
+        <div><div class="cc-name">Philippines</div><div class="cc-region">ASIA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=philippines">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇸🇹</span>
+        <div><div class="cc-name">Sao Tome and Principe</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=sao-tome-and-principe">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇷🇸</span>
+        <div><div class="cc-name">Serbia</div><div class="cc-region">EUROPE</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=serbia">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
         <span class="flag">🇸🇴</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/somalia/">Somalia</a><div class="cc-region">AFRICA</div></div>
+        <div><div class="cc-name">Somalia</div><div class="cc-region">AFRICA</div></div>
         <span class="badge b-evisa">eVisa / eTA</span>
       </div>
       <div class="facts">
@@ -2019,8 +2079,68 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <div class="cc">
       <div class="cc-top">
+        <span class="flag">🇿🇦</span>
+        <div><div class="cc-name">South Africa</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=south-africa">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇸🇸</span>
+        <div><div class="cc-name">South Sudan</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=south-sudan">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇸🇷</span>
+        <div><div class="cc-name">Suriname</div><div class="cc-region">AMERICAS</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=suriname">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇹🇿</span>
+        <div><div class="cc-name">Tanzania</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=tanzania">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
         <span class="flag">🇹🇭</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/thailand/">Thailand</a><div class="cc-region">ASIA</div></div>
+        <div><div class="cc-name">Thailand</div><div class="cc-region">ASIA</div></div>
         <span class="badge b-evisa">eVisa / eTA</span>
       </div>
       <div class="facts">
@@ -2035,7 +2155,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     <div class="cc">
       <div class="cc-top">
         <span class="flag">🇹🇹</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/trinidad-and-tobago/">Trinidad and Tobago</a><div class="cc-region">CARIBBEAN</div></div>
+        <div><div class="cc-name">Trinidad and Tobago</div><div class="cc-region">CARIBBEAN</div></div>
         <span class="badge b-evisa">eVisa / eTA</span>
       </div>
       <div class="facts">
@@ -2050,7 +2170,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     <div class="cc">
       <div class="cc-top">
         <span class="flag">🇹🇳</span>
-        <div><a class="cc-name" href="/can-i-enter/nigeria/tunisia/">Tunisia</a><div class="cc-region">AFRICA</div></div>
+        <div><div class="cc-name">Tunisia</div><div class="cc-region">AFRICA</div></div>
         <span class="badge b-evisa">eVisa / eTA</span>
       </div>
       <div class="facts">
@@ -2060,6 +2180,126 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
         <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=tunisia">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇦🇪</span>
+        <div><div class="cc-name">United Arab Emirates</div><div class="cc-region">MIDDLE EAST</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=united-arab-emirates">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇻🇳</span>
+        <div><div class="cc-name">Vietnam</div><div class="cc-region">ASIA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=vietnam">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇿🇲</span>
+        <div><div class="cc-name">Zambia</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=zambia">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇿🇼</span>
+        <div><div class="cc-name">Zimbabwe</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">1 month</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=zimbabwe">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇨🇻</span>
+        <div><div class="cc-name">Cape Verde Islands</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">30 days</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">30.83 EUR</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=cape-verde-islands">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇸🇨</span>
+        <div><div class="cc-name">Seychelles</div><div class="cc-region">AFRICA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">10.90 EUR</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=seychelles">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇱🇰</span>
+        <div><div class="cc-name">Sri Lanka</div><div class="cc-region">ASIA</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=sri-lanka">Open in app</a>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="cc-top">
+        <span class="flag">🇰🇳</span>
+        <div><div class="cc-name">St. Kitts and Nevis</div><div class="cc-region">CARIBBEAN</div></div>
+        <span class="badge b-evisa">eVisa / eTA</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="k">Stay</div><div class="v">—</div></div>
+        <div class="fact"><div class="k">Visa cost</div><div class="v">—</div></div>
+      </div>
+      <div class="locked">
+        <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
+        <a class="open-app" href="https://layovered.app/download.html?passport=nigeria&amp;country=st-kitts-and-nevis">Open in app</a>
       </div>
     </div>
     <div class="cc">
@@ -2086,7 +2326,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     <a href="https://layovered.app/download.html">Get it in the app →</a>
   </div>
   <div class="body-seo">
-    <p>A valid Canada visa can open doors a Nigerian passport alone cannot. The checker above shows all 120 destinations you can enter — including 83 extra countries unlocked specifically by your Canada visa — each with the allowed stay and indicative cost.</p>
+    <p>A valid Canada visa can open doors a Nigerian passport alone cannot. The checker above shows all 136 destinations you can enter — including 56 extra countries unlocked specifically by your Canada visa — each with the allowed stay and indicative cost.</p>
     <h2>Explore more</h2>
     <ul>
       <li><a href="/visa-free/nigeria/">All visa-free countries for Nigerian passport holders</a></li>
@@ -2094,17 +2334,11 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       <li><a href="/visa-free/nigeria/with-schengen-visa/">Where Nigerian passport holders can go with a Schengen visa</a></li>
       <li><a href="/visa-free/nigeria/with-uk-visa/">Where Nigerian passport holders can go with a UK visa</a></li>
       <li><a href="/visa-free/nigeria/with-uae-visa/">Where Nigerian passport holders can go with a UAE visa</a></li>
-      <li><a href="/can-i-enter/nigeria/anguilla/">Can Nigerian passport holders enter Anguilla?</a></li>
-      <li><a href="/can-i-enter/nigeria/argentina/">Can Nigerian passport holders enter Argentina?</a></li>
-      <li><a href="/can-i-enter/nigeria/armenia/">Can Nigerian passport holders enter Armenia?</a></li>
-      <li><a href="/can-i-enter/nigeria/australia/">Can Nigerian passport holders enter Australia?</a></li>
-      <li><a href="/can-i-enter/nigeria/bahamas/">Can Nigerian passport holders enter Bahamas?</a></li>
-      <li><a href="/can-i-enter/nigeria/bahrain/">Can Nigerian passport holders enter Bahrain?</a></li>
     </ul>
     <h2>Frequently asked questions</h2>
 
     <div class="faq">
-      <details open><summary>Which countries can Nigerian passport holders enter with a Canada visa?</summary><p>A valid Canada visa unlocks 83 additional destinations, on top of those already open visa-free. The checker marks each with an 'unlocked' tag.</p></details>
+      <details open><summary>Which countries can Nigerian passport holders enter with a Canada visa?</summary><p>A valid Canada visa unlocks 56 additional destinations, on top of those already open visa-free. The checker marks each with an 'unlocked' tag.</p></details>
       <details><summary>Does the Canada visa need to be currently valid?</summary><p>Yes. Countries that admit you on the strength of a Canada visa generally require it to be valid. Check the specific country's rule in the Layovered app before you travel.</p></details>
       <details><summary>What is the difference between visa-free and visa-on-arrival?</summary><p>Visa-free means you need no visa at all. Visa-on-arrival means you obtain it at the airport or border on landing, sometimes for a fee. Both are shown above with cost and stay.</p></details>
       <details><summary>Do I need to apply for anything before I fly?</summary><p>Fully visa-free countries need nothing in advance; eVisa and eTA countries require a short online application before departure. Open any country in the Layovered app for the exact documents and the official application link.</p></details>
@@ -2118,6 +2352,12 @@ var APP_DEEPLINK_BASE="https://layovered.app/download.html";
 var CAPTURE_ENDPOINT="";
 var NAV={"passport":"nigeria","hub":"/visa-free/nigeria/","hubs":{"india":"/visa-free/india/","philippines":"/visa-free/philippines/","nigeria":"/visa-free/nigeria/","pakistan":"/visa-free/pakistan/","bangladesh":"/visa-free/bangladesh/"},"visas":{"us":"/visa-free/nigeria/with-us-visa/","schengen":"/visa-free/nigeria/with-schengen-visa/","uk":"/visa-free/nigeria/with-uk-visa/","canada":"/visa-free/nigeria/with-canada-visa/","uae":"/visa-free/nigeria/with-uae-visa/"},"active":"canada"};
 (function(){
+  // nav scroll + hamburger — identical behaviour to the main site
+  var navbar=document.getElementById('navbar');
+  if(navbar)window.addEventListener('scroll',function(){navbar.classList.toggle('scrolled',window.scrollY>40);});
+  var hb=document.getElementById('hamburger'),mm=document.getElementById('mobileMenu');
+  if(hb&&mm)hb.addEventListener('click',function(){hb.classList.toggle('open');mm.classList.toggle('open');});
+
   var sel=document.getElementById('passport');
   if(sel)sel.addEventListener('change',function(){var u=NAV.hubs[this.value];window.location=u||NAV.hub;});
   var active={};

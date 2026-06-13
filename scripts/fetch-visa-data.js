@@ -91,19 +91,9 @@ function teaserPrice(details, access) {
   return FREE_ACCESS.has(access) ? 'Free' : null;
 }
 
-function transformCountry(c) {
+function toTeaser(c, unlockedBy) {
   const access = ACCESS_MAP[c.restriction_type];
   if (!access) return null; // skip visaRequired / unknown
-  const pairs = Array.isArray(c.valid_pairs) ? c.valid_pairs : [];
-  const isBase = pairs.some(p => !p.visa_id);
-  const unlockedBy = isBase
-    ? []
-    : [...new Set(pairs.map(p => p.visa_id).filter(Boolean)
-        .map(id => VISA_BY_API_ID[id] && VISA_BY_API_ID[id].code)
-        .filter(Boolean))];
-  // A non-base country unlocked only by non-Wave-1 visas would be empty — skip it.
-  if (!isBase && !unlockedBy.length) return null;
-
   const country = {
     code: c.code,
     name: c.name,
@@ -117,6 +107,14 @@ function transformCountry(c) {
   const price = teaserPrice(c.details_json, access);
   if (price) country.price = price;
   return country;
+}
+
+// Which Wave-1 visas a row's valid_pairs attribute it to.
+function visaCodesFromPairs(c) {
+  const pairs = Array.isArray(c.valid_pairs) ? c.valid_pairs : [];
+  return [...new Set(pairs.map(p => p.visa_id).filter(Boolean)
+    .map(id => VISA_BY_API_ID[id] && VISA_BY_API_ID[id].code)
+    .filter(Boolean))];
 }
 
 // base access first, then by access rank, then alpha — gives the generator a
@@ -140,11 +138,34 @@ async function main() {
   for (const w of WAVE1) {
     const pp = passports.find(p => p.code === w.code);
     if (!pp) { console.log(`• Skipping ${w.slug}: not found in API passports.`); continue; }
-    const rows = await api('/api/unlocks', {
+
+    // Base = what the passport reaches with NO held visa (visas:[]). The API
+    // re-attributes visa-free countries to a visa when visas are present, so
+    // base MUST come from the empty-visa call, not from valid_pairs of a
+    // combined call. Unlocks = the delta the held visas add on top of base.
+    const baseRows = await api('/api/unlocks', {
+      method: 'POST',
+      body: JSON.stringify({ passports: [pp.id], visas: [] }),
+    });
+    const allRows = await api('/api/unlocks', {
       method: 'POST',
       body: JSON.stringify({ passports: [pp.id], visas: visaIds }),
     });
-    const countries = rows.map(transformCountry).filter(Boolean).sort(sortCountries);
+
+    const byCode = new Map();
+    for (const c of baseRows) {
+      const t = toTeaser(c, []);
+      if (t) byCode.set(t.code, t);
+    }
+    for (const c of allRows) {
+      if (byCode.has(c.code)) continue;       // already reachable visa-free
+      const codes = visaCodesFromPairs(c);
+      if (!codes.length) continue;            // unlocked only by a non-Wave-1 visa
+      const t = toTeaser(c, codes);
+      if (t) byCode.set(t.code, t);
+    }
+
+    const countries = [...byCode.values()].sort(sortCountries);
     const base = countries.filter(c => !c.unlockedBy.length).length;
     console.log(`• ${w.slug} (id=${pp.id}): ${countries.length} accessible (${base} base, ${countries.length - base} visa-unlocked).`);
     outPassports.push({

@@ -239,6 +239,52 @@
           "price": "Free"
         },
         {
+          "code": "BH",
+          "name": "Bahrain",
+          "slug": "bahrain",
+          "region": "MIDDLE EAST",
+          "access": "voa",
+          "unlockedBy": [],
+          "price": "84 USD"
+        },
+        {
+          "code": "BI",
+          "name": "Burundi",
+          "slug": "burundi",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "KH",
+          "name": "Cambodia",
+          "slug": "cambodia",
+          "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days",
+          "price": "60 USD"
+        },
+        {
+          "code": "KM",
+          "name": "Comoro Islands",
+          "slug": "comoro-islands",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "45 Days"
+        },
+        {
+          "code": "ET",
+          "name": "Ethiopia",
+          "slug": "ethiopia",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "price": "122 USD"
+        },
+        {
           "code": "ID",
           "name": "Indonesia",
           "slug": "indonesia",
@@ -249,6 +295,68 @@
           "price": "68.2 USD"
         },
         {
+          "code": "JO",
+          "name": "Jordan",
+          "slug": "jordan",
+          "region": "MIDDLE EAST",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days",
+          "price": "78 USD"
+        },
+        {
+          "code": "KW",
+          "name": "Kuwait",
+          "slug": "kuwait",
+          "region": "MIDDLE EAST",
+          "access": "voa",
+          "unlockedBy": []
+        },
+        {
+          "code": "LA",
+          "name": "Laos",
+          "slug": "laos",
+          "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "price": "121.75 USD"
+        },
+        {
+          "code": "MG",
+          "name": "Madagascar",
+          "slug": "madagascar",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "15 days"
+        },
+        {
+          "code": "MV",
+          "name": "Maldives",
+          "slug": "maldives",
+          "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "MH",
+          "name": "Marshall Islands",
+          "slug": "marshall-islands",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MN",
+          "name": "Mongolia",
+          "slug": "mongolia",
+          "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "price": "111.5 USD"
+        },
+        {
           "code": "MM",
           "name": "Myanmar",
           "slug": "myanmar",
@@ -257,6 +365,75 @@
           "unlockedBy": [],
           "stay": "30 days",
           "price": "130 USD"
+        },
+        {
+          "code": "PW",
+          "name": "Palau Islands",
+          "slug": "palau-islands",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "RW",
+          "name": "Rwanda",
+          "slug": "rwanda",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "WS",
+          "name": "Samoa",
+          "slug": "samoa",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
+          "code": "SA",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia",
+          "region": "MIDDLE EAST",
+          "access": "voa",
+          "unlockedBy": []
+        },
+        {
+          "code": "LK",
+          "name": "Sri Lanka",
+          "slug": "sri-lanka",
+          "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": []
+        },
+        {
+          "code": "LC",
+          "name": "St. Lucia",
+          "slug": "st-lucia",
+          "region": "CARIBBEAN",
+          "access": "voa",
+          "unlockedBy": []
+        },
+        {
+          "code": "VC",
+          "name": "St. Vincent and the Grenadines",
+          "slug": "st-vincent-and-the-grenadines",
+          "region": "CARIBBEAN",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
+          "code": "TZ",
+          "name": "Tanzania",
+          "slug": "tanzania",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "price": "112 USD"
         },
         {
           "code": "TL",
@@ -277,6 +454,47 @@
           "stay": "120 days"
         },
         {
+          "code": "AL",
+          "name": "Albania",
+          "slug": "albania",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "AI",
+          "name": "Anguilla",
+          "slug": "anguilla",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "220 USD"
+        },
+        {
+          "code": "AG",
+          "name": "Antigua and Barbuda",
+          "slug": "antigua-and-barbuda",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "AM",
+          "name": "Armenia",
+          "slug": "armenia",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "AU",
+          "name": "Australia",
+          "slug": "australia",
+          "region": "OCEANIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "AZ",
           "name": "Azerbaijan",
           "slug": "azerbaijan",
@@ -286,10 +504,255 @@
           "price": "60 USD"
         },
         {
+          "code": "BS",
+          "name": "Bahamas",
+          "slug": "bahamas",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "BJ",
+          "name": "Benin",
+          "slug": "benin",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "76.79 USD"
+        },
+        {
+          "code": "BW",
+          "name": "Botswana",
+          "slug": "botswana",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "BF",
+          "name": "Burkina Faso",
+          "slug": "burkina-faso",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "CM",
+          "name": "Cameroon",
+          "slug": "cameroon",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "TD",
+          "name": "Chad",
+          "slug": "chad",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "CL",
+          "name": "Chile",
+          "slug": "chile",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "CO",
+          "name": "Colombia",
+          "slug": "colombia",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "CI",
+          "name": "Cote d'Ivoire",
+          "slug": "cote-d-ivoire",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "90 days",
+          "price": "150 USD"
+        },
+        {
+          "code": "CU",
+          "name": "Cuba",
+          "slug": "cuba",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "33.8 USD"
+        },
+        {
+          "code": "DJ",
+          "name": "Djibouti",
+          "slug": "djibouti",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "EC",
+          "name": "Ecuador",
+          "slug": "ecuador",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "EG",
+          "name": "Egypt",
+          "slug": "egypt",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SV",
+          "name": "El Salvador",
+          "slug": "el-salvador",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GQ",
+          "name": "Equatorial Guinea",
+          "slug": "equatorial-guinea",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GA",
+          "name": "Gabon",
+          "slug": "gabon",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GE",
+          "name": "Georgia",
+          "slug": "georgia",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GN",
+          "name": "Guinea",
+          "slug": "guinea",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "IQ",
           "name": "Iraq",
           "slug": "iraq",
           "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "IL",
+          "name": "Israel",
+          "slug": "israel",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "slug": "japan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
+          "code": "KG",
+          "name": "Kyrgyzstan",
+          "slug": "kyrgyzstan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "LY",
+          "name": "Libya",
+          "slug": "libya",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MW",
+          "name": "Malawi",
+          "slug": "malawi",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MR",
+          "name": "Mauritania",
+          "slug": "mauritania",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MD",
+          "name": "Moldova",
+          "slug": "moldova",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MA",
+          "name": "Morocco",
+          "slug": "morocco",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MZ",
+          "name": "Mozambique",
+          "slug": "mozambique",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "NG",
+          "name": "Nigeria",
+          "slug": "nigeria",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "PS",
+          "name": "Palestinian Territory",
+          "slug": "palestinian-territory",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "PG",
+          "name": "Papua New Guinea",
+          "slug": "papua-new-guinea",
+          "region": "OCEANIA",
           "access": "evisa",
           "unlockedBy": []
         },
@@ -303,10 +766,34 @@
           "stay": "30 days"
         },
         {
+          "code": "ST",
+          "name": "Sao Tome and Principe",
+          "slug": "sao-tome-and-principe",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "RS",
+          "name": "Serbia",
+          "slug": "serbia",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "SL",
           "name": "Sierra Leone",
           "slug": "sierra-leone",
           "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SG",
+          "name": "Singapore",
+          "slug": "singapore",
+          "region": "ASIA",
           "access": "evisa",
           "unlockedBy": []
         },
@@ -319,11 +806,159 @@
           "unlockedBy": []
         },
         {
+          "code": "ZA",
+          "name": "South Africa",
+          "slug": "south-africa",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SS",
+          "name": "South Sudan",
+          "slug": "south-sudan",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SR",
+          "name": "Suriname",
+          "slug": "suriname",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "TW",
+          "name": "Taiwan (Chinese Taipei)",
+          "slug": "taiwan-chinese-taipei",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "TJ",
+          "name": "Tajikistan",
+          "slug": "tajikistan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "90 USD"
+        },
+        {
           "code": "TG",
           "name": "Togo",
           "slug": "togo",
           "region": "AFRICA",
           "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "TR",
+          "name": "Türkiye",
+          "slug": "t-rkiye",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "80.5 USD"
+        },
+        {
+          "code": "UG",
+          "name": "Uganda",
+          "slug": "uganda",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "111.5 USD"
+        },
+        {
+          "code": "UA",
+          "name": "Ukraine",
+          "slug": "ukraine",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "AE",
+          "name": "United Arab Emirates",
+          "slug": "united-arab-emirates",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "187 USD"
+        },
+        {
+          "code": "UZ",
+          "name": "Uzbekistan",
+          "slug": "uzbekistan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "81.5 USD"
+        },
+        {
+          "code": "VN",
+          "name": "Vietnam",
+          "slug": "vietnam",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "112 USD"
+        },
+        {
+          "code": "ZM",
+          "name": "Zambia",
+          "slug": "zambia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ZW",
+          "name": "Zimbabwe",
+          "slug": "zimbabwe",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "65.77 USD"
+        },
+        {
+          "code": "HK",
+          "name": "Hong Kong (SAR China)",
+          "slug": "hong-kong-sar-china",
+          "region": "ASIA",
+          "access": "eta",
+          "unlockedBy": [],
+          "stay": "14 days",
+          "price": "20 USD"
+        },
+        {
+          "code": "KE",
+          "name": "Kenya",
+          "slug": "kenya",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "stay": "90 days",
+          "price": "74.09 USD"
+        },
+        {
+          "code": "SC",
+          "name": "Seychelles",
+          "slug": "seychelles",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "price": "10.90 EUR"
+        },
+        {
+          "code": "KN",
+          "name": "St. Kitts and Nevis",
+          "slug": "st-kitts-and-nevis",
+          "region": "CARIBBEAN",
+          "access": "eta",
           "unlockedBy": []
         },
         {
@@ -334,20 +969,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AL",
-          "name": "Albania",
-          "slug": "albania",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK"
           ],
           "price": "Free"
         },
@@ -375,52 +996,10 @@
           "price": "Free"
         },
         {
-          "code": "AI",
-          "name": "Anguilla",
-          "slug": "anguilla",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "220 USD"
-        },
-        {
           "code": "AR",
           "name": "Argentina",
           "slug": "argentina",
           "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AM",
-          "name": "Armenia",
-          "slug": "armenia",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AU",
-          "name": "Australia",
-          "slug": "australia",
-          "region": "OCEANIA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -438,35 +1017,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BS",
-          "name": "Bahamas",
-          "slug": "bahamas",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BH",
-          "name": "Bahrain",
-          "slug": "bahrain",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -502,17 +1052,6 @@
             "SCHENGEN",
             "US",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BJ",
-          "name": "Benin",
-          "slug": "benin",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -557,18 +1096,6 @@
           "price": "Free"
         },
         {
-          "code": "BW",
-          "name": "Botswana",
-          "slug": "botswana",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "BR",
           "name": "Brazil",
           "slug": "brazil",
@@ -605,55 +1132,6 @@
           "price": "Free"
         },
         {
-          "code": "BF",
-          "name": "Burkina Faso",
-          "slug": "burkina-faso",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BI",
-          "name": "Burundi",
-          "slug": "burundi",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "AE",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KH",
-          "name": "Cambodia",
-          "slug": "cambodia",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CM",
-          "name": "Cameroon",
-          "slug": "cameroon",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "CA",
           "name": "Canada",
           "slug": "canada",
@@ -680,34 +1158,6 @@
           "price": "Free"
         },
         {
-          "code": "TD",
-          "name": "Chad",
-          "slug": "chad",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CL",
-          "name": "Chile",
-          "slug": "chile",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "CN",
           "name": "China",
           "slug": "china",
@@ -718,31 +1168,6 @@
             "US",
             "UK",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CO",
-          "name": "Colombia",
-          "slug": "colombia",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KM",
-          "name": "Comoro Islands",
-          "slug": "comoro-islands",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -772,20 +1197,6 @@
           "price": "Free"
         },
         {
-          "code": "CI",
-          "name": "Cote d'Ivoire",
-          "slug": "cote-d-ivoire",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "HR",
           "name": "Croatia",
           "slug": "croatia",
@@ -793,20 +1204,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CU",
-          "name": "Cuba",
-          "slug": "cuba",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -846,18 +1243,6 @@
           "price": "Free"
         },
         {
-          "code": "DJ",
-          "name": "Djibouti",
-          "slug": "djibouti",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "AE"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "DO",
           "name": "Dominican Republic",
           "slug": "dominican-republic",
@@ -868,56 +1253,6 @@
             "US",
             "UK",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "EC",
-          "name": "Ecuador",
-          "slug": "ecuador",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "EG",
-          "name": "Egypt",
-          "slug": "egypt",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SV",
-          "name": "El Salvador",
-          "slug": "el-salvador",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GQ",
-          "name": "Equatorial Guinea",
-          "slug": "equatorial-guinea",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -944,17 +1279,6 @@
           "price": "Free"
         },
         {
-          "code": "ET",
-          "name": "Ethiopia",
-          "slug": "ethiopia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "FI",
           "name": "Finland",
           "slug": "finland",
@@ -976,32 +1300,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GA",
-          "name": "Gabon",
-          "slug": "gabon",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GE",
-          "name": "Georgia",
-          "slug": "georgia",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -1064,17 +1362,6 @@
           "price": "Free"
         },
         {
-          "code": "GN",
-          "name": "Guinea",
-          "slug": "guinea",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "GW",
           "name": "Guinea-Bissau",
           "slug": "guinea-bissau",
@@ -1096,17 +1383,6 @@
             "SCHENGEN",
             "US",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "HK",
-          "name": "Hong Kong (SAR China)",
-          "slug": "hong-kong-sar-china",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
@@ -1160,20 +1436,6 @@
           "price": "Free"
         },
         {
-          "code": "IL",
-          "name": "Israel",
-          "slug": "israel",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "IT",
           "name": "Italy",
           "slug": "italy",
@@ -1181,88 +1443,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "JP",
-          "name": "Japan",
-          "slug": "japan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "JO",
-          "name": "Jordan",
-          "slug": "jordan",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KE",
-          "name": "Kenya",
-          "slug": "kenya",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KW",
-          "name": "Kuwait",
-          "slug": "kuwait",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "AE"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KG",
-          "name": "Kyrgyzstan",
-          "slug": "kyrgyzstan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LA",
-          "name": "Laos",
-          "slug": "laos",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -1295,20 +1475,6 @@
           "region": "AFRICA",
           "access": "visa_free",
           "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LY",
-          "name": "Libya",
-          "slug": "libya",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
             "CA"
           ],
           "price": "Free"
@@ -1349,45 +1515,6 @@
           "price": "Free"
         },
         {
-          "code": "MG",
-          "name": "Madagascar",
-          "slug": "madagascar",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MW",
-          "name": "Malawi",
-          "slug": "malawi",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MV",
-          "name": "Maldives",
-          "slug": "maldives",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "MT",
           "name": "Malta",
           "slug": "malta",
@@ -1395,34 +1522,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MH",
-          "name": "Marshall Islands",
-          "slug": "marshall-islands",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MR",
-          "name": "Mauritania",
-          "slug": "mauritania",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -1452,17 +1551,6 @@
           "price": "Free"
         },
         {
-          "code": "MD",
-          "name": "Moldova",
-          "slug": "moldova",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "MC",
           "name": "Monaco",
           "slug": "monaco",
@@ -1474,47 +1562,10 @@
           "price": "Free"
         },
         {
-          "code": "MN",
-          "name": "Mongolia",
-          "slug": "mongolia",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "ME",
           "name": "Montenegro",
           "slug": "montenegro",
           "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MA",
-          "name": "Morocco",
-          "slug": "morocco",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MZ",
-          "name": "Mozambique",
-          "slug": "mozambique",
-          "region": "AFRICA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -1573,17 +1624,6 @@
             "SCHENGEN",
             "US",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "NG",
-          "name": "Nigeria",
-          "slug": "nigeria",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
@@ -1654,31 +1694,6 @@
           "price": "Free"
         },
         {
-          "code": "PW",
-          "name": "Palau Islands",
-          "slug": "palau-islands",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "PS",
-          "name": "Palestinian Territory",
-          "slug": "palestinian-territory",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "PA",
           "name": "Panama",
           "slug": "panama",
@@ -1688,17 +1703,6 @@
             "SCHENGEN",
             "US",
             "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "PG",
-          "name": "Papua New Guinea",
-          "slug": "papua-new-guinea",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
             "CA"
           ],
           "price": "Free"
@@ -1761,33 +1765,6 @@
           "price": "Free"
         },
         {
-          "code": "RW",
-          "name": "Rwanda",
-          "slug": "rwanda",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "WS",
-          "name": "Samoa",
-          "slug": "samoa",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "SM",
           "name": "San Marino",
           "slug": "san-marino",
@@ -1795,73 +1772,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ST",
-          "name": "Sao Tome and Principe",
-          "slug": "sao-tome-and-principe",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SA",
-          "name": "Saudi Arabia",
-          "slug": "saudi-arabia",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "RS",
-          "name": "Serbia",
-          "slug": "serbia",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SC",
-          "name": "Seychelles",
-          "slug": "seychelles",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SG",
-          "name": "Singapore",
-          "slug": "singapore",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -1901,17 +1811,6 @@
           "price": "Free"
         },
         {
-          "code": "ZA",
-          "name": "South Africa",
-          "slug": "south-africa",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "KR",
           "name": "South Korea",
           "slug": "south-korea",
@@ -1926,17 +1825,6 @@
           "price": "Free"
         },
         {
-          "code": "SS",
-          "name": "South Sudan",
-          "slug": "south-sudan",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "ES",
           "name": "Spain",
           "slug": "spain",
@@ -1944,71 +1832,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LK",
-          "name": "Sri Lanka",
-          "slug": "sri-lanka",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KN",
-          "name": "St. Kitts and Nevis",
-          "slug": "st-kitts-and-nevis",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LC",
-          "name": "St. Lucia",
-          "slug": "st-lucia",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "VC",
-          "name": "St. Vincent and the Grenadines",
-          "slug": "st-vincent-and-the-grenadines",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SR",
-          "name": "Suriname",
-          "slug": "suriname",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -2047,42 +1870,6 @@
           "price": "Free"
         },
         {
-          "code": "TW",
-          "name": "Taiwan (Chinese Taipei)",
-          "slug": "taiwan-chinese-taipei",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "TJ",
-          "name": "Tajikistan",
-          "slug": "tajikistan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "TZ",
-          "name": "Tanzania",
-          "slug": "tanzania",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "GM",
           "name": "The Gambia",
           "slug": "the-gambia",
@@ -2095,19 +1882,6 @@
             "CA"
           ],
           "price": "Free"
-        },
-        {
-          "code": "TR",
-          "name": "Türkiye",
-          "slug": "t-rkiye",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
-          ],
-          "price": "80.5 USD"
         },
         {
           "code": "TM",
@@ -2143,44 +1917,6 @@
             "SCHENGEN",
             "US",
             "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "UG",
-          "name": "Uganda",
-          "slug": "uganda",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "UA",
-          "name": "Ukraine",
-          "slug": "ukraine",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AE",
-          "name": "United Arab Emirates",
-          "slug": "united-arab-emirates",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "AE",
             "CA"
           ],
           "price": "Free"
@@ -2227,20 +1963,6 @@
           "price": "Free"
         },
         {
-          "code": "UZ",
-          "name": "Uzbekistan",
-          "slug": "uzbekistan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "VA",
           "name": "Vatican City",
           "slug": "vatican-city",
@@ -2250,55 +1972,6 @@
             "SCHENGEN"
           ],
           "price": "Free"
-        },
-        {
-          "code": "VN",
-          "name": "Vietnam",
-          "slug": "vietnam",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ZM",
-          "name": "Zambia",
-          "slug": "zambia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ZW",
-          "name": "Zimbabwe",
-          "slug": "zimbabwe",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AG",
-          "name": "Antigua and Barbuda",
-          "slug": "antigua-and-barbuda",
-          "region": "CARIBBEAN",
-          "access": "voa",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ]
         },
         {
           "code": "CD",
@@ -2625,6 +2298,59 @@
           "price": "112 USD"
         },
         {
+          "code": "BH",
+          "name": "Bahrain",
+          "slug": "bahrain",
+          "region": "MIDDLE EAST",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "14 days or 30 days"
+        },
+        {
+          "code": "BI",
+          "name": "Burundi",
+          "slug": "burundi",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "ET",
+          "name": "Ethiopia",
+          "slug": "ethiopia",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "price": "142 USD"
+        },
+        {
+          "code": "LR",
+          "name": "Liberia",
+          "slug": "liberia",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
+          "code": "MV",
+          "name": "Maldives",
+          "slug": "maldives",
+          "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "MH",
+          "name": "Marshall Islands",
+          "slug": "marshall-islands",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": []
+        },
+        {
           "code": "MU",
           "name": "Mauritius",
           "slug": "mauritius",
@@ -2632,6 +2358,41 @@
           "access": "voa",
           "unlockedBy": [],
           "stay": "60 days"
+        },
+        {
+          "code": "NI",
+          "name": "Nicaragua",
+          "slug": "nicaragua",
+          "region": "AMERICAS",
+          "access": "voa",
+          "unlockedBy": []
+        },
+        {
+          "code": "PW",
+          "name": "Palau Islands",
+          "slug": "palau-islands",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "RW",
+          "name": "Rwanda",
+          "slug": "rwanda",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
+          "code": "WS",
+          "name": "Samoa",
+          "slug": "samoa",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
         },
         {
           "code": "SN",
@@ -2643,10 +2404,46 @@
           "stay": "90 days"
         },
         {
+          "code": "LC",
+          "name": "St. Lucia",
+          "slug": "st-lucia",
+          "region": "CARIBBEAN",
+          "access": "voa",
+          "unlockedBy": []
+        },
+        {
+          "code": "VC",
+          "name": "St. Vincent and the Grenadines",
+          "slug": "st-vincent-and-the-grenadines",
+          "region": "CARIBBEAN",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
+          "code": "TZ",
+          "name": "Tanzania",
+          "slug": "tanzania",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days",
+          "price": "112 USD"
+        },
+        {
           "code": "TL",
           "name": "Timor-Leste",
           "slug": "timor-leste",
           "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "TV",
+          "name": "Tuvalu",
+          "slug": "tuvalu",
+          "region": "OCEANIA",
           "access": "voa",
           "unlockedBy": [],
           "stay": "30 days"
@@ -2659,6 +2456,14 @@
           "access": "voa",
           "unlockedBy": [],
           "stay": "30 days"
+        },
+        {
+          "code": "AL",
+          "name": "Albania",
+          "slug": "albania",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
         },
         {
           "code": "DZ",
@@ -2678,6 +2483,39 @@
           "unlockedBy": []
         },
         {
+          "code": "AI",
+          "name": "Anguilla",
+          "slug": "anguilla",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "220 USD"
+        },
+        {
+          "code": "AM",
+          "name": "Armenia",
+          "slug": "armenia",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "AU",
+          "name": "Australia",
+          "slug": "australia",
+          "region": "OCEANIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "BS",
+          "name": "Bahamas",
+          "slug": "bahamas",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "BD",
           "name": "Bangladesh",
           "slug": "bangladesh",
@@ -2685,6 +2523,15 @@
           "access": "evisa",
           "unlockedBy": [],
           "price": "60 USD"
+        },
+        {
+          "code": "BJ",
+          "name": "Benin",
+          "slug": "benin",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "76.79 USD"
         },
         {
           "code": "BT",
@@ -2695,10 +2542,155 @@
           "unlockedBy": []
         },
         {
+          "code": "BF",
+          "name": "Burkina Faso",
+          "slug": "burkina-faso",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "90 days",
+          "price": "33000 XOF"
+        },
+        {
+          "code": "CM",
+          "name": "Cameroon",
+          "slug": "cameroon",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "CU",
+          "name": "Cuba",
+          "slug": "cuba",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "DJ",
+          "name": "Djibouti",
+          "slug": "djibouti",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "86.65 USD"
+        },
+        {
+          "code": "EC",
+          "name": "Ecuador",
+          "slug": "ecuador",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SV",
+          "name": "El Salvador",
+          "slug": "el-salvador",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GQ",
+          "name": "Equatorial Guinea",
+          "slug": "equatorial-guinea",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GE",
+          "name": "Georgia",
+          "slug": "georgia",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "30 calendar days"
+        },
+        {
+          "code": "GN",
+          "name": "Guinea",
+          "slug": "guinea",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "IN",
+          "name": "India",
+          "slug": "india",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "180 days in 1 calendar year",
+          "price": "89 USD"
+        },
+        {
           "code": "IR",
           "name": "Iran",
           "slug": "iran",
           "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "slug": "japan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "15 days"
+        },
+        {
+          "code": "JO",
+          "name": "Jordan",
+          "slug": "jordan",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "KG",
+          "name": "Kyrgyzstan",
+          "slug": "kyrgyzstan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MG",
+          "name": "Madagascar",
+          "slug": "madagascar",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "60 days",
+          "price": "47 USD"
+        },
+        {
+          "code": "MW",
+          "name": "Malawi",
+          "slug": "malawi",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MR",
+          "name": "Mauritania",
+          "slug": "mauritania",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MD",
+          "name": "Moldova",
+          "slug": "moldova",
+          "region": "EUROPE",
           "access": "evisa",
           "unlockedBy": []
         },
@@ -2711,6 +2703,38 @@
           "unlockedBy": []
         },
         {
+          "code": "MZ",
+          "name": "Mozambique",
+          "slug": "mozambique",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "NG",
+          "name": "Nigeria",
+          "slug": "nigeria",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "PK",
+          "name": "Pakistan",
+          "slug": "pakistan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "PG",
+          "name": "Papua New Guinea",
+          "slug": "papua-new-guinea",
+          "region": "OCEANIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "RU",
           "name": "Russian Federation",
           "slug": "russian-federation",
@@ -2718,6 +2742,22 @@
           "access": "evisa",
           "unlockedBy": [],
           "stay": "30 days"
+        },
+        {
+          "code": "ST",
+          "name": "Sao Tome and Principe",
+          "slug": "sao-tome-and-principe",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "RS",
+          "name": "Serbia",
+          "slug": "serbia",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
         },
         {
           "code": "SL",
@@ -2732,6 +2772,22 @@
           "name": "Somalia",
           "slug": "somalia",
           "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SS",
+          "name": "South Sudan",
+          "slug": "south-sudan",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "KN",
+          "name": "St. Kitts and Nevis",
+          "slug": "st-kitts-and-nevis",
+          "region": "CARIBBEAN",
           "access": "evisa",
           "unlockedBy": []
         },
@@ -2760,6 +2816,111 @@
           "unlockedBy": []
         },
         {
+          "code": "TR",
+          "name": "Türkiye",
+          "slug": "t-rkiye",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "UA",
+          "name": "Ukraine",
+          "slug": "ukraine",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "AE",
+          "name": "United Arab Emirates",
+          "slug": "united-arab-emirates",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "187 USD"
+        },
+        {
+          "code": "UZ",
+          "name": "Uzbekistan",
+          "slug": "uzbekistan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ZM",
+          "name": "Zambia",
+          "slug": "zambia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ZW",
+          "name": "Zimbabwe",
+          "slug": "zimbabwe",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "1 month"
+        },
+        {
+          "code": "CA",
+          "name": "Canada",
+          "slug": "canada",
+          "region": "AMERICAS",
+          "access": "eta",
+          "unlockedBy": []
+        },
+        {
+          "code": "CV",
+          "name": "Cape Verde Islands",
+          "slug": "cape-verde-islands",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "stay": "30 days",
+          "price": "30.83 EUR"
+        },
+        {
+          "code": "IL",
+          "name": "Israel",
+          "slug": "israel",
+          "region": "MIDDLE EAST",
+          "access": "eta",
+          "unlockedBy": [],
+          "price": "26.85 USD"
+        },
+        {
+          "code": "KE",
+          "name": "Kenya",
+          "slug": "kenya",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "stay": "90 days",
+          "price": "74.09 USD"
+        },
+        {
+          "code": "SC",
+          "name": "Seychelles",
+          "slug": "seychelles",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "price": "10.90 EUR"
+        },
+        {
+          "code": "LK",
+          "name": "Sri Lanka",
+          "slug": "sri-lanka",
+          "region": "ASIA",
+          "access": "eta",
+          "unlockedBy": []
+        },
+        {
           "code": "AF",
           "name": "Afghanistan",
           "slug": "afghanistan",
@@ -2767,20 +2928,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AL",
-          "name": "Albania",
-          "slug": "albania",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK"
           ],
           "price": "Free"
         },
@@ -2808,52 +2955,10 @@
           "price": "Free"
         },
         {
-          "code": "AI",
-          "name": "Anguilla",
-          "slug": "anguilla",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "220 USD"
-        },
-        {
           "code": "AR",
           "name": "Argentina",
           "slug": "argentina",
           "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AM",
-          "name": "Armenia",
-          "slug": "armenia",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AU",
-          "name": "Australia",
-          "slug": "australia",
-          "region": "OCEANIA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -2871,35 +2976,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BS",
-          "name": "Bahamas",
-          "slug": "bahamas",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BH",
-          "name": "Bahrain",
-          "slug": "bahrain",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -2935,17 +3011,6 @@
             "SCHENGEN",
             "US",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BJ",
-          "name": "Benin",
-          "slug": "benin",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -2996,68 +3061,6 @@
           "unlockedBy": [
             "SCHENGEN",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BF",
-          "name": "Burkina Faso",
-          "slug": "burkina-faso",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BI",
-          "name": "Burundi",
-          "slug": "burundi",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "AE",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CM",
-          "name": "Cameroon",
-          "slug": "cameroon",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CA",
-          "name": "Canada",
-          "slug": "canada",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CV",
-          "name": "Cape Verde Islands",
-          "slug": "cape-verde-islands",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
           ],
           "price": "Free"
         },
@@ -3123,20 +3126,6 @@
           "price": "Free"
         },
         {
-          "code": "CU",
-          "name": "Cuba",
-          "slug": "cuba",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "CY",
           "name": "Cyprus",
           "slug": "cyprus",
@@ -3172,36 +3161,10 @@
           "price": "Free"
         },
         {
-          "code": "DJ",
-          "name": "Djibouti",
-          "slug": "djibouti",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "AE"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "DO",
           "name": "Dominican Republic",
           "slug": "dominican-republic",
           "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "EC",
-          "name": "Ecuador",
-          "slug": "ecuador",
-          "region": "AMERICAS",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -3219,31 +3182,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SV",
-          "name": "El Salvador",
-          "slug": "el-salvador",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GQ",
-          "name": "Equatorial Guinea",
-          "slug": "equatorial-guinea",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -3266,17 +3204,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ET",
-          "name": "Ethiopia",
-          "slug": "ethiopia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -3313,21 +3240,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GE",
-          "name": "Georgia",
-          "slug": "georgia",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -3390,17 +3302,6 @@
           "price": "Free"
         },
         {
-          "code": "GN",
-          "name": "Guinea",
-          "slug": "guinea",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "GW",
           "name": "Guinea-Bissau",
           "slug": "guinea-bissau",
@@ -3448,21 +3349,6 @@
           "price": "Free"
         },
         {
-          "code": "IN",
-          "name": "India",
-          "slug": "india",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "IE",
           "name": "Ireland",
           "slug": "ireland",
@@ -3471,20 +3357,6 @@
           "unlockedBy": [
             "SCHENGEN",
             "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "IL",
-          "name": "Israel",
-          "slug": "israel",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -3500,50 +3372,6 @@
           "price": "Free"
         },
         {
-          "code": "JP",
-          "name": "Japan",
-          "slug": "japan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "JO",
-          "name": "Jordan",
-          "slug": "jordan",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KE",
-          "name": "Kenya",
-          "slug": "kenya",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "KW",
           "name": "Kuwait",
           "slug": "kuwait",
@@ -3551,19 +3379,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "AE"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KG",
-          "name": "Kyrgyzstan",
-          "slug": "kyrgyzstan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
           ],
           "price": "Free"
         },
@@ -3586,17 +3401,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LR",
-          "name": "Liberia",
-          "slug": "liberia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
           ],
           "price": "Free"
         },
@@ -3650,45 +3454,6 @@
           "price": "Free"
         },
         {
-          "code": "MG",
-          "name": "Madagascar",
-          "slug": "madagascar",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MW",
-          "name": "Malawi",
-          "slug": "malawi",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MV",
-          "name": "Maldives",
-          "slug": "maldives",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "MT",
           "name": "Malta",
           "slug": "malta",
@@ -3696,34 +3461,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MH",
-          "name": "Marshall Islands",
-          "slug": "marshall-islands",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MR",
-          "name": "Mauritania",
-          "slug": "mauritania",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -3753,17 +3490,6 @@
           "price": "Free"
         },
         {
-          "code": "MD",
-          "name": "Moldova",
-          "slug": "moldova",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "MC",
           "name": "Monaco",
           "slug": "monaco",
@@ -3779,20 +3505,6 @@
           "name": "Montenegro",
           "slug": "montenegro",
           "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MZ",
-          "name": "Mozambique",
-          "slug": "mozambique",
-          "region": "AFRICA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -3824,30 +3536,6 @@
             "US",
             "UK",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "NI",
-          "name": "Nicaragua",
-          "slug": "nicaragua",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "NG",
-          "name": "Nigeria",
-          "slug": "nigeria",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
@@ -3904,34 +3592,6 @@
           "price": "Free"
         },
         {
-          "code": "PK",
-          "name": "Pakistan",
-          "slug": "pakistan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "PW",
-          "name": "Palau Islands",
-          "slug": "palau-islands",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "PS",
           "name": "Palestinian Territory",
           "slug": "palestinian-territory",
@@ -3952,17 +3612,6 @@
             "SCHENGEN",
             "US",
             "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "PG",
-          "name": "Papua New Guinea",
-          "slug": "papua-new-guinea",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
             "CA"
           ],
           "price": "Free"
@@ -4025,33 +3674,6 @@
           "price": "Free"
         },
         {
-          "code": "RW",
-          "name": "Rwanda",
-          "slug": "rwanda",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "WS",
-          "name": "Samoa",
-          "slug": "samoa",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "SM",
           "name": "San Marino",
           "slug": "san-marino",
@@ -4063,49 +3685,10 @@
           "price": "Free"
         },
         {
-          "code": "ST",
-          "name": "Sao Tome and Principe",
-          "slug": "sao-tome-and-principe",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "SA",
           "name": "Saudi Arabia",
           "slug": "saudi-arabia",
           "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "RS",
-          "name": "Serbia",
-          "slug": "serbia",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SC",
-          "name": "Seychelles",
-          "slug": "seychelles",
-          "region": "AFRICA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -4176,17 +3759,6 @@
           "price": "Free"
         },
         {
-          "code": "SS",
-          "name": "South Sudan",
-          "slug": "south-sudan",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "ES",
           "name": "Spain",
           "slug": "spain",
@@ -4194,57 +3766,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LK",
-          "name": "Sri Lanka",
-          "slug": "sri-lanka",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KN",
-          "name": "St. Kitts and Nevis",
-          "slug": "st-kitts-and-nevis",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LC",
-          "name": "St. Lucia",
-          "slug": "st-lucia",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "VC",
-          "name": "St. Vincent and the Grenadines",
-          "slug": "st-vincent-and-the-grenadines",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US"
           ],
           "price": "Free"
         },
@@ -4308,30 +3829,6 @@
           "price": "Free"
         },
         {
-          "code": "TZ",
-          "name": "Tanzania",
-          "slug": "tanzania",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "TR",
-          "name": "Türkiye",
-          "slug": "t-rkiye",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
-          ],
-          "price": "80.5 USD"
-        },
-        {
           "code": "TM",
           "name": "Turkmenistan",
           "slug": "turkmenistan",
@@ -4356,53 +3853,12 @@
           "price": "Free"
         },
         {
-          "code": "TV",
-          "name": "Tuvalu",
-          "slug": "tuvalu",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "UG",
           "name": "Uganda",
           "slug": "uganda",
           "region": "AFRICA",
           "access": "visa_free",
           "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "UA",
-          "name": "Ukraine",
-          "slug": "ukraine",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AE",
-          "name": "United Arab Emirates",
-          "slug": "united-arab-emirates",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "AE",
             "CA"
           ],
           "price": "Free"
@@ -4449,20 +3905,6 @@
           "price": "Free"
         },
         {
-          "code": "UZ",
-          "name": "Uzbekistan",
-          "slug": "uzbekistan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "VA",
           "name": "Vatican City",
           "slug": "vatican-city",
@@ -4470,28 +3912,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ZM",
-          "name": "Zambia",
-          "slug": "zambia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ZW",
-          "name": "Zimbabwe",
-          "slug": "zimbabwe",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
@@ -4760,6 +4180,42 @@
           "price": "Free"
         },
         {
+          "code": "BI",
+          "name": "Burundi",
+          "slug": "burundi",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "LB",
+          "name": "Lebanon",
+          "slug": "lebanon",
+          "region": "MIDDLE EAST",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "1 month extendable to 3 months"
+        },
+        {
+          "code": "MG",
+          "name": "Madagascar",
+          "slug": "madagascar",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "15 days"
+        },
+        {
+          "code": "MV",
+          "name": "Maldives",
+          "slug": "maldives",
+          "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
           "code": "MU",
           "name": "Mauritius",
           "slug": "mauritius",
@@ -4769,10 +4225,46 @@
           "stay": "14 days"
         },
         {
+          "code": "PW",
+          "name": "Palau Islands",
+          "slug": "palau-islands",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "RW",
+          "name": "Rwanda",
+          "slug": "rwanda",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "WS",
+          "name": "Samoa",
+          "slug": "samoa",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
           "code": "TL",
           "name": "Timor-Leste",
           "slug": "timor-leste",
           "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "TV",
+          "name": "Tuvalu",
+          "slug": "tuvalu",
+          "region": "OCEANIA",
           "access": "voa",
           "unlockedBy": [],
           "stay": "30 days"
@@ -4785,6 +4277,14 @@
           "access": "voa",
           "unlockedBy": [],
           "stay": "120 days"
+        },
+        {
+          "code": "AL",
+          "name": "Albania",
+          "slug": "albania",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
         },
         {
           "code": "DZ",
@@ -4804,6 +4304,31 @@
           "unlockedBy": []
         },
         {
+          "code": "AI",
+          "name": "Anguilla",
+          "slug": "anguilla",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "220 USD"
+        },
+        {
+          "code": "AU",
+          "name": "Australia",
+          "slug": "australia",
+          "region": "OCEANIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "BS",
+          "name": "Bahamas",
+          "slug": "bahamas",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "BT",
           "name": "Bhutan",
           "slug": "bhutan",
@@ -4812,10 +4337,101 @@
           "unlockedBy": []
         },
         {
+          "code": "CL",
+          "name": "Chile",
+          "slug": "chile",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "CU",
+          "name": "Cuba",
+          "slug": "cuba",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "DJ",
+          "name": "Djibouti",
+          "slug": "djibouti",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "86.65 USD"
+        },
+        {
+          "code": "SV",
+          "name": "El Salvador",
+          "slug": "el-salvador",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GQ",
+          "name": "Equatorial Guinea",
+          "slug": "equatorial-guinea",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ET",
+          "name": "Ethiopia",
+          "slug": "ethiopia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "142 USD"
+        },
+        {
+          "code": "GE",
+          "name": "Georgia",
+          "slug": "georgia",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "30 calendar days"
+        },
+        {
+          "code": "HK",
+          "name": "Hong Kong (SAR China)",
+          "slug": "hong-kong-sar-china",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "JO",
+          "name": "Jordan",
+          "slug": "jordan",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "KZ",
           "name": "Kazakhstan",
           "slug": "kazakhstan",
           "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "KG",
+          "name": "Kyrgyzstan",
+          "slug": "kyrgyzstan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MW",
+          "name": "Malawi",
+          "slug": "malawi",
+          "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": []
         },
@@ -4829,6 +4445,30 @@
           "stay": "30 days"
         },
         {
+          "code": "MR",
+          "name": "Mauritania",
+          "slug": "mauritania",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MD",
+          "name": "Moldova",
+          "slug": "moldova",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MZ",
+          "name": "Mozambique",
+          "slug": "mozambique",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "MM",
           "name": "Myanmar",
           "slug": "myanmar",
@@ -4838,9 +4478,81 @@
           "stay": "28 days"
         },
         {
+          "code": "PK",
+          "name": "Pakistan",
+          "slug": "pakistan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "PG",
+          "name": "Papua New Guinea",
+          "slug": "papua-new-guinea",
+          "region": "OCEANIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "PH",
+          "name": "Philippines",
+          "slug": "philippines",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ST",
+          "name": "Sao Tome and Principe",
+          "slug": "sao-tome-and-principe",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "RS",
+          "name": "Serbia",
+          "slug": "serbia",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "SO",
           "name": "Somalia",
           "slug": "somalia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ZA",
+          "name": "South Africa",
+          "slug": "south-africa",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SS",
+          "name": "South Sudan",
+          "slug": "south-sudan",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SR",
+          "name": "Suriname",
+          "slug": "suriname",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "TZ",
+          "name": "Tanzania",
+          "slug": "tanzania",
           "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": []
@@ -4871,6 +4583,74 @@
           "unlockedBy": []
         },
         {
+          "code": "AE",
+          "name": "United Arab Emirates",
+          "slug": "united-arab-emirates",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "VN",
+          "name": "Vietnam",
+          "slug": "vietnam",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ZM",
+          "name": "Zambia",
+          "slug": "zambia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ZW",
+          "name": "Zimbabwe",
+          "slug": "zimbabwe",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "1 month"
+        },
+        {
+          "code": "CV",
+          "name": "Cape Verde Islands",
+          "slug": "cape-verde-islands",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "stay": "30 days",
+          "price": "30.83 EUR"
+        },
+        {
+          "code": "SC",
+          "name": "Seychelles",
+          "slug": "seychelles",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "price": "10.90 EUR"
+        },
+        {
+          "code": "LK",
+          "name": "Sri Lanka",
+          "slug": "sri-lanka",
+          "region": "ASIA",
+          "access": "eta",
+          "unlockedBy": []
+        },
+        {
+          "code": "KN",
+          "name": "St. Kitts and Nevis",
+          "slug": "st-kitts-and-nevis",
+          "region": "CARIBBEAN",
+          "access": "eta",
+          "unlockedBy": []
+        },
+        {
           "code": "AF",
           "name": "Afghanistan",
           "slug": "afghanistan",
@@ -4878,20 +4658,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AL",
-          "name": "Albania",
-          "slug": "albania",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK"
           ],
           "price": "Free"
         },
@@ -4917,19 +4683,6 @@
             "SCHENGEN"
           ],
           "price": "Free"
-        },
-        {
-          "code": "AI",
-          "name": "Anguilla",
-          "slug": "anguilla",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "220 USD"
         },
         {
           "code": "AR",
@@ -4961,20 +4714,6 @@
           "price": "Free"
         },
         {
-          "code": "AU",
-          "name": "Australia",
-          "slug": "australia",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "AT",
           "name": "Austria",
           "slug": "austria",
@@ -4982,20 +4721,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BS",
-          "name": "Bahamas",
-          "slug": "bahamas",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -5138,19 +4863,6 @@
           "price": "Free"
         },
         {
-          "code": "BI",
-          "name": "Burundi",
-          "slug": "burundi",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "AE",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "KH",
           "name": "Cambodia",
           "slug": "cambodia",
@@ -5172,33 +4884,6 @@
           "unlockedBy": [
             "SCHENGEN",
             "US",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CV",
-          "name": "Cape Verde Islands",
-          "slug": "cape-verde-islands",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CL",
-          "name": "Chile",
-          "slug": "chile",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
             "CA"
           ],
           "price": "Free"
@@ -5279,20 +4964,6 @@
           "price": "Free"
         },
         {
-          "code": "CU",
-          "name": "Cuba",
-          "slug": "cuba",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "CY",
           "name": "Cyprus",
           "slug": "cyprus",
@@ -5324,18 +4995,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "DJ",
-          "name": "Djibouti",
-          "slug": "djibouti",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "AE"
           ],
           "price": "Free"
         },
@@ -5379,31 +5038,6 @@
           "price": "Free"
         },
         {
-          "code": "SV",
-          "name": "El Salvador",
-          "slug": "el-salvador",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GQ",
-          "name": "Equatorial Guinea",
-          "slug": "equatorial-guinea",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "EE",
           "name": "Estonia",
           "slug": "estonia",
@@ -5422,17 +5056,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ET",
-          "name": "Ethiopia",
-          "slug": "ethiopia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -5469,21 +5092,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GE",
-          "name": "Georgia",
-          "slug": "georgia",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -5556,17 +5164,6 @@
             "SCHENGEN",
             "US",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "HK",
-          "name": "Hong Kong (SAR China)",
-          "slug": "hong-kong-sar-china",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
@@ -5660,21 +5257,6 @@
           "price": "Free"
         },
         {
-          "code": "JO",
-          "name": "Jordan",
-          "slug": "jordan",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "KW",
           "name": "Kuwait",
           "slug": "kuwait",
@@ -5682,19 +5264,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "AE"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KG",
-          "name": "Kyrgyzstan",
-          "slug": "kyrgyzstan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
           ],
           "price": "Free"
         },
@@ -5720,17 +5289,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LB",
-          "name": "Lebanon",
-          "slug": "lebanon",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
@@ -5784,45 +5342,6 @@
           "price": "Free"
         },
         {
-          "code": "MG",
-          "name": "Madagascar",
-          "slug": "madagascar",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MW",
-          "name": "Malawi",
-          "slug": "malawi",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MV",
-          "name": "Maldives",
-          "slug": "maldives",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "MT",
           "name": "Malta",
           "slug": "malta",
@@ -5838,20 +5357,6 @@
           "name": "Marshall Islands",
           "slug": "marshall-islands",
           "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MR",
-          "name": "Mauritania",
-          "slug": "mauritania",
-          "region": "AFRICA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -5883,17 +5388,6 @@
             "US",
             "UK",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MD",
-          "name": "Moldova",
-          "slug": "moldova",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -5942,20 +5436,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MZ",
-          "name": "Mozambique",
-          "slug": "mozambique",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -6075,34 +5555,6 @@
           "price": "Free"
         },
         {
-          "code": "PK",
-          "name": "Pakistan",
-          "slug": "pakistan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "PW",
-          "name": "Palau Islands",
-          "slug": "palau-islands",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "PS",
           "name": "Palestinian Territory",
           "slug": "palestinian-territory",
@@ -6123,17 +5575,6 @@
             "SCHENGEN",
             "US",
             "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "PG",
-          "name": "Papua New Guinea",
-          "slug": "papua-new-guinea",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
             "CA"
           ],
           "price": "Free"
@@ -6162,21 +5603,6 @@
             "UK",
             "CA"
           ],
-          "price": "Free"
-        },
-        {
-          "code": "PH",
-          "name": "Philippines",
-          "slug": "philippines",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "stay": "14 days",
           "price": "Free"
         },
         {
@@ -6225,33 +5651,6 @@
           "price": "Free"
         },
         {
-          "code": "RW",
-          "name": "Rwanda",
-          "slug": "rwanda",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "WS",
-          "name": "Samoa",
-          "slug": "samoa",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "SM",
           "name": "San Marino",
           "slug": "san-marino",
@@ -6263,49 +5662,10 @@
           "price": "Free"
         },
         {
-          "code": "ST",
-          "name": "Sao Tome and Principe",
-          "slug": "sao-tome-and-principe",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "SA",
           "name": "Saudi Arabia",
           "slug": "saudi-arabia",
           "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "RS",
-          "name": "Serbia",
-          "slug": "serbia",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SC",
-          "name": "Seychelles",
-          "slug": "seychelles",
-          "region": "AFRICA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -6365,17 +5725,6 @@
           "price": "Free"
         },
         {
-          "code": "ZA",
-          "name": "South Africa",
-          "slug": "south-africa",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "KR",
           "name": "South Korea",
           "slug": "south-korea",
@@ -6390,17 +5739,6 @@
           "price": "Free"
         },
         {
-          "code": "SS",
-          "name": "South Sudan",
-          "slug": "south-sudan",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "ES",
           "name": "Spain",
           "slug": "spain",
@@ -6408,32 +5746,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LK",
-          "name": "Sri Lanka",
-          "slug": "sri-lanka",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KN",
-          "name": "St. Kitts and Nevis",
-          "slug": "st-kitts-and-nevis",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -6459,20 +5771,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "US"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SR",
-          "name": "Suriname",
-          "slug": "suriname",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -6536,17 +5834,6 @@
           "price": "Free"
         },
         {
-          "code": "TZ",
-          "name": "Tanzania",
-          "slug": "tanzania",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "TR",
           "name": "Türkiye",
           "slug": "t-rkiye",
@@ -6584,20 +5871,6 @@
           "price": "Free"
         },
         {
-          "code": "TV",
-          "name": "Tuvalu",
-          "slug": "tuvalu",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "UG",
           "name": "Uganda",
           "slug": "uganda",
@@ -6618,19 +5891,6 @@
             "SCHENGEN",
             "US",
             "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AE",
-          "name": "United Arab Emirates",
-          "slug": "united-arab-emirates",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "AE",
             "CA"
           ],
           "price": "Free"
@@ -6698,42 +5958,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "VN",
-          "name": "Vietnam",
-          "slug": "vietnam",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ZM",
-          "name": "Zambia",
-          "slug": "zambia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ZW",
-          "name": "Zimbabwe",
-          "slug": "zimbabwe",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
@@ -6848,10 +6072,108 @@
           "price": "Free"
         },
         {
+          "code": "BH",
+          "name": "Bahrain",
+          "slug": "bahrain",
+          "region": "MIDDLE EAST",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "14 days or 30 days"
+        },
+        {
+          "code": "BI",
+          "name": "Burundi",
+          "slug": "burundi",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "KM",
+          "name": "Comoro Islands",
+          "slug": "comoro-islands",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": []
+        },
+        {
+          "code": "LR",
+          "name": "Liberia",
+          "slug": "liberia",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
+          "code": "MV",
+          "name": "Maldives",
+          "slug": "maldives",
+          "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "PW",
+          "name": "Palau Islands",
+          "slug": "palau-islands",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "QA",
+          "name": "Qatar",
+          "slug": "qatar",
+          "region": "MIDDLE EAST",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "RW",
+          "name": "Rwanda",
+          "slug": "rwanda",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "WS",
+          "name": "Samoa",
+          "slug": "samoa",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
+          "code": "VC",
+          "name": "St. Vincent and the Grenadines",
+          "slug": "st-vincent-and-the-grenadines",
+          "region": "CARIBBEAN",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
           "code": "TL",
           "name": "Timor-Leste",
           "slug": "timor-leste",
           "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "TV",
+          "name": "Tuvalu",
+          "slug": "tuvalu",
+          "region": "OCEANIA",
           "access": "voa",
           "unlockedBy": [],
           "stay": "30 days"
@@ -6864,6 +6186,14 @@
           "access": "voa",
           "unlockedBy": [],
           "stay": "30 days"
+        },
+        {
+          "code": "AL",
+          "name": "Albania",
+          "slug": "albania",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
         },
         {
           "code": "DZ",
@@ -6883,6 +6213,23 @@
           "unlockedBy": []
         },
         {
+          "code": "AI",
+          "name": "Anguilla",
+          "slug": "anguilla",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "220 USD"
+        },
+        {
+          "code": "AU",
+          "name": "Australia",
+          "slug": "australia",
+          "region": "OCEANIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "AZ",
           "name": "Azerbaijan",
           "slug": "azerbaijan",
@@ -6890,6 +6237,14 @@
           "access": "evisa",
           "unlockedBy": [],
           "price": "60 USD"
+        },
+        {
+          "code": "BS",
+          "name": "Bahamas",
+          "slug": "bahamas",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": []
         },
         {
           "code": "BD",
@@ -6901,12 +6256,123 @@
           "price": "2 USD"
         },
         {
+          "code": "BJ",
+          "name": "Benin",
+          "slug": "benin",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "76.79 USD"
+        },
+        {
           "code": "BT",
           "name": "Bhutan",
           "slug": "bhutan",
           "region": "ASIA",
           "access": "evisa",
           "unlockedBy": []
+        },
+        {
+          "code": "BF",
+          "name": "Burkina Faso",
+          "slug": "burkina-faso",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "90 days",
+          "price": "33000 XOF"
+        },
+        {
+          "code": "KH",
+          "name": "Cambodia",
+          "slug": "cambodia",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "CM",
+          "name": "Cameroon",
+          "slug": "cameroon",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "TD",
+          "name": "Chad",
+          "slug": "chad",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "CL",
+          "name": "Chile",
+          "slug": "chile",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "CI",
+          "name": "Cote d'Ivoire",
+          "slug": "cote-d-ivoire",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "150 USD"
+        },
+        {
+          "code": "CU",
+          "name": "Cuba",
+          "slug": "cuba",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "DJ",
+          "name": "Djibouti",
+          "slug": "djibouti",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "86.65 USD"
+        },
+        {
+          "code": "EC",
+          "name": "Ecuador",
+          "slug": "ecuador",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SV",
+          "name": "El Salvador",
+          "slug": "el-salvador",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GQ",
+          "name": "Equatorial Guinea",
+          "slug": "equatorial-guinea",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ET",
+          "name": "Ethiopia",
+          "slug": "ethiopia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "142 USD"
         },
         {
           "code": "FJ",
@@ -6917,10 +6383,77 @@
           "unlockedBy": []
         },
         {
+          "code": "GA",
+          "name": "Gabon",
+          "slug": "gabon",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GE",
+          "name": "Georgia",
+          "slug": "georgia",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "30 calendar days"
+        },
+        {
+          "code": "GN",
+          "name": "Guinea",
+          "slug": "guinea",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "HK",
+          "name": "Hong Kong (SAR China)",
+          "slug": "hong-kong-sar-china",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "ID",
           "name": "Indonesia",
           "slug": "indonesia",
           "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "JO",
+          "name": "Jordan",
+          "slug": "jordan",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "KG",
+          "name": "Kyrgyzstan",
+          "slug": "kyrgyzstan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MG",
+          "name": "Madagascar",
+          "slug": "madagascar",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "60 days",
+          "price": "47 USD"
+        },
+        {
+          "code": "MW",
+          "name": "Malawi",
+          "slug": "malawi",
+          "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": []
         },
@@ -6934,6 +6467,22 @@
           "stay": "30 days"
         },
         {
+          "code": "MR",
+          "name": "Mauritania",
+          "slug": "mauritania",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MD",
+          "name": "Moldova",
+          "slug": "moldova",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "MM",
           "name": "Myanmar",
           "slug": "myanmar",
@@ -6941,6 +6490,30 @@
           "access": "evisa",
           "unlockedBy": [],
           "stay": "28 days"
+        },
+        {
+          "code": "NG",
+          "name": "Nigeria",
+          "slug": "nigeria",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "PG",
+          "name": "Papua New Guinea",
+          "slug": "papua-new-guinea",
+          "region": "OCEANIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ST",
+          "name": "Sao Tome and Principe",
+          "slug": "sao-tome-and-principe",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
         },
         {
           "code": "SN",
@@ -6952,6 +6525,14 @@
           "price": "50 EUR"
         },
         {
+          "code": "RS",
+          "name": "Serbia",
+          "slug": "serbia",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "SL",
           "name": "Sierra Leone",
           "slug": "sierra-leone",
@@ -6960,9 +6541,66 @@
           "unlockedBy": []
         },
         {
+          "code": "SG",
+          "name": "Singapore",
+          "slug": "singapore",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "SO",
           "name": "Somalia",
           "slug": "somalia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ZA",
+          "name": "South Africa",
+          "slug": "south-africa",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SS",
+          "name": "South Sudan",
+          "slug": "south-sudan",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "KN",
+          "name": "St. Kitts and Nevis",
+          "slug": "st-kitts-and-nevis",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SR",
+          "name": "Suriname",
+          "slug": "suriname",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "TJ",
+          "name": "Tajikistan",
+          "slug": "tajikistan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "90 USD"
+        },
+        {
+          "code": "TZ",
+          "name": "Tanzania",
+          "slug": "tanzania",
           "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": []
@@ -6993,6 +6631,94 @@
           "unlockedBy": []
         },
         {
+          "code": "TR",
+          "name": "Türkiye",
+          "slug": "t-rkiye",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "1 month"
+        },
+        {
+          "code": "UG",
+          "name": "Uganda",
+          "slug": "uganda",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "111.5 USD"
+        },
+        {
+          "code": "AE",
+          "name": "United Arab Emirates",
+          "slug": "united-arab-emirates",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "VN",
+          "name": "Vietnam",
+          "slug": "vietnam",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ZM",
+          "name": "Zambia",
+          "slug": "zambia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ZW",
+          "name": "Zimbabwe",
+          "slug": "zimbabwe",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "1 month"
+        },
+        {
+          "code": "CV",
+          "name": "Cape Verde Islands",
+          "slug": "cape-verde-islands",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "stay": "30 days",
+          "price": "30.83 EUR"
+        },
+        {
+          "code": "KE",
+          "name": "Kenya",
+          "slug": "kenya",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "stay": "90 days",
+          "price": "74.09 USD"
+        },
+        {
+          "code": "SC",
+          "name": "Seychelles",
+          "slug": "seychelles",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "price": "10.90 EUR"
+        },
+        {
+          "code": "LK",
+          "name": "Sri Lanka",
+          "slug": "sri-lanka",
+          "region": "ASIA",
+          "access": "eta",
+          "unlockedBy": []
+        },
+        {
           "code": "AF",
           "name": "Afghanistan",
           "slug": "afghanistan",
@@ -7000,20 +6726,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AL",
-          "name": "Albania",
-          "slug": "albania",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK"
           ],
           "price": "Free"
         },
@@ -7039,19 +6751,6 @@
             "SCHENGEN"
           ],
           "price": "Free"
-        },
-        {
-          "code": "AI",
-          "name": "Anguilla",
-          "slug": "anguilla",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "220 USD"
         },
         {
           "code": "AR",
@@ -7083,20 +6782,6 @@
           "price": "Free"
         },
         {
-          "code": "AU",
-          "name": "Australia",
-          "slug": "australia",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "AT",
           "name": "Austria",
           "slug": "austria",
@@ -7104,35 +6789,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BS",
-          "name": "Bahamas",
-          "slug": "bahamas",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BH",
-          "name": "Bahrain",
-          "slug": "bahrain",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -7168,17 +6824,6 @@
             "SCHENGEN",
             "US",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BJ",
-          "name": "Benin",
-          "slug": "benin",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -7271,55 +6916,6 @@
           "price": "Free"
         },
         {
-          "code": "BF",
-          "name": "Burkina Faso",
-          "slug": "burkina-faso",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BI",
-          "name": "Burundi",
-          "slug": "burundi",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "AE",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KH",
-          "name": "Cambodia",
-          "slug": "cambodia",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CM",
-          "name": "Cameroon",
-          "slug": "cameroon",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "CA",
           "name": "Canada",
           "slug": "canada",
@@ -7328,47 +6924,6 @@
           "unlockedBy": [
             "SCHENGEN",
             "US",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CV",
-          "name": "Cape Verde Islands",
-          "slug": "cape-verde-islands",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "TD",
-          "name": "Chad",
-          "slug": "chad",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CL",
-          "name": "Chile",
-          "slug": "chile",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
             "CA"
           ],
           "price": "Free"
@@ -7402,17 +6957,6 @@
           "price": "Free"
         },
         {
-          "code": "KM",
-          "name": "Comoro Islands",
-          "slug": "comoro-islands",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "CG",
           "name": "Congo (Rep.)",
           "slug": "congo-rep",
@@ -7438,20 +6982,6 @@
           "price": "Free"
         },
         {
-          "code": "CI",
-          "name": "Cote d'Ivoire",
-          "slug": "cote-d-ivoire",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "HR",
           "name": "Croatia",
           "slug": "croatia",
@@ -7459,20 +6989,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CU",
-          "name": "Cuba",
-          "slug": "cuba",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -7512,36 +7028,10 @@
           "price": "Free"
         },
         {
-          "code": "DJ",
-          "name": "Djibouti",
-          "slug": "djibouti",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "AE"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "DO",
           "name": "Dominican Republic",
           "slug": "dominican-republic",
           "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "EC",
-          "name": "Ecuador",
-          "slug": "ecuador",
-          "region": "AMERICAS",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -7559,31 +7049,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SV",
-          "name": "El Salvador",
-          "slug": "el-salvador",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GQ",
-          "name": "Equatorial Guinea",
-          "slug": "equatorial-guinea",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -7610,17 +7075,6 @@
           "price": "Free"
         },
         {
-          "code": "ET",
-          "name": "Ethiopia",
-          "slug": "ethiopia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "FI",
           "name": "Finland",
           "slug": "finland",
@@ -7642,32 +7096,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GA",
-          "name": "Gabon",
-          "slug": "gabon",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GE",
-          "name": "Georgia",
-          "slug": "georgia",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -7730,17 +7158,6 @@
           "price": "Free"
         },
         {
-          "code": "GN",
-          "name": "Guinea",
-          "slug": "guinea",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "GW",
           "name": "Guinea-Bissau",
           "slug": "guinea-bissau",
@@ -7762,17 +7179,6 @@
             "SCHENGEN",
             "US",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "HK",
-          "name": "Hong Kong (SAR China)",
-          "slug": "hong-kong-sar-china",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
@@ -7866,35 +7272,6 @@
           "price": "Free"
         },
         {
-          "code": "JO",
-          "name": "Jordan",
-          "slug": "jordan",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KE",
-          "name": "Kenya",
-          "slug": "kenya",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "KW",
           "name": "Kuwait",
           "slug": "kuwait",
@@ -7902,19 +7279,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "AE"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KG",
-          "name": "Kyrgyzstan",
-          "slug": "kyrgyzstan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
           ],
           "price": "Free"
         },
@@ -7951,17 +7315,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LR",
-          "name": "Liberia",
-          "slug": "liberia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
           ],
           "price": "Free"
         },
@@ -8015,45 +7368,6 @@
           "price": "Free"
         },
         {
-          "code": "MG",
-          "name": "Madagascar",
-          "slug": "madagascar",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MW",
-          "name": "Malawi",
-          "slug": "malawi",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MV",
-          "name": "Maldives",
-          "slug": "maldives",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "MT",
           "name": "Malta",
           "slug": "malta",
@@ -8069,20 +7383,6 @@
           "name": "Marshall Islands",
           "slug": "marshall-islands",
           "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MR",
-          "name": "Mauritania",
-          "slug": "mauritania",
-          "region": "AFRICA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -8114,17 +7414,6 @@
             "US",
             "UK",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MD",
-          "name": "Moldova",
-          "slug": "moldova",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -8243,17 +7532,6 @@
           "price": "Free"
         },
         {
-          "code": "NG",
-          "name": "Nigeria",
-          "slug": "nigeria",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "MK",
           "name": "North Macedonia",
           "slug": "north-macedonia",
@@ -8320,20 +7598,6 @@
           "price": "Free"
         },
         {
-          "code": "PW",
-          "name": "Palau Islands",
-          "slug": "palau-islands",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "PS",
           "name": "Palestinian Territory",
           "slug": "palestinian-territory",
@@ -8354,17 +7618,6 @@
             "SCHENGEN",
             "US",
             "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "PG",
-          "name": "Papua New Guinea",
-          "slug": "papua-new-guinea",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
             "CA"
           ],
           "price": "Free"
@@ -8456,33 +7709,6 @@
           "price": "Free"
         },
         {
-          "code": "RW",
-          "name": "Rwanda",
-          "slug": "rwanda",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "WS",
-          "name": "Samoa",
-          "slug": "samoa",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "SM",
           "name": "San Marino",
           "slug": "san-marino",
@@ -8494,63 +7720,10 @@
           "price": "Free"
         },
         {
-          "code": "ST",
-          "name": "Sao Tome and Principe",
-          "slug": "sao-tome-and-principe",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "SA",
           "name": "Saudi Arabia",
           "slug": "saudi-arabia",
           "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "RS",
-          "name": "Serbia",
-          "slug": "serbia",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SC",
-          "name": "Seychelles",
-          "slug": "seychelles",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SG",
-          "name": "Singapore",
-          "slug": "singapore",
-          "region": "ASIA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -8596,17 +7769,6 @@
           "price": "Free"
         },
         {
-          "code": "ZA",
-          "name": "South Africa",
-          "slug": "south-africa",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "KR",
           "name": "South Korea",
           "slug": "south-korea",
@@ -8617,17 +7779,6 @@
             "US",
             "UK",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SS",
-          "name": "South Sudan",
-          "slug": "south-sudan",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
@@ -8643,61 +7794,10 @@
           "price": "Free"
         },
         {
-          "code": "LK",
-          "name": "Sri Lanka",
-          "slug": "sri-lanka",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KN",
-          "name": "St. Kitts and Nevis",
-          "slug": "st-kitts-and-nevis",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "LC",
           "name": "St. Lucia",
           "slug": "st-lucia",
           "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "VC",
-          "name": "St. Vincent and the Grenadines",
-          "slug": "st-vincent-and-the-grenadines",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SR",
-          "name": "Suriname",
-          "slug": "suriname",
-          "region": "AMERICAS",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -8753,44 +7853,6 @@
           "price": "Free"
         },
         {
-          "code": "TJ",
-          "name": "Tajikistan",
-          "slug": "tajikistan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "TZ",
-          "name": "Tanzania",
-          "slug": "tanzania",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "TR",
-          "name": "Türkiye",
-          "slug": "t-rkiye",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
-          ],
-          "price": "80.5 USD"
-        },
-        {
           "code": "TM",
           "name": "Turkmenistan",
           "slug": "turkmenistan",
@@ -8815,31 +7877,6 @@
           "price": "Free"
         },
         {
-          "code": "TV",
-          "name": "Tuvalu",
-          "slug": "tuvalu",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "UG",
-          "name": "Uganda",
-          "slug": "uganda",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "UA",
           "name": "Ukraine",
           "slug": "ukraine",
@@ -8849,19 +7886,6 @@
             "SCHENGEN",
             "US",
             "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AE",
-          "name": "United Arab Emirates",
-          "slug": "united-arab-emirates",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "AE",
             "CA"
           ],
           "price": "Free"
@@ -8933,42 +7957,6 @@
           "price": "Free"
         },
         {
-          "code": "VN",
-          "name": "Vietnam",
-          "slug": "vietnam",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ZM",
-          "name": "Zambia",
-          "slug": "zambia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ZW",
-          "name": "Zimbabwe",
-          "slug": "zimbabwe",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "CD",
           "name": "Congo (Dem. Rep.)",
           "slug": "congo-dem-rep",
@@ -8976,19 +7964,6 @@
           "access": "voa",
           "unlockedBy": [
             "UK"
-          ]
-        },
-        {
-          "code": "QA",
-          "name": "Qatar",
-          "slug": "qatar",
-          "region": "MIDDLE EAST",
-          "access": "eta",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ]
         }
       ]
@@ -9153,10 +8128,91 @@
           "price": "Free"
         },
         {
+          "code": "BH",
+          "name": "Bahrain",
+          "slug": "bahrain",
+          "region": "MIDDLE EAST",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "14 or 30 days"
+        },
+        {
+          "code": "BI",
+          "name": "Burundi",
+          "slug": "burundi",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "KM",
+          "name": "Comoro Islands",
+          "slug": "comoro-islands",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "45 days"
+        },
+        {
+          "code": "LR",
+          "name": "Liberia",
+          "slug": "liberia",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
+          "code": "MG",
+          "name": "Madagascar",
+          "slug": "madagascar",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "15 days"
+        },
+        {
+          "code": "MV",
+          "name": "Maldives",
+          "slug": "maldives",
+          "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "RW",
+          "name": "Rwanda",
+          "slug": "rwanda",
+          "region": "AFRICA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "WS",
+          "name": "Samoa",
+          "slug": "samoa",
+          "region": "OCEANIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "90 days"
+        },
+        {
           "code": "TL",
           "name": "Timor-Leste",
           "slug": "timor-leste",
           "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "TV",
+          "name": "Tuvalu",
+          "slug": "tuvalu",
+          "region": "OCEANIA",
           "access": "voa",
           "unlockedBy": [],
           "stay": "30 days"
@@ -9169,6 +8225,14 @@
           "access": "voa",
           "unlockedBy": [],
           "stay": "120 days"
+        },
+        {
+          "code": "AL",
+          "name": "Albania",
+          "slug": "albania",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
         },
         {
           "code": "DZ",
@@ -9188,10 +8252,203 @@
           "unlockedBy": []
         },
         {
+          "code": "AI",
+          "name": "Anguilla",
+          "slug": "anguilla",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "220 USD"
+        },
+        {
+          "code": "AU",
+          "name": "Australia",
+          "slug": "australia",
+          "region": "OCEANIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "BJ",
+          "name": "Benin",
+          "slug": "benin",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "76.79 USD"
+        },
+        {
+          "code": "BF",
+          "name": "Burkina Faso",
+          "slug": "burkina-faso",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "90 days",
+          "price": "33000 XOF"
+        },
+        {
+          "code": "KH",
+          "name": "Cambodia",
+          "slug": "cambodia",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "CM",
+          "name": "Cameroon",
+          "slug": "cameroon",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "TD",
+          "name": "Chad",
+          "slug": "chad",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "CL",
+          "name": "Chile",
+          "slug": "chile",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "CI",
+          "name": "Cote d'Ivoire",
+          "slug": "cote-d-ivoire",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "150 USD"
+        },
+        {
+          "code": "CU",
+          "name": "Cuba",
+          "slug": "cuba",
+          "region": "CARIBBEAN",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "DJ",
+          "name": "Djibouti",
+          "slug": "djibouti",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "86.65 USD"
+        },
+        {
+          "code": "EC",
+          "name": "Ecuador",
+          "slug": "ecuador",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SV",
+          "name": "El Salvador",
+          "slug": "el-salvador",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GQ",
+          "name": "Equatorial Guinea",
+          "slug": "equatorial-guinea",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ET",
+          "name": "Ethiopia",
+          "slug": "ethiopia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "142 USD"
+        },
+        {
+          "code": "FI",
+          "name": "Finland",
+          "slug": "finland",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GA",
+          "name": "Gabon",
+          "slug": "gabon",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "GE",
+          "name": "Georgia",
+          "slug": "georgia",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "30 calendar days"
+        },
+        {
+          "code": "GN",
+          "name": "Guinea",
+          "slug": "guinea",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "HK",
+          "name": "Hong Kong (SAR China)",
+          "slug": "hong-kong-sar-china",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "JO",
+          "name": "Jordan",
+          "slug": "jordan",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "KZ",
           "name": "Kazakhstan",
           "slug": "kazakhstan",
           "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "KG",
+          "name": "Kyrgyzstan",
+          "slug": "kyrgyzstan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MW",
+          "name": "Malawi",
+          "slug": "malawi",
+          "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": []
         },
@@ -9205,6 +8462,22 @@
           "stay": "30 days"
         },
         {
+          "code": "MR",
+          "name": "Mauritania",
+          "slug": "mauritania",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "MD",
+          "name": "Moldova",
+          "slug": "moldova",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "MM",
           "name": "Myanmar",
           "slug": "myanmar",
@@ -9212,6 +8485,38 @@
           "access": "evisa",
           "unlockedBy": [],
           "stay": "28 days"
+        },
+        {
+          "code": "NG",
+          "name": "Nigeria",
+          "slug": "nigeria",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "PK",
+          "name": "Pakistan",
+          "slug": "pakistan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "PG",
+          "name": "Papua New Guinea",
+          "slug": "papua-new-guinea",
+          "region": "OCEANIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ST",
+          "name": "Sao Tome and Principe",
+          "slug": "sao-tome-and-principe",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
         },
         {
           "code": "SN",
@@ -9223,6 +8528,14 @@
           "price": "50 EUR"
         },
         {
+          "code": "RS",
+          "name": "Serbia",
+          "slug": "serbia",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "SL",
           "name": "Sierra Leone",
           "slug": "sierra-leone",
@@ -9231,9 +8544,50 @@
           "unlockedBy": []
         },
         {
+          "code": "SG",
+          "name": "Singapore",
+          "slug": "singapore",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
           "code": "SO",
           "name": "Somalia",
           "slug": "somalia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SS",
+          "name": "South Sudan",
+          "slug": "south-sudan",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "SR",
+          "name": "Suriname",
+          "slug": "suriname",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "TJ",
+          "name": "Tajikistan",
+          "slug": "tajikistan",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "90 USD"
+        },
+        {
+          "code": "TZ",
+          "name": "Tanzania",
+          "slug": "tanzania",
           "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": []
@@ -9264,6 +8618,103 @@
           "unlockedBy": []
         },
         {
+          "code": "TR",
+          "name": "Türkiye",
+          "slug": "t-rkiye",
+          "region": "EUROPE",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "1 month"
+        },
+        {
+          "code": "UG",
+          "name": "Uganda",
+          "slug": "uganda",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "price": "111.5 USD"
+        },
+        {
+          "code": "AE",
+          "name": "United Arab Emirates",
+          "slug": "united-arab-emirates",
+          "region": "MIDDLE EAST",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "VN",
+          "name": "Vietnam",
+          "slug": "vietnam",
+          "region": "ASIA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "30 days"
+        },
+        {
+          "code": "ZM",
+          "name": "Zambia",
+          "slug": "zambia",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
+        },
+        {
+          "code": "ZW",
+          "name": "Zimbabwe",
+          "slug": "zimbabwe",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": [],
+          "stay": "1 month"
+        },
+        {
+          "code": "CV",
+          "name": "Cape Verde Islands",
+          "slug": "cape-verde-islands",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "stay": "30 days",
+          "price": "30.83 EUR"
+        },
+        {
+          "code": "KE",
+          "name": "Kenya",
+          "slug": "kenya",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "stay": "90 days",
+          "price": "74.09 USD"
+        },
+        {
+          "code": "SC",
+          "name": "Seychelles",
+          "slug": "seychelles",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": [],
+          "price": "10.90 EUR"
+        },
+        {
+          "code": "LK",
+          "name": "Sri Lanka",
+          "slug": "sri-lanka",
+          "region": "ASIA",
+          "access": "eta",
+          "unlockedBy": []
+        },
+        {
+          "code": "KN",
+          "name": "St. Kitts and Nevis",
+          "slug": "st-kitts-and-nevis",
+          "region": "CARIBBEAN",
+          "access": "eta",
+          "unlockedBy": []
+        },
+        {
           "code": "AF",
           "name": "Afghanistan",
           "slug": "afghanistan",
@@ -9271,20 +8722,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AL",
-          "name": "Albania",
-          "slug": "albania",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK"
           ],
           "price": "Free"
         },
@@ -9310,19 +8747,6 @@
             "SCHENGEN"
           ],
           "price": "Free"
-        },
-        {
-          "code": "AI",
-          "name": "Anguilla",
-          "slug": "anguilla",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "220 USD"
         },
         {
           "code": "AR",
@@ -9354,20 +8778,6 @@
           "price": "Free"
         },
         {
-          "code": "AU",
-          "name": "Australia",
-          "slug": "australia",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "AT",
           "name": "Austria",
           "slug": "austria",
@@ -9375,21 +8785,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BH",
-          "name": "Bahrain",
-          "slug": "bahrain",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -9425,17 +8820,6 @@
             "SCHENGEN",
             "US",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BJ",
-          "name": "Benin",
-          "slug": "benin",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -9528,55 +8912,6 @@
           "price": "Free"
         },
         {
-          "code": "BF",
-          "name": "Burkina Faso",
-          "slug": "burkina-faso",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "BI",
-          "name": "Burundi",
-          "slug": "burundi",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "AE",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KH",
-          "name": "Cambodia",
-          "slug": "cambodia",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CM",
-          "name": "Cameroon",
-          "slug": "cameroon",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "CA",
           "name": "Canada",
           "slug": "canada",
@@ -9585,47 +8920,6 @@
           "unlockedBy": [
             "SCHENGEN",
             "US",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CV",
-          "name": "Cape Verde Islands",
-          "slug": "cape-verde-islands",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "TD",
-          "name": "Chad",
-          "slug": "chad",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CL",
-          "name": "Chile",
-          "slug": "chile",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
             "CA"
           ],
           "price": "Free"
@@ -9659,17 +8953,6 @@
           "price": "Free"
         },
         {
-          "code": "KM",
-          "name": "Comoro Islands",
-          "slug": "comoro-islands",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "CG",
           "name": "Congo (Rep.)",
           "slug": "congo-rep",
@@ -9695,20 +8978,6 @@
           "price": "Free"
         },
         {
-          "code": "CI",
-          "name": "Cote d'Ivoire",
-          "slug": "cote-d-ivoire",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "HR",
           "name": "Croatia",
           "slug": "croatia",
@@ -9716,20 +8985,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "CU",
-          "name": "Cuba",
-          "slug": "cuba",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -9769,36 +9024,10 @@
           "price": "Free"
         },
         {
-          "code": "DJ",
-          "name": "Djibouti",
-          "slug": "djibouti",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "AE"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "DO",
           "name": "Dominican Republic",
           "slug": "dominican-republic",
           "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "EC",
-          "name": "Ecuador",
-          "slug": "ecuador",
-          "region": "AMERICAS",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -9816,31 +9045,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SV",
-          "name": "El Salvador",
-          "slug": "el-salvador",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GQ",
-          "name": "Equatorial Guinea",
-          "slug": "equatorial-guinea",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -9867,31 +9071,6 @@
           "price": "Free"
         },
         {
-          "code": "ET",
-          "name": "Ethiopia",
-          "slug": "ethiopia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "FI",
-          "name": "Finland",
-          "slug": "finland",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "FR",
           "name": "France",
           "slug": "france",
@@ -9899,32 +9078,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GA",
-          "name": "Gabon",
-          "slug": "gabon",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "GE",
-          "name": "Georgia",
-          "slug": "georgia",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -9987,17 +9140,6 @@
           "price": "Free"
         },
         {
-          "code": "GN",
-          "name": "Guinea",
-          "slug": "guinea",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "GW",
           "name": "Guinea-Bissau",
           "slug": "guinea-bissau",
@@ -10019,17 +9161,6 @@
             "SCHENGEN",
             "US",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "HK",
-          "name": "Hong Kong (SAR China)",
-          "slug": "hong-kong-sar-china",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
@@ -10123,35 +9254,6 @@
           "price": "Free"
         },
         {
-          "code": "JO",
-          "name": "Jordan",
-          "slug": "jordan",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KE",
-          "name": "Kenya",
-          "slug": "kenya",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "KW",
           "name": "Kuwait",
           "slug": "kuwait",
@@ -10159,19 +9261,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "AE"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KG",
-          "name": "Kyrgyzstan",
-          "slug": "kyrgyzstan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
           ],
           "price": "Free"
         },
@@ -10208,17 +9297,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LR",
-          "name": "Liberia",
-          "slug": "liberia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
           ],
           "price": "Free"
         },
@@ -10272,45 +9350,6 @@
           "price": "Free"
         },
         {
-          "code": "MG",
-          "name": "Madagascar",
-          "slug": "madagascar",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MW",
-          "name": "Malawi",
-          "slug": "malawi",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MV",
-          "name": "Maldives",
-          "slug": "maldives",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "MT",
           "name": "Malta",
           "slug": "malta",
@@ -10326,20 +9365,6 @@
           "name": "Marshall Islands",
           "slug": "marshall-islands",
           "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MR",
-          "name": "Mauritania",
-          "slug": "mauritania",
-          "region": "AFRICA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -10371,17 +9396,6 @@
             "US",
             "UK",
             "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "MD",
-          "name": "Moldova",
-          "slug": "moldova",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
           ],
           "price": "Free"
         },
@@ -10475,17 +9489,6 @@
           "price": "Free"
         },
         {
-          "code": "NG",
-          "name": "Nigeria",
-          "slug": "nigeria",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "MK",
           "name": "North Macedonia",
           "slug": "north-macedonia",
@@ -10538,20 +9541,6 @@
           "price": "Free"
         },
         {
-          "code": "PK",
-          "name": "Pakistan",
-          "slug": "pakistan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "PW",
           "name": "Palau Islands",
           "slug": "palau-islands",
@@ -10586,17 +9575,6 @@
             "SCHENGEN",
             "US",
             "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "PG",
-          "name": "Papua New Guinea",
-          "slug": "papua-new-guinea",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
             "CA"
           ],
           "price": "Free"
@@ -10688,33 +9666,6 @@
           "price": "Free"
         },
         {
-          "code": "RW",
-          "name": "Rwanda",
-          "slug": "rwanda",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "WS",
-          "name": "Samoa",
-          "slug": "samoa",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "SM",
           "name": "San Marino",
           "slug": "san-marino",
@@ -10726,63 +9677,10 @@
           "price": "Free"
         },
         {
-          "code": "ST",
-          "name": "Sao Tome and Principe",
-          "slug": "sao-tome-and-principe",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "SA",
           "name": "Saudi Arabia",
           "slug": "saudi-arabia",
           "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "RS",
-          "name": "Serbia",
-          "slug": "serbia",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SC",
-          "name": "Seychelles",
-          "slug": "seychelles",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SG",
-          "name": "Singapore",
-          "slug": "singapore",
-          "region": "ASIA",
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN",
@@ -10853,17 +9751,6 @@
           "price": "Free"
         },
         {
-          "code": "SS",
-          "name": "South Sudan",
-          "slug": "south-sudan",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "ES",
           "name": "Spain",
           "slug": "spain",
@@ -10871,32 +9758,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "LK",
-          "name": "Sri Lanka",
-          "slug": "sri-lanka",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "KN",
-          "name": "St. Kitts and Nevis",
-          "slug": "st-kitts-and-nevis",
-          "region": "CARIBBEAN",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -10922,20 +9783,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "US"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "SR",
-          "name": "Suriname",
-          "slug": "suriname",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -10985,31 +9832,6 @@
           "price": "Free"
         },
         {
-          "code": "TJ",
-          "name": "Tajikistan",
-          "slug": "tajikistan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "TZ",
-          "name": "Tanzania",
-          "slug": "tanzania",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "GM",
           "name": "The Gambia",
           "slug": "the-gambia",
@@ -11022,19 +9844,6 @@
             "CA"
           ],
           "price": "Free"
-        },
-        {
-          "code": "TR",
-          "name": "Türkiye",
-          "slug": "t-rkiye",
-          "region": "EUROPE",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK"
-          ],
-          "price": "80.5 USD"
         },
         {
           "code": "TM",
@@ -11061,31 +9870,6 @@
           "price": "Free"
         },
         {
-          "code": "TV",
-          "name": "Tuvalu",
-          "slug": "tuvalu",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "UG",
-          "name": "Uganda",
-          "slug": "uganda",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "UA",
           "name": "Ukraine",
           "slug": "ukraine",
@@ -11095,19 +9879,6 @@
             "SCHENGEN",
             "US",
             "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "AE",
-          "name": "United Arab Emirates",
-          "slug": "united-arab-emirates",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "US",
-            "AE",
             "CA"
           ],
           "price": "Free"
@@ -11175,42 +9946,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "VN",
-          "name": "Vietnam",
-          "slug": "vietnam",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ZM",
-          "name": "Zambia",
-          "slug": "zambia",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "ZW",
-          "name": "Zimbabwe",
-          "slug": "zimbabwe",
-          "region": "AFRICA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "UK"
           ],
           "price": "Free"
         },
