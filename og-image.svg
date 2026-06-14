@@ -1,0 +1,42 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- background -->
+  <rect width="1200" height="630" fill="#FAFAF8"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <defs>
+    <radialGradient id="glow" cx="88%" cy="18%" r="70%">
+      <stop offset="0%" stop-color="#FF4C00" stop-opacity="0.10"/>
+      <stop offset="55%" stop-color="#FF4C00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- faint logo watermark, bottom-right -->
+  <g transform="translate(735,250) scale(0.95)" opacity="0.07">
+    <path d="M510.519 63.9622L441.005 235.409C434.859 250.6 414.116 252.226 405.692 238.18L341.954 132.056C336.92 123.687 338.669 112.894 346.06 106.551L464.98 4.77018C475.338 -4.10463 491.259 -0.0803207 496.266 12.6322L510.598 49.1176C512.479 53.8881 512.453 59.2184 510.519 63.9622Z" fill="#FF4C00"/>
+    <path d="M427.333 344.545C425.055 351.794 419.73 358.057 412.074 361.176L127.821 477.081C121.649 479.613 114.734 479.666 108.509 477.268L16.9808 442.142C-1.74861 434.946 -5.98724 410.187 9.27182 397.101L149.226 277.225C153.226 273.787 156.087 269.283 157.491 264.299L427.333 344.545Z" fill="#E04300"/>
+    <path d="M427.331 344.545L157.489 264.299C158.416 261.101 158.734 257.716 158.39 254.305L139.872 71.0252C138.336 55.5675 150.204 42.0821 165.622 41.7623L244.725 40.1632C254.289 39.9767 263.216 45.0137 268.064 53.3288L413.449 303.369L424.947 323.144C428.894 329.94 429.503 337.696 427.331 344.545Z" fill="#FF4C00"/>
+  </g>
+
+  <!-- brand lockup -->
+  <g transform="translate(80,74)">
+    <g transform="scale(0.1)">
+      <path d="M510.519 63.9622L441.005 235.409C434.859 250.6 414.116 252.226 405.692 238.18L341.954 132.056C336.92 123.687 338.669 112.894 346.06 106.551L464.98 4.77018C475.338 -4.10463 491.259 -0.0803207 496.266 12.6322L510.598 49.1176C512.479 53.8881 512.453 59.2184 510.519 63.9622Z" fill="#FF4C00"/>
+      <path d="M427.333 344.545C425.055 351.794 419.73 358.057 412.074 361.176L127.821 477.081C121.649 479.613 114.734 479.666 108.509 477.268L16.9808 442.142C-1.74861 434.946 -5.98724 410.187 9.27182 397.101L149.226 277.225C153.226 273.787 156.087 269.283 157.491 264.299L427.333 344.545Z" fill="#E04300"/>
+      <path d="M427.331 344.545L157.489 264.299C158.416 261.101 158.734 257.716 158.39 254.305L139.872 71.0252C138.336 55.5675 150.204 42.0821 165.622 41.7623L244.725 40.1632C254.289 39.9767 263.216 45.0137 268.064 53.3288L413.449 303.369L424.947 323.144C428.894 329.94 429.503 337.696 427.331 344.545Z" fill="#FF4C00"/>
+    </g>
+    <text x="68" y="40" font-family="'Plus Jakarta Sans','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="38" fill="#0A0A0A" letter-spacing="-0.5">Layovered</text>
+  </g>
+
+  <!-- headline -->
+  <text font-family="'Plus Jakarta Sans','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="82" letter-spacing="-2" fill="#0A0A0A">
+    <tspan x="80" y="290">Turn your <tspan fill="#FF4C00">layover</tspan></tspan>
+    <tspan x="80" y="384">into a <tspan fill="#FF4C00">vacation.</tspan></tspan>
+  </text>
+
+  <!-- subline -->
+  <text x="80" y="452" font-family="'Plus Jakarta Sans','Helvetica Neue',Arial,sans-serif" font-weight="500" font-size="30" fill="#5C5A55">Find cheaper flights routed through countries</text>
+  <text x="80" y="494" font-family="'Plus Jakarta Sans','Helvetica Neue',Arial,sans-serif" font-weight="500" font-size="30" fill="#5C5A55">your passport enters visa-free.</text>
+
+  <!-- footer url -->
+  <text x="80" y="566" font-family="'Plus Jakarta Sans','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="28" fill="#FF4C00">layovered.com</text>
+</svg>
