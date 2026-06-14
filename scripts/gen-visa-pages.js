@@ -326,8 +326,11 @@ function pageShell({ title, description, canonical, breadcrumbItems, faqs, body,
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -343,7 +346,7 @@ ${CSS}
 <nav id="navbar">
   <div class="container flex-between">
     <a href="/" class="nav-logo">
-      <img src="/icon.png" alt="Layovered" width="39" height="36">
+      <img src="/logo.svg" alt="Layovered" width="39" height="36">
       Layovered
     </a>
     <div class="nav-links">
