@@ -16,16 +16,16 @@
 <link rel="canonical" href="https://layovered.com/can-i-enter/bangladesh/sri-lanka/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Layovered">
-<meta property="og:title" content="Can Bangladeshi Passport Holders Enter Sri Lanka? Visa, Cost &amp; Duration (2026)">
-<meta property="og:description" content="Sri Lanka entry rules for Bangladeshi passport holders: visa type, allowed stay and cost. See documents and apply links in the Layovered app.">
+<meta property="og:title" content="Can Bangladeshi passport holders enter Sri Lanka?">
+<meta property="og:description" content="Sri Lanka: visa type, allowed stay and cost for Bangladeshi passport holders. Check free →">
 <meta property="og:url" content="https://layovered.com/can-i-enter/bangladesh/sri-lanka/">
 <meta property="og:image" content="https://layovered.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Layovered — turn your layover into a vacation">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Can Bangladeshi Passport Holders Enter Sri Lanka? Visa, Cost &amp; Duration (2026)">
-<meta name="twitter:description" content="Sri Lanka entry rules for Bangladeshi passport holders: visa type, allowed stay and cost. See documents and apply links in the Layovered app.">
+<meta name="twitter:title" content="Can Bangladeshi passport holders enter Sri Lanka?">
+<meta name="twitter:description" content="Sri Lanka: visa type, allowed stay and cost for Bangladeshi passport holders. Check free →">
 <meta name="twitter:image" content="https://layovered.com/og-image.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -247,6 +247,12 @@ var APP_DEEPLINK_BASE="/download.html";
 var CAPTURE_ENDPOINT="";
 var NAV={"passport":"bangladesh","hub":"/visa-free/bangladesh/","hubs":{"india":"/visa-free/india/","philippines":"/visa-free/philippines/","nigeria":"/visa-free/nigeria/","pakistan":"/visa-free/pakistan/","bangladesh":"/visa-free/bangladesh/"},"visas":{},"active":null};
 (function(){
+  function track(name,params){try{if(window.gtag)gtag('event',name,params||{});}catch(e){}}
+  // app conversion: any "Open in app" or "Download app" CTA
+  document.addEventListener('click',function(e){
+    var a=e.target.closest?e.target.closest('.open-app,.nav-cta'):null;
+    if(a)track('app_cta_clicked',{passport:NAV.passport||null,visa:NAV.active||null,href:a.getAttribute('href')});
+  });
   // nav scroll + hamburger — identical behaviour to the main site
   var navbar=document.getElementById('navbar');
   if(navbar)window.addEventListener('scroll',function(){navbar.classList.toggle('scrolled',window.scrollY>40);});
@@ -254,11 +260,12 @@ var NAV={"passport":"bangladesh","hub":"/visa-free/bangladesh/","hubs":{"india":
   if(hb&&mm)hb.addEventListener('click',function(){hb.classList.toggle('open');mm.classList.toggle('open');});
 
   var sel=document.getElementById('passport');
-  if(sel)sel.addEventListener('change',function(){var u=NAV.hubs[this.value];window.location=u||NAV.hub;});
+  if(sel)sel.addEventListener('change',function(){track('passport_changed',{passport:this.value});var u=NAV.hubs[this.value];window.location=u||NAV.hub;});
   // Single-select: clicking a visa navigates straight to its pre-built page
   // (or the hub if that page wasn't built). Clicking the active visa clears
   // the selection and returns to the hub. Picking another swaps in one click.
   function go(slug){
+    track('visa_toggled',{passport:NAV.passport||null,visa:slug||null});
     if(!slug||slug===NAV.active)window.location=NAV.hub;
     else window.location=NAV.visas[slug]||NAV.hub;
   }

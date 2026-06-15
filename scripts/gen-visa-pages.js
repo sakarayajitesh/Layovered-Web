@@ -308,7 +308,7 @@ a.cc-name:hover{color:var(--orange)}
 footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.85rem;text-align:center}
 `.trim();
 
-function pageShell({ title, description, canonical, breadcrumbItems, faqs, body, nav }) {
+function pageShell({ title, description, ogTitle, ogDescription, canonical, breadcrumbItems, faqs, body, nav }) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -327,16 +327,16 @@ function pageShell({ title, description, canonical, breadcrumbItems, faqs, body,
 <link rel="canonical" href="${esc(canonical)}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Layovered">
-<meta property="og:title" content="${esc(title)}">
-<meta property="og:description" content="${esc(description)}">
+<meta property="og:title" content="${esc(ogTitle || title)}">
+<meta property="og:description" content="${esc(ogDescription || description)}">
 <meta property="og:url" content="${esc(canonical)}">
 <meta property="og:image" content="${SITE_BASE}/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Layovered — turn your layover into a vacation">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${esc(title)}">
-<meta name="twitter:description" content="${esc(description)}">
+<meta name="twitter:title" content="${esc(ogTitle || title)}">
+<meta name="twitter:description" content="${esc(ogDescription || description)}">
 <meta name="twitter:image" content="${SITE_BASE}/og-image.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -400,6 +400,12 @@ var APP_DEEPLINK_BASE=${JSON.stringify(APP_DEEPLINK_BASE)};
 var CAPTURE_ENDPOINT=${JSON.stringify(CAPTURE_ENDPOINT)};
 var NAV=${JSON.stringify(nav)};
 (function(){
+  function track(name,params){try{if(window.gtag)gtag('event',name,params||{});}catch(e){}}
+  // app conversion: any "Open in app" or "Download app" CTA
+  document.addEventListener('click',function(e){
+    var a=e.target.closest?e.target.closest('.open-app,.nav-cta'):null;
+    if(a)track('app_cta_clicked',{passport:NAV.passport||null,visa:NAV.active||null,href:a.getAttribute('href')});
+  });
   // nav scroll + hamburger — identical behaviour to the main site
   var navbar=document.getElementById('navbar');
   if(navbar)window.addEventListener('scroll',function(){navbar.classList.toggle('scrolled',window.scrollY>40);});
@@ -407,11 +413,12 @@ var NAV=${JSON.stringify(nav)};
   if(hb&&mm)hb.addEventListener('click',function(){hb.classList.toggle('open');mm.classList.toggle('open');});
 
   var sel=document.getElementById('passport');
-  if(sel)sel.addEventListener('change',function(){var u=NAV.hubs[this.value];window.location=u||NAV.hub;});
+  if(sel)sel.addEventListener('change',function(){track('passport_changed',{passport:this.value});var u=NAV.hubs[this.value];window.location=u||NAV.hub;});
   // Single-select: clicking a visa navigates straight to its pre-built page
   // (or the hub if that page wasn't built). Clicking the active visa clears
   // the selection and returns to the hub. Picking another swaps in one click.
   function go(slug){
+    track('visa_toggled',{passport:NAV.passport||null,visa:slug||null});
     if(!slug||slug===NAV.active)window.location=NAV.hub;
     else window.location=NAV.visas[slug]||NAV.hub;
   }
@@ -622,6 +629,8 @@ ${faqBlock(faqs)}
   return pageShell({
     title: `Visa-Free Countries for ${nat} Passport Holders (${YEAR})`,
     description: `See every country ${nat} passport holders can enter visa-free or visa-on-arrival, with stay duration and cost. Add visas you hold to unlock more. Free.`,
+    ogTitle: `${nat} passport: where can you go visa-free?`,
+    ogDescription: `Every country ${nat} passport holders enter visa-free, with stay and cost. Check yours free →`,
     canonical,
     breadcrumbItems: [
       ['Home', `${SITE_BASE}/`],
@@ -693,6 +702,8 @@ ${faqBlock(faqs)}
   return pageShell({
     title: `Where Can ${nat} Passport Holders Go With a ${short} Visa? (${YEAR})`,
     description: `Holding a ${short} visa on a${/^[AEIOU]/i.test(nat) ? 'n' : ''} ${nat} passport unlocks extra visa-free and visa-on-arrival countries. See your full list with duration and cost — free.`,
+    ogTitle: `${nat} passport + ${short} visa: where to?`,
+    ogDescription: `Your ${short} visa unlocks extra visa-free countries. See the full list free →`,
     canonical,
     breadcrumbItems: [
       ['Home', `${SITE_BASE}/`],
@@ -787,6 +798,8 @@ ${faqBlock(faqs)}
   return pageShell({
     title: `Can ${nat} Passport Holders Enter ${c.name}? Visa, Cost & Duration (${YEAR})`,
     description: `${c.name} entry rules for ${nat} passport holders: visa type, allowed stay and cost. See documents and apply links in the Layovered app.`,
+    ogTitle: `Can ${nat} passport holders enter ${c.name}?`,
+    ogDescription: `${c.name}: visa type, allowed stay and cost for ${nat} passport holders. Check free →`,
     canonical,
     breadcrumbItems: [
       ['Home', `${SITE_BASE}/`],
