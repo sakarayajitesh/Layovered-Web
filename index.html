@@ -178,10 +178,22 @@
             transition-delay: 0.35s;
         }
 
+        /* ──── ANNOUNCEMENT BAR ──── */
+        .announce {
+            position: fixed; top: 0; left: 0; width: 100%; height: 40px; z-index: 1000;
+            background: var(--orange); display: flex; align-items: center; justify-content: center;
+            padding: 0 12px; white-space: nowrap; overflow: hidden;
+        }
+        .announce a {
+            color: #fff; font-size: 0.85rem; font-weight: 600; text-decoration: none;
+            text-overflow: ellipsis; overflow: hidden;
+        }
+        .announce a u { text-decoration: underline; font-weight: 700; }
+
         /* ──── NAV ──── */
         nav {
             position: fixed;
-            top: 0;
+            top: 40px;
             left: 0;
             width: 100%;
             z-index: 999;
@@ -299,7 +311,7 @@
             flex-direction: column;
             gap: 12px;
             position: fixed;
-            top: 72px;
+            top: 112px;
             left: 0;
             width: 100%;
             background: var(--white);
@@ -1724,7 +1736,7 @@
             }
 
             .hero {
-                padding: 120px 5vw 60px;
+                padding: 160px 5vw 60px;
             }
 
             .hero h1 {
@@ -1795,6 +1807,8 @@
 </head>
 
 <body>
+
+    <div class="announce"><a href="waitlist.html">Layovered Flights is coming soon | visa-free flight search. <u>Join the waitlist</u></a></div>
 
     <nav id="navbar">
         <div class="container flex-between">

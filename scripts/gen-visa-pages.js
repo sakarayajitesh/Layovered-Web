@@ -535,13 +535,11 @@ function captureBlock(pp) {
     </form>
   </div>` : '';
   // With email capture off, the routing teaser points to the app instead of the (absent) capture form.
-  const routingCta = ENABLE_EMAIL_CAPTURE
-    ? `<a href="#capture">Join the waitlist →</a>`
-    : `<a href="${esc(APP_DEEPLINK_BASE)}">Get it in the app →</a>`;
+  const routingCta = `<a href="/waitlist.html">Join the waitlist →</a>`;
   return `${emailBand}
   <div class="routing">
     <div class="ic"><i class="fa-solid fa-route"></i></div>
-    <div class="rt"><b>Want the cheaper flight, not just the visa?</b><p>Our routing finds flights through these visa-free countries for less. Launching soon.</p></div>
+    <div class="rt"><b>Layovered Flights — cheaper routes through your visa-free countries.</b><p>Visa-free flight search that finds you a cheaper way there. Launching soon.</p></div>
     ${routingCta}
   </div>`;
 }
