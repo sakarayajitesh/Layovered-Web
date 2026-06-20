@@ -30,7 +30,7 @@ const DATA_FILE = path.join(ROOT, 'data', 'visa-data.json');
 // (the live site is layovered.com per CNAME), matching the nav CTA. Swap for
 // the real absolute Branch/Firebase deep link when it's ready. The existing
 // download page harmlessly ignores the ?passport/&country params.
-const APP_DEEPLINK_BASE = '/download.html';
+const APP_DEEPLINK_BASE = 'https://layovered.chottu.link/get-app'; // ChottuLink: opens app (deferred) or store; attributed utm_source=web-checker
 const CAPTURE_ENDPOINT = '';                 // unused while email capture is disabled
 const ENABLE_EMAIL_CAPTURE = false;          // flip to true once an ESP/form endpoint is wired into CAPTURE_ENDPOINT
 
@@ -506,7 +506,7 @@ function countryCard(pp, c, activeVisa, countryPageSlugs) {
       </div>
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="${esc(APP_DEEPLINK_BASE)}?passport=${esc(pp.slug)}&amp;country=${esc(c.slug)}">Open in app</a>
+        <a class="open-app" href="${esc(APP_DEEPLINK_BASE)}">Open in app</a>
       </div>
     </div>`;
 }
@@ -782,7 +782,7 @@ function countryPage(pp, model, c, visasByCode) {
     </div>
     <div class="locked" style="margin-top:14px">
       <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-      <a class="open-app" href="${esc(APP_DEEPLINK_BASE)}?passport=${esc(pp.slug)}&amp;country=${esc(c.slug)}">Open in app</a>
+      <a class="open-app" href="${esc(APP_DEEPLINK_BASE)}">Open in app</a>
     </div>
   </div>
 ${captureBlock(pp)}
