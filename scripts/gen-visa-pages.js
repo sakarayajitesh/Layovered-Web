@@ -625,10 +625,10 @@ ${faqBlock(faqs)}
   </div>`;
 
   return pageShell({
-    title: `Visa-Free Countries for ${nat} Passport Holders (${YEAR})`,
-    description: `See every country ${nat} passport holders can enter visa-free or visa-on-arrival, with stay duration and cost. Add visas you hold to unlock more. Free.`,
-    ogTitle: `${nat} passport: where can you go visa-free?`,
-    ogDescription: `Every country ${nat} passport holders enter visa-free, with stay and cost. Check yours free →`,
+    title: `${total} Visa-Free Countries for ${nat} Passport Holders (${YEAR})`,
+    description: `The full list of all ${total} countries ${nat} passport holders can enter visa-free or visa-on-arrival in ${YEAR} — each with the allowed stay and cost. Free, no signup.`,
+    ogTitle: `${total} visa-free countries on a${/^[AEIOU]/i.test(nat) ? 'n' : ''} ${nat} passport`,
+    ogDescription: `All ${total} countries you can enter visa-free or on arrival — with stay and cost. Check yours free →`,
     canonical,
     breadcrumbItems: [
       ['Home', `${SITE_BASE}/`],
@@ -698,10 +698,10 @@ ${faqBlock(faqs)}
   </div>`;
 
   return pageShell({
-    title: `Where Can ${nat} Passport Holders Go With a ${short} Visa? (${YEAR})`,
-    description: `Holding a ${short} visa on a${/^[AEIOU]/i.test(nat) ? 'n' : ''} ${nat} passport unlocks extra visa-free and visa-on-arrival countries. See your full list with duration and cost — free.`,
-    ogTitle: `${nat} passport + ${short} visa: where to?`,
-    ogDescription: `Your ${short} visa unlocks extra visa-free countries. See the full list free →`,
+    title: `${total} Countries ${nat} Passport Holders Can Visit With a ${short} Visa (${YEAR})`,
+    description: `A ${short} visa unlocks ${unlockCount} extra destination${unlockCount === 1 ? '' : 's'} for ${nat} passport holders — ${total} in total. See the full list with allowed stay and cost, free. (${YEAR})`,
+    ogTitle: `${total} countries on a${/^[AEIOU]/i.test(nat) ? 'n' : ''} ${nat} passport + ${short} visa`,
+    ogDescription: `Your ${short} visa unlocks ${unlockCount} more — see all ${total} with stay & cost, free →`,
     canonical,
     breadcrumbItems: [
       ['Home', `${SITE_BASE}/`],
@@ -794,10 +794,10 @@ ${faqBlock(faqs)}
   </div>`;
 
   return pageShell({
-    title: `Can ${nat} Passport Holders Enter ${c.name}? Visa, Cost & Duration (${YEAR})`,
-    description: `${c.name} entry rules for ${nat} passport holders: visa type, allowed stay and cost. See documents and apply links in the Layovered app.`,
-    ogTitle: `Can ${nat} passport holders enter ${c.name}?`,
-    ogDescription: `${c.name}: visa type, allowed stay and cost for ${nat} passport holders. Check free →`,
+    title: `Can ${nat} Passport Holders Enter ${c.name}? ${a.label} (${YEAR})`,
+    description: `${a.label} for ${nat} passport holders visiting ${c.name} — see the allowed stay, cost, the documents you need and how to apply. Free visa checker. (${YEAR})`,
+    ogTitle: `Can ${nat} passport holders enter ${c.name}? ${a.label}`,
+    ogDescription: `${c.name} for ${nat} passport holders: ${a.label.toLowerCase()}, stay and cost. Check free →`,
     canonical,
     breadcrumbItems: [
       ['Home', `${SITE_BASE}/`],

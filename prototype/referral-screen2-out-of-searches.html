@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referral — Out of searches (mock)</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --ink:#1F271B; --muted:#4F5B62; --orange:#FF4C00; --tint:#FFF4ED; --line:#E5E4E2; }
+  *{box-sizing:border-box;margin:0;padding:0;font-family:'Roboto',sans-serif}
+  body{background:#eceff1;display:flex;justify-content:center;padding:30px;gap:30px;flex-wrap:wrap}
+  .note{width:100%;text-align:center;color:#607d8b;font-size:13px;margin-bottom:4px}
+  .phone{width:360px;height:800px;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.12);display:flex;flex-direction:column;border:1px solid #e0e0e0}
+  .status{display:flex;justify-content:space-between;align-items:center;padding:12px 20px 4px;font-size:13px;font-weight:500;color:var(--ink)}
+  .body{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 28px;gap:16px}
+  .icon{width:88px;height:88px;border-radius:50%;background:var(--tint);display:flex;align-items:center;justify-content:center;margin-bottom:6px}
+  .icon span{font-size:36px;font-weight:500;color:var(--orange)}
+  h1{font-size:20px;font-weight:500;color:var(--ink);line-height:1.3}
+  p.body-txt{font-size:14px;font-weight:400;color:var(--muted);line-height:1.55;max-width:280px}
+  .btn{width:100%;background:var(--orange);color:#fff;font-size:16px;font-weight:500;text-align:center;padding:15px;border-radius:12px;margin-top:8px}
+  .secondary{font-size:13px;font-weight:400;color:var(--muted);margin-top:2px}
+</style>
+</head>
+<body>
+  <div class="note">Reference mock of <b>Screen 2 — "Out of searches"</b> (replicate in Figma to match Screen 1's style)</div>
+  <div class="phone">
+    <div class="status"><span>9:30</span><span>100%</span></div>
+    <div class="body">
+      <div class="icon"><span>0</span></div>
+      <h1>You're out of searches for today</h1>
+      <p class="body-txt">Want more right now? Invite a friend — you'll get <b>+5 searches</b> the moment they run their first search (and they get <b>+3</b> to start).</p>
+      <div class="btn">Invite a friend → +5 searches</div>
+      <div class="secondary">Or come back tomorrow for 2 more.</div>
+    </div>
+  </div>
+</body>
+</html>

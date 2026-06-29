@@ -1,0 +1,138 @@
+<svg viewBox="0 0 1040 910" xmlns="http://www.w3.org/2000/svg" font-family="'Roboto','Helvetica Neue',Arial,sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Layovered referral app flow</title>
+<desc id="d">App-side flow in three bands: the inviter journey, the new friend install journey, and the search counter state machine, annotated with API calls, analytics events and Figma screens.</desc>
+<defs>
+<marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#9AA0A6"/></marker>
+</defs>
+<rect width="1040" height="910" fill="#FFFFFF"/>
+
+<text x="520" y="34" text-anchor="middle" font-size="23" font-weight="700" fill="#1F271B">Layovered Referral — App Flow, Screens &amp; APIs</text>
+<text x="520" y="56" text-anchor="middle" font-size="13" fill="#4F5B62">what the user sees · which API each screen calls · which event fires · what's designed in Figma</text>
+
+<g font-size="11.5" fill="#1F271B">
+<rect x="120" y="74" width="13" height="13" rx="3" fill="#E7F0FF" stroke="#2563EB"/><text x="139" y="85">API call</text>
+<rect x="210" y="74" width="13" height="13" rx="3" fill="#FFF4ED" stroke="#FF4C00"/><text x="229" y="85">Analytics / trigger</text>
+<rect x="345" y="74" width="13" height="13" rx="3" fill="#F2F3F4" stroke="#9AA0A6"/><text x="364" y="85">Screen / state</text>
+<rect x="460" y="74" width="13" height="13" rx="3" fill="#E9F7EE" stroke="#15803D"/><text x="479" y="85">Figma ready ✓</text>
+<text x="600" y="85" fill="#4F5B62">App only displays state — it never grants rewards.</text>
+</g>
+
+<text x="40" y="120" font-size="14" font-weight="800" fill="#FF4C00">1 · INVITER journey</text>
+<line x1="40" y1="126" x2="1000" y2="126" stroke="#F0E4DC" stroke-width="1"/>
+
+<rect x="40" y="142" width="222" height="108" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="56" y="162" font-size="12.5" font-weight="700" fill="#1F271B">Entry points → Invite</text>
+<text x="56" y="182" font-size="11.5" fill="#4F5B62">• Profile "Invite friends" row</text>
+<text x="56" y="200" font-size="11.5" fill="#4F5B62">• Search counter chip</text>
+<text x="56" y="218" font-size="11.5" fill="#4F5B62">• Out-of-searches wall</text>
+<text x="56" y="236" font-size="11.5" fill="#4F5B62">• Post-saving share prompt</text>
+
+<line x1="262" y1="196" x2="318" y2="196" stroke="#9AA0A6" stroke-width="2" marker-end="url(#ar)"/>
+
+<rect x="320" y="160" width="226" height="72" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="433" y="186" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1F271B">Invite screen (hub)</text>
+<text x="433" y="205" text-anchor="middle" font-size="11.5" fill="#4F5B62">link · QR · balance · X/10</text>
+<rect x="455" y="150" width="92" height="18" rx="9" fill="#E9F7EE" stroke="#15803D"/><text x="501" y="163" text-anchor="middle" font-size="10" fill="#14532D">Figma ✓</text>
+<rect x="320" y="238" width="226" height="26" rx="7" fill="#E7F0FF" stroke="#2563EB"/><text x="433" y="256" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1A4Fb0">GET /referral/me</text>
+
+<line x1="546" y1="196" x2="602" y2="196" stroke="#9AA0A6" stroke-width="2" marker-end="url(#ar)"/>
+
+<rect x="604" y="160" width="288" height="72" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="748" y="184" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1F271B">Share via ChottuLink</text>
+<text x="748" y="202" text-anchor="middle" font-size="11" fill="#4F5B62">link carries referrerId + ~feature=referral</text>
+<text x="748" y="219" text-anchor="middle" font-size="11" fill="#4F5B62">referrer-voice prefilled message</text>
+<rect x="604" y="238" width="288" height="26" rx="7" fill="#FFF4ED" stroke="#FF4C00"/><text x="748" y="256" text-anchor="middle" font-size="11.5" font-weight="700" fill="#B23400">fire invite_sent</text>
+
+<text x="40" y="306" font-size="14" font-weight="800" fill="#FF4C00">2 · FRIEND (new install) journey</text>
+<line x1="40" y1="312" x2="1000" y2="312" stroke="#F0E4DC" stroke-width="1"/>
+
+<rect x="40" y="328" width="150" height="56" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="115" y="361" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F271B">Friend taps link</text>
+<line x1="190" y1="356" x2="222" y2="356" stroke="#9AA0A6" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="224" y="328" width="130" height="56" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="289" y="361" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F271B">Installs app</text>
+<line x1="354" y1="356" x2="386" y2="356" stroke="#9AA0A6" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="388" y="328" width="210" height="56" rx="10" fill="#FFFFFF" stroke="#FF4C00" stroke-width="2"/>
+<text x="493" y="350" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F271B">First open: deferred link</text>
+<text x="493" y="367" text-anchor="middle" font-size="11" fill="#7a3b1d">reads referrerId · needs LAY-2/3</text>
+<line x1="598" y1="356" x2="630" y2="356" stroke="#9AA0A6" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="632" y="328" width="260" height="56" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="762" y="350" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F271B">Tell backend who referred</text>
+<text x="762" y="367" text-anchor="middle" font-size="11" fill="#4F5B62">once per install</text>
+
+<rect x="388" y="390" width="210" height="24" rx="7" fill="#FFF4ED" stroke="#FF4C00"/><text x="493" y="407" text-anchor="middle" font-size="11" font-weight="700" fill="#B23400">fire referral_install</text>
+<rect x="632" y="390" width="260" height="24" rx="7" fill="#E7F0FF" stroke="#2563EB"/><text x="762" y="407" text-anchor="middle" font-size="11" font-weight="700" fill="#1A4Fb0">POST /referral/attribute</text>
+
+<rect x="40" y="436" width="172" height="52" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="126" y="460" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F271B">Signs in (Google/Apple)</text>
+<text x="126" y="477" text-anchor="middle" font-size="10.5" fill="#4F5B62">anonymous? stays pending</text>
+<line x1="212" y1="462" x2="244" y2="462" stroke="#9AA0A6" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="246" y="436" width="172" height="52" rx="10" fill="#FFF4ED" stroke="#FF4C00" stroke-width="2"/>
+<text x="332" y="460" text-anchor="middle" font-size="12.5" font-weight="800" fill="#B23400">⚡ First routing search</text>
+<text x="332" y="477" text-anchor="middle" font-size="10.5" fill="#7a3b1d">backend validates &amp; rewards</text>
+<line x1="418" y1="462" x2="450" y2="462" stroke="#9AA0A6" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="452" y="436" width="190" height="52" rx="10" fill="#E9F7EE" stroke="#15803D"/>
+<text x="547" y="460" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14532D">Both credited (server)</text>
+<text x="547" y="477" text-anchor="middle" font-size="10.5" fill="#14532D">referrer +5 · referee +3</text>
+<line x1="642" y1="462" x2="674" y2="462" stroke="#9AA0A6" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="676" y="436" width="216" height="52" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="784" y="460" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F271B">Show "+3 added" welcome</text>
+<text x="784" y="477" text-anchor="middle" font-size="10.5" fill="#4F5B62">+ referrer toast "+5"</text>
+
+<text x="40" y="540" font-size="14" font-weight="800" fill="#FF4C00">3 · SEARCH COUNTER states (Layovered mode)</text>
+<line x1="40" y1="546" x2="1000" y2="546" stroke="#F0E4DC" stroke-width="1"/>
+
+<rect x="40" y="566" width="236" height="150" rx="10" fill="#E7F0FF" stroke="#2563EB"/>
+<text x="158" y="592" text-anchor="middle" font-size="13" font-weight="800" fill="#1A4Fb0">GET /searches/remaining</text>
+<text x="158" y="616" text-anchor="middle" font-size="11.5" fill="#1A4Fb0">dailyRemaining</text>
+<text x="158" y="636" text-anchor="middle" font-size="11.5" fill="#1A4Fb0">bonusBalance</text>
+<text x="158" y="656" text-anchor="middle" font-size="11.5" fill="#1A4Fb0">totalRemaining = sum</text>
+<text x="158" y="686" text-anchor="middle" font-size="10.5" fill="#4F5B62">refresh after every search</text>
+<text x="158" y="702" text-anchor="middle" font-size="10.5" fill="#4F5B62">spend daily first, then bonus</text>
+
+<g stroke="#9AA0A6" stroke-width="2" fill="none" marker-end="url(#ar)">
+<path d="M276 600 L312 600"/>
+<path d="M276 641 L312 670"/>
+<path d="M276 682 L312 740"/>
+</g>
+
+<rect x="314" y="572" width="248" height="54" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="438" y="594" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F271B">Normal · total ≥ 2</text>
+<text x="438" y="612" text-anchor="middle" font-size="11" fill="#4F5B62">chip: "{n} searches left today"</text>
+
+<rect x="314" y="642" width="248" height="54" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="438" y="664" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F271B">Low · total == 1</text>
+<text x="438" y="682" text-anchor="middle" font-size="11" fill="#4F5B62">"1 left · invite for +5 →"</text>
+
+<rect x="314" y="712" width="248" height="58" rx="10" fill="#FFF4ED" stroke="#FF4C00" stroke-width="2"/>
+<text x="438" y="734" text-anchor="middle" font-size="12.5" font-weight="800" fill="#B23400">Exhausted · total == 0</text>
+<text x="438" y="752" text-anchor="middle" font-size="11" fill="#7a3b1d">Out-of-searches WALL (hero)</text>
+<rect x="468" y="703" width="92" height="17" rx="8" fill="#E9F7EE" stroke="#15803D"/><text x="514" y="716" text-anchor="middle" font-size="9.5" fill="#14532D">Figma ✓</text>
+
+<rect x="600" y="712" width="236" height="58" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="718" y="734" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F271B">Returning · opens at 0/low</text>
+<text x="718" y="752" text-anchor="middle" font-size="11" fill="#4F5B62">banner: "how to get more →"</text>
+
+<rect x="600" y="572" width="236" height="124" rx="10" fill="#FBFBFC" stroke="#FF4C00"/>
+<text x="718" y="600" text-anchor="middle" font-size="13" font-weight="800" fill="#B23400">every state →</text>
+<text x="718" y="624" text-anchor="middle" font-size="13" font-weight="800" fill="#1F271B">Invite / Share flow</text>
+<text x="718" y="650" text-anchor="middle" font-size="11" fill="#4F5B62">the limit itself drives</text>
+<text x="718" y="666" text-anchor="middle" font-size="11" fill="#4F5B62">the referral loop</text>
+<g stroke="#FF4C00" stroke-width="1.6" fill="none" stroke-dasharray="4 3" marker-end="url(#ar)">
+<path d="M562 599 L600 610"/>
+<path d="M562 669 L600 645"/>
+<path d="M562 741 L585 741 L585 696"/>
+<path d="M836 741 L855 741 L855 634 L838 634"/>
+</g>
+
+<line x1="40" y1="800" x2="1000" y2="800" stroke="#E5E4E2"/>
+<text x="40" y="824" font-size="13" font-weight="800" fill="#15803D">Designs already in Figma ✓ ("Layovered - ORIGINAL")</text>
+<g font-size="11" fill="#14532D">
+<rect x="40" y="836" width="180" height="30" rx="8" fill="#E9F7EE" stroke="#15803D"/><text x="130" y="855" text-anchor="middle">Invite friends</text>
+<rect x="230" y="836" width="190" height="30" rx="8" fill="#E9F7EE" stroke="#15803D"/><text x="325" y="855" text-anchor="middle">Out-of-searches sheet</text>
+<rect x="430" y="836" width="170" height="30" rx="8" fill="#E9F7EE" stroke="#15803D"/><text x="515" y="855" text-anchor="middle">Know-more sheet</text>
+<rect x="610" y="836" width="180" height="30" rx="8" fill="#E9F7EE" stroke="#15803D"/><text x="700" y="855" text-anchor="middle">Profile invite row</text>
+<rect x="800" y="836" width="200" height="30" rx="8" fill="#E9F7EE" stroke="#15803D"/><text x="900" y="855" text-anchor="middle">Counter on search screen</text>
+</g>
+<text x="40" y="892" font-size="11" font-style="italic" fill="#8a8f94">Reminder: never hardcode +5 / +3 / 10 — read them from rewardConfig (from /referral/me) and template all copy.</text>
+</svg>

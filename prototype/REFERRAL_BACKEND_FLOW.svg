@@ -1,0 +1,157 @@
+<svg viewBox="0 0 1020 1320" xmlns="http://www.w3.org/2000/svg" font-family="'Roboto','Helvetica Neue',Arial,sans-serif" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Layovered referral backend flow</title>
+<desc id="desc">Top-to-bottom flow showing each step of a referral, the API called at that step, and the database tables written, ending in a reward-or-reject branch.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#9AA0A6"/>
+</marker>
+</defs>
+<rect x="0" y="0" width="1020" height="1320" fill="#FFFFFF"/>
+
+<text x="510" y="40" text-anchor="middle" font-size="24" font-weight="700" fill="#1F271B">Layovered Referral — Flow, APIs &amp; Tables</text>
+<text x="510" y="64" text-anchor="middle" font-size="13" fill="#4F5B62">What happens at each step · which API is called · which tables are written</text>
+
+<g font-size="12" fill="#1F271B">
+<rect x="120" y="82" width="14" height="14" rx="3" fill="#E7F0FF" stroke="#2563EB"/><text x="140" y="93">API call</text>
+<rect x="232" y="82" width="14" height="14" rx="3" fill="#FFF4ED" stroke="#FF4C00"/><text x="252" y="93">Trigger / event</text>
+<rect x="378" y="82" width="14" height="14" rx="3" fill="#E9F7EE" stroke="#15803D"/><text x="398" y="93">DB write</text>
+<rect x="486" y="82" width="14" height="14" rx="3" fill="#F2F3F4" stroke="#9AA0A6"/><text x="506" y="93">State / step</text>
+<text x="640" y="93" fill="#4F5B62">Left = API · Center = step · Right = tables written</text>
+</g>
+
+<text x="150" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#2563EB">API</text>
+<text x="510" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#4F5B62">FLOW</text>
+<text x="870" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#15803D">TABLES</text>
+
+<g stroke="#9AA0A6" stroke-width="2" marker-end="url(#arrow)">
+<line x1="510" y1="196" x2="510" y2="214"/>
+<line x1="510" y1="286" x2="510" y2="304"/>
+<line x1="510" y1="376" x2="510" y2="394"/>
+<line x1="510" y1="466" x2="510" y2="484"/>
+<line x1="510" y1="556" x2="510" y2="574"/>
+<line x1="510" y1="646" x2="510" y2="664"/>
+<line x1="510" y1="766" x2="510" y2="784"/>
+</g>
+
+<rect x="350" y="142" width="320" height="54" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="510" y="166" text-anchor="middle" font-size="14" font-weight="700" fill="#1F271B">Referrer opens Invite screen</text>
+<text x="510" y="184" text-anchor="middle" font-size="12" fill="#4F5B62">app shows their link, code &amp; balance</text>
+<rect x="20" y="152" width="260" height="34" rx="8" fill="#E7F0FF" stroke="#2563EB"/>
+<text x="150" y="174" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1A4Fb0">GET /referral/me</text>
+<line x1="280" y1="169" x2="350" y2="169" stroke="#2563EB" stroke-width="1.4" stroke-dasharray="4 3"/>
+<rect x="740" y="152" width="260" height="34" rx="8" fill="#E9F7EE" stroke="#15803D"/>
+<text x="870" y="173" text-anchor="middle" font-size="12" fill="#14532D">reads <tspan font-weight="700">users</tspan> + <tspan font-weight="700">referral_config</tspan></text>
+<line x1="670" y1="169" x2="740" y2="169" stroke="#15803D" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+<rect x="350" y="232" width="320" height="54" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="510" y="256" text-anchor="middle" font-size="14" font-weight="700" fill="#1F271B">Referrer shares the link</text>
+<text x="510" y="274" text-anchor="middle" font-size="12" fill="#4F5B62">link carries ?referrerId=code (ChottuLink)</text>
+
+<rect x="350" y="322" width="320" height="54" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="510" y="346" text-anchor="middle" font-size="14" font-weight="700" fill="#1F271B">Friend taps link → installs → opens</text>
+<text x="510" y="364" text-anchor="middle" font-size="12" fill="#4F5B62">app reads referrerId from deferred deep link</text>
+
+<rect x="350" y="412" width="320" height="54" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="510" y="436" text-anchor="middle" font-size="14" font-weight="700" fill="#1F271B">Referral recorded · status = PENDING</text>
+<text x="510" y="454" text-anchor="middle" font-size="12" fill="#4F5B62">cheap guards run (self / same-device)</text>
+<rect x="20" y="422" width="260" height="34" rx="8" fill="#E7F0FF" stroke="#2563EB"/>
+<text x="150" y="444" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1A4Fb0">POST /referral/attribute</text>
+<line x1="280" y1="439" x2="350" y2="439" stroke="#2563EB" stroke-width="1.4" stroke-dasharray="4 3"/>
+<rect x="740" y="422" width="260" height="34" rx="8" fill="#E9F7EE" stroke="#15803D"/>
+<text x="870" y="443" text-anchor="middle" font-size="12" fill="#14532D">INSERT <tspan font-weight="700">referrals</tspan> (pending)</text>
+<line x1="670" y1="439" x2="740" y2="439" stroke="#15803D" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+<rect x="350" y="502" width="320" height="54" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="510" y="526" text-anchor="middle" font-size="14" font-weight="700" fill="#1F271B">Friend signs in (Google / Apple)</text>
+<text x="510" y="544" text-anchor="middle" font-size="12" fill="#4F5B62">anonymous? referral stays pending</text>
+<rect x="740" y="512" width="260" height="34" rx="8" fill="#E9F7EE" stroke="#15803D"/>
+<text x="870" y="533" text-anchor="middle" font-size="11.5" fill="#14532D">UPDATE <tspan font-weight="700">users</tspan>, <tspan font-weight="700">referrals</tspan>.referee_id</text>
+<line x1="670" y1="529" x2="740" y2="529" stroke="#15803D" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+<rect x="340" y="592" width="340" height="54" rx="10" fill="#FFF4ED" stroke="#FF4C00" stroke-width="2"/>
+<text x="510" y="616" text-anchor="middle" font-size="14.5" font-weight="800" fill="#B23400">⚡ Friend runs their FIRST routing search</text>
+<text x="510" y="634" text-anchor="middle" font-size="12" fill="#7a3b1d">this is the activation trigger — nothing rewards before it</text>
+
+<rect x="320" y="672" width="380" height="92" rx="10" fill="#FFFFFF" stroke="#FF4C00" stroke-width="2"/>
+<text x="510" y="694" text-anchor="middle" font-size="14" font-weight="800" fill="#1F271B">ACTIVATION HOOK — run all anti-abuse checks</text>
+<text x="345" y="714" font-size="11.5" fill="#4F5B62">1 · authenticated (google/apple)</text>
+<text x="345" y="730" font-size="11.5" fill="#4F5B62">2 · new account, not already referred</text>
+<text x="345" y="746" font-size="11.5" fill="#4F5B62">3 · new device (not same as referrer)</text>
+<text x="600" y="714" font-size="11.5" fill="#4F5B62">4 · not self-referral</text>
+<text x="600" y="730" font-size="11.5" fill="#4F5B62">5 · referrer under monthly cap</text>
+<text x="600" y="748" font-size="11.5" font-weight="700" fill="#B23400">ALL pass → reward</text>
+<rect x="20" y="700" width="260" height="36" rx="8" fill="#E7F0FF" stroke="#2563EB"/>
+<text x="150" y="716" text-anchor="middle" font-size="11" font-weight="700" fill="#1A4Fb0">(no new endpoint)</text>
+<text x="150" y="730" text-anchor="middle" font-size="10.5" fill="#1A4Fb0">runs inside search-consume code</text>
+<line x1="280" y1="718" x2="320" y2="718" stroke="#2563EB" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+<g stroke="#9AA0A6" stroke-width="2" fill="none" marker-end="url(#arrow)">
+<path d="M430 764 L430 800 L360 800 L360 826"/>
+<path d="M590 764 L590 800 L690 800 L690 826"/>
+</g>
+<text x="360" y="794" text-anchor="middle" font-size="11" font-weight="700" fill="#15803D">PASS</text>
+<text x="690" y="794" text-anchor="middle" font-size="11" font-weight="700" fill="#8a8f94">FAIL</text>
+
+<rect x="150" y="828" width="420" height="120" rx="10" fill="#E9F7EE" stroke="#15803D" stroke-width="2"/>
+<text x="360" y="852" text-anchor="middle" font-size="14" font-weight="800" fill="#14532D">REWARDED ✅ — one DB transaction</text>
+<text x="172" y="876" font-size="12" fill="#14532D">• referrer.bonus_search_balance <tspan font-weight="700">+5</tspan></text>
+<text x="172" y="896" font-size="12" fill="#14532D">• referee.bonus_search_balance <tspan font-weight="700">+3</tspan></text>
+<text x="172" y="916" font-size="12" fill="#14532D">• INSERT <tspan font-weight="700">search_bonus_ledger</tspan> ×2</text>
+<text x="172" y="936" font-size="12" fill="#14532D">• UPDATE <tspan font-weight="700">referrals</tspan> → status = rewarded</text>
+
+<rect x="600" y="828" width="270" height="120" rx="10" fill="#F2F3F4" stroke="#9AA0A6" stroke-width="2"/>
+<text x="735" y="852" text-anchor="middle" font-size="14" font-weight="800" fill="#5a5f63">REJECTED ❌</text>
+<text x="620" y="876" font-size="12" fill="#5a5f63">• grant nothing</text>
+<text x="620" y="896" font-size="12" fill="#5a5f63">• UPDATE <tspan font-weight="700">referrals</tspan></text>
+<text x="632" y="914" font-size="12" fill="#5a5f63">status = rejected</text>
+<text x="620" y="934" font-size="11.5" fill="#5a5f63">reason: self_referral /</text>
+<text x="632" y="950" font-size="11.5" fill="#5a5f63">same_device / cap_exceeded…</text>
+
+<line x1="360" y1="948" x2="360" y2="984" stroke="#9AA0A6" stroke-width="2" marker-end="url(#arrow)"/>
+
+<rect x="150" y="986" width="420" height="58" rx="10" fill="#F2F3F4" stroke="#9AA0A6"/>
+<text x="360" y="1010" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1F271B">App shows updated search counter</text>
+<text x="360" y="1028" text-anchor="middle" font-size="12" fill="#4F5B62">total = dailyRemaining + bonusBalance</text>
+<rect x="600" y="996" width="290" height="38" rx="8" fill="#E7F0FF" stroke="#2563EB"/>
+<text x="745" y="1014" text-anchor="middle" font-size="12" font-weight="700" fill="#1A4Fb0">GET /searches/remaining</text>
+<text x="745" y="1028" text-anchor="middle" font-size="10.5" fill="#1A4Fb0">spend daily first, then bonus</text>
+<line x1="570" y1="1015" x2="600" y2="1015" stroke="#2563EB" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+<line x1="40" y1="1078" x2="980" y2="1078" stroke="#E5E4E2" stroke-width="1"/>
+<text x="40" y="1102" font-size="14" font-weight="800" fill="#1F271B">The 4 tables</text>
+
+<rect x="40" y="1116" width="222" height="150" rx="10" fill="#FBFBFC" stroke="#15803D"/>
+<text x="56" y="1138" font-size="13" font-weight="800" fill="#14532D">users <tspan font-weight="400" fill="#4F5B62">(extended)</tspan></text>
+<text x="56" y="1160" font-size="11" fill="#4F5B62">referral_code (unique)</text>
+<text x="56" y="1178" font-size="11" fill="#4F5B62">bonus_search_balance</text>
+<text x="56" y="1196" font-size="11" fill="#4F5B62">auth_provider</text>
+<text x="56" y="1214" font-size="11" fill="#4F5B62">primary_device_id</text>
+<text x="56" y="1232" font-size="11" fill="#4F5B62">referred_by_user_id</text>
+<text x="56" y="1254" font-size="10.5" font-style="italic" fill="#8a8f94">accounts + bonus bucket</text>
+
+<rect x="278" y="1116" width="222" height="150" rx="10" fill="#FBFBFC" stroke="#15803D"/>
+<text x="294" y="1138" font-size="13" font-weight="800" fill="#14532D">referrals <tspan font-weight="400" fill="#4F5B62">(new)</tspan></text>
+<text x="294" y="1160" font-size="11" fill="#4F5B62">referrer_user_id</text>
+<text x="294" y="1178" font-size="11" fill="#4F5B62">referee_user_id (unique)</text>
+<text x="294" y="1196" font-size="11" fill="#4F5B62">referee_device_id</text>
+<text x="294" y="1214" font-size="11" fill="#4F5B62">status / reject_reason</text>
+<text x="294" y="1232" font-size="11" fill="#4F5B62">referrer/referee_reward</text>
+<text x="294" y="1254" font-size="10.5" font-style="italic" fill="#8a8f94">one row per invite</text>
+
+<rect x="516" y="1116" width="222" height="150" rx="10" fill="#FBFBFC" stroke="#15803D"/>
+<text x="532" y="1138" font-size="13" font-weight="800" fill="#14532D">search_bonus_ledger</text>
+<text x="532" y="1160" font-size="11" fill="#4F5B62">user_id</text>
+<text x="532" y="1178" font-size="11" fill="#4F5B62">delta (+5 / +3 / −1)</text>
+<text x="532" y="1196" font-size="11" fill="#4F5B62">reason</text>
+<text x="532" y="1214" font-size="11" fill="#4F5B62">referral_id</text>
+<text x="532" y="1232" font-size="11" fill="#4F5B62">balance_after</text>
+<text x="532" y="1254" font-size="10.5" font-style="italic" fill="#8a8f94">audit log of every change</text>
+
+<rect x="754" y="1116" width="222" height="150" rx="10" fill="#FBFBFC" stroke="#15803D"/>
+<text x="770" y="1138" font-size="13" font-weight="800" fill="#14532D">referral_config</text>
+<text x="770" y="1160" font-size="11" fill="#4F5B62">referrer_reward (json)</text>
+<text x="770" y="1178" font-size="11" fill="#4F5B62">referee_reward (json)</text>
+<text x="770" y="1196" font-size="11" fill="#4F5B62">monthly_cap</text>
+<text x="770" y="1214" font-size="11" fill="#4F5B62">activation_event</text>
+<text x="770" y="1254" font-size="10.5" font-style="italic" fill="#8a8f94">change rewards w/o code</text>
+</svg>
