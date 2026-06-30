@@ -99,7 +99,7 @@ select:focus{outline:none;border-color:var(--orange)}
 .chip.on i{opacity:1}
 .go{margin-top:22px;width:100%;background:var(--orange);color:#fff;border:none;padding:15px;border-radius:13px;font-family:inherit;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:.25s}
 .go:hover{background:var(--orange-dark)}
-.summary{margin:30px 0 8px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.summary{margin:18px 0 10px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .summary .big{font-size:2.4rem;font-weight:800;color:var(--orange);line-height:1}
 .summary .txt{font-weight:700;font-size:1.05rem}
 .summary .txt span{color:var(--muted);font-weight:600;display:block;font-size:.9rem;margin-top:3px}
@@ -196,8 +196,18 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     <div class="crumb"><a href="/">Home</a> &nbsp;›&nbsp; <a href="/visa-free/pakistan/">Visa-free</a> &nbsp;›&nbsp; Pakistan</div>
     <div class="tag"><span class="pulse"></span> Free visa checker</div>
     <h1>Visa-Free Countries for <span class="accent">Pakistani Passport</span> Holders</h1>
-    <p class="sub">See everywhere you can go visa-free or on arrival — with stay duration and cost. Add the visas you already hold to unlock even more destinations.</p>
+    <p class="sub">Every country your Pakistani passport enters visa-free or on arrival — with stay and cost.</p>
   </header>
+
+  <div class="summary">
+    <div class="big">84</div>
+    <div class="txt">destinations unlocked<span>Your Pakistani passport</span></div>
+  </div>
+  <div class="filters">
+    <span class="fpill"><b>12</b> Visa-free</span>
+    <span class="fpill"><b>13</b> Visa on arrival</span>
+    <span class="fpill"><b>59</b> eVisa</span>
+  </div>
 
   <section class="checker">
     <div class="passport-row">
@@ -224,16 +234,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <button class="go" id="go"><i class="fa-solid fa-earth-asia"></i> Show where I can go</button>
   </section>
-
-  <div class="summary">
-    <div class="big">84</div>
-    <div class="txt">destinations unlocked<span>Your Pakistani passport</span></div>
-  </div>
-  <div class="filters">
-    <span class="fpill"><b>12</b> Visa-free</span>
-    <span class="fpill"><b>13</b> Visa on arrival</span>
-    <span class="fpill"><b>59</b> eVisa</span>
-  </div>
+  <div id="results">
 
   <h2 class="group-h"><i class="fa-solid fa-circle-check"></i> Visa-free <span class="gcount">12 destinations</span></h2>
   <div class="grid">
@@ -1504,6 +1505,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
       </div>
     </div>
   </div>
+  </div>
 
   <div class="routing">
     <div class="ic"><i class="fa-solid fa-route"></i></div>
@@ -1582,7 +1584,7 @@ var NAV={"passport":"pakistan","hub":"/visa-free/pakistan/","hubs":{"india":"/vi
     chips[i].addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go(this.getAttribute('data-slug'));}});
   }
   var goBtn=document.getElementById('go');
-  if(goBtn)goBtn.addEventListener('click',function(){var s=document.querySelector('.summary');if(s)s.scrollIntoView({behavior:'smooth',block:'start'});});
+  if(goBtn)goBtn.addEventListener('click',function(){var s=document.getElementById('results')||document.querySelector('.summary');if(s)s.scrollIntoView({behavior:'smooth',block:'start'});});
   var form=document.getElementById('cap-form');
   if(form)form.addEventListener('submit',function(e){
     e.preventDefault();

@@ -99,7 +99,7 @@ select:focus{outline:none;border-color:var(--orange)}
 .chip.on i{opacity:1}
 .go{margin-top:22px;width:100%;background:var(--orange);color:#fff;border:none;padding:15px;border-radius:13px;font-family:inherit;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:.25s}
 .go:hover{background:var(--orange-dark)}
-.summary{margin:30px 0 8px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.summary{margin:18px 0 10px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .summary .big{font-size:2.4rem;font-weight:800;color:var(--orange);line-height:1}
 .summary .txt{font-weight:700;font-size:1.05rem}
 .summary .txt span{color:var(--muted);font-weight:600;display:block;font-size:.9rem;margin-top:3px}
@@ -275,7 +275,7 @@ var NAV={"passport":"pakistan","hub":"/visa-free/pakistan/","hubs":{"india":"/vi
     chips[i].addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go(this.getAttribute('data-slug'));}});
   }
   var goBtn=document.getElementById('go');
-  if(goBtn)goBtn.addEventListener('click',function(){var s=document.querySelector('.summary');if(s)s.scrollIntoView({behavior:'smooth',block:'start'});});
+  if(goBtn)goBtn.addEventListener('click',function(){var s=document.getElementById('results')||document.querySelector('.summary');if(s)s.scrollIntoView({behavior:'smooth',block:'start'});});
   var form=document.getElementById('cap-form');
   if(form)form.addEventListener('submit',function(e){
     e.preventDefault();

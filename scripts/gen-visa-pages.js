@@ -244,7 +244,7 @@ select:focus{outline:none;border-color:var(--orange)}
 .chip.on i{opacity:1}
 .go{margin-top:22px;width:100%;background:var(--orange);color:#fff;border:none;padding:15px;border-radius:13px;font-family:inherit;font-weight:800;font-size:1.02rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:.25s}
 .go:hover{background:var(--orange-dark)}
-.summary{margin:30px 0 8px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.summary{margin:18px 0 10px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .summary .big{font-size:2.4rem;font-weight:800;color:var(--orange);line-height:1}
 .summary .txt{font-weight:700;font-size:1.05rem}
 .summary .txt span{color:var(--muted);font-weight:600;display:block;font-size:.9rem;margin-top:3px}
@@ -428,7 +428,7 @@ var NAV=${JSON.stringify(nav)};
     chips[i].addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go(this.getAttribute('data-slug'));}});
   }
   var goBtn=document.getElementById('go');
-  if(goBtn)goBtn.addEventListener('click',function(){var s=document.querySelector('.summary');if(s)s.scrollIntoView({behavior:'smooth',block:'start'});});
+  if(goBtn)goBtn.addEventListener('click',function(){var s=document.getElementById('results')||document.querySelector('.summary');if(s)s.scrollIntoView({behavior:'smooth',block:'start'});});
   var form=document.getElementById('cap-form');
   if(form)form.addEventListener('submit',function(e){
     e.preventDefault();
@@ -602,15 +602,17 @@ function hubPage(pp, model, hubs) {
     <div class="crumb"><a href="/">Home</a> &nbsp;›&nbsp; <a href="${model.hubUrl}">Visa-free</a> &nbsp;›&nbsp; ${esc(pp.name)}</div>
     <div class="tag"><span class="pulse"></span> Free visa checker</div>
     <h1>Visa-Free Countries for <span class="accent">${esc(nat)} Passport</span> Holders</h1>
-    <p class="sub">See everywhere you can go visa-free or on arrival — with stay duration and cost. Add the visas you already hold to unlock even more destinations.</p>
+    <p class="sub">Every country your ${esc(nat)} passport enters visa-free or on arrival — with stay and cost.</p>
   </header>
-${checkerBlock(pp, hubs, null, model.visas)}
 ${summaryBlock(total, `Your ${nat} passport`, [
     [n.free, 'Visa-free'],
     [n.voa, 'Visa on arrival'],
     [n.evisa, 'eVisa'],
   ])}
+${checkerBlock(pp, hubs, null, model.visas)}
+  <div id="results">
 ${resultsBlock(pp, base, null, model.countryPageSlugs)}
+  </div>
 ${captureBlock(pp)}
   <div class="body-seo">
     <p>Wondering where you can travel on a${/^[AEIOU]/i.test(nat) ? 'n' : ''} ${esc(nat)} passport without arranging a visa in advance? The free checker above shows all ${total} destinations open to ${esc(nat)} citizens — ${n.free} visa-free, ${n.voa} visa-on-arrival and ${n.evisa} via eVisa — each with the permitted length of stay and indicative cost. Popular visa-free picks include ${esc(ex[0])}, ${esc(ex[1])} and ${esc(ex[2])}.</p>
@@ -678,16 +680,18 @@ function variantPage(pp, model, variant, hubs) {
     <div class="crumb"><a href="/">Home</a> &nbsp;›&nbsp; <a href="${model.hubUrl}">Visa-free</a> &nbsp;›&nbsp; <a href="${model.hubUrl}">${esc(pp.name)}</a> &nbsp;›&nbsp; With a ${esc(short)} visa</div>
     <div class="tag"><span class="pulse"></span> Free visa checker</div>
     <h1>Visa-Free Countries for <span class="accent">${esc(nat)} Passport</span> Holders With a ${esc(short)} Visa</h1>
-    <p class="sub">A valid ${esc(short)} visa opens extra doors. See everything your ${esc(nat)} passport unlocks with it — stay duration and cost included.</p>
+    <p class="sub">A valid ${esc(short)} visa opens extra doors — ${unlockCount} more ${unlockCount === 1 ? 'country' : 'countries'} for your ${esc(nat)} passport, with stay and cost.</p>
   </header>
-${checkerBlock(pp, hubs, visa.slug, model.visas)}
 ${summaryBlock(total, `Your ${nat} passport + ${short} visa`, [
     [n.free, 'Visa-free'],
     [n.voa, 'Visa on arrival'],
     [n.evisa, 'eVisa'],
     [unlockCount, `unlocked by your ${short} visa`, true],
   ])}
+${checkerBlock(pp, hubs, visa.slug, model.visas)}
+  <div id="results">
 ${resultsBlock(pp, list, visa, model.countryPageSlugs)}
+  </div>
 ${captureBlock(pp)}
   <div class="body-seo">
     <p>A valid ${esc(short)} visa can open doors a${/^[AEIOU]/i.test(nat) ? 'n' : ''} ${esc(nat)} passport alone cannot. The checker above shows all ${total} destinations you can enter — including ${unlockCount} extra ${unlockCount === 1 ? 'country' : 'countries'} unlocked specifically by your ${esc(short)} visa — each with the allowed stay and indicative cost.</p>
