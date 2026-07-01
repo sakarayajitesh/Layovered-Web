@@ -31,13 +31,24 @@ const OUT_FILE = path.join(ROOT, 'data', 'visa-data.json');
 const BASE = process.env.VISA_API_BASE || 'https://lmg-staging-x89z.layovered.com';
 const TOKEN = process.env.VISA_API_TOKEN || process.env.VISA_API_KEY;
 
-// Wave-1 passports — nationality adjective is not in the API, so map it here.
+// Passports — nationality adjective is not in the API, so map it here.
+// A passport whose `code` the API doesn't return is skipped (logged), never a failure.
 const WAVE1 = [
+  // Wave 1 (live)
   { code: 'IN', slug: 'india', nationality: 'Indian' },
   { code: 'PH', slug: 'philippines', nationality: 'Filipino' },
   { code: 'NG', slug: 'nigeria', nationality: 'Nigerian' },
   { code: 'PK', slug: 'pakistan', nationality: 'Pakistani' },
   { code: 'BD', slug: 'bangladesh', nationality: 'Bangladeshi' },
+  // Wave 2 (prioritised by diaspora + visa-search demand)
+  { code: 'LK', slug: 'sri-lanka', nationality: 'Sri Lankan' },
+  { code: 'NP', slug: 'nepal', nationality: 'Nepali' },
+  { code: 'EG', slug: 'egypt', nationality: 'Egyptian' },
+  { code: 'KE', slug: 'kenya', nationality: 'Kenyan' },
+  { code: 'GH', slug: 'ghana', nationality: 'Ghanaian' },
+  { code: 'ID', slug: 'indonesia', nationality: 'Indonesian' },
+  { code: 'VN', slug: 'vietnam', nationality: 'Vietnamese' },
+  { code: 'ET', slug: 'ethiopia', nationality: 'Ethiopian' },
 ];
 
 // Wave-1 visas — API id → the generator's visa identity (brand names from the brief).

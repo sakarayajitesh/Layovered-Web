@@ -34,11 +34,20 @@ const APP_DEEPLINK_BASE = 'https://layovered.chottu.link/get-app'; // ChottuLink
 const CAPTURE_ENDPOINT = '';                 // unused while email capture is disabled
 const ENABLE_EMAIL_CAPTURE = false;          // flip to true once an ESP/form endpoint is wired into CAPTURE_ENDPOINT
 
-const WAVE1 = ['india', 'philippines', 'nigeria', 'pakistan', 'bangladesh'];
+// Passports to build. Wave 1 is live. Wave 2 generates as soon as the data source
+// (VISA_API_URL, or an expanded data/visa-data.json) includes them — any slug the data
+// source doesn't have is safely skipped with a log line, never a build failure.
+// Verify each Wave-2 slug matches the exact slug your API returns; adjust if it differs.
+const WAVE1 = [
+  // Wave 1 (live)
+  'india', 'philippines', 'nigeria', 'pakistan', 'bangladesh',
+  // Wave 2 (prioritised by diaspora + visa-search demand)
+  'sri-lanka', 'nepal', 'egypt', 'kenya', 'ghana', 'indonesia', 'vietnam', 'ethiopia',
+];
 const YEAR = new Date().getFullYear();
 const TODAY = new Date().toISOString().slice(0, 10);
 
-const MAX_COUNTRY_PAGES = 50; // top ~50 country pages per passport
+const MAX_COUNTRY_PAGES = 90; // Wave-2: top ~90 country pages per passport (was 50)
 const HUB_LINK_COUNT = 10;    // hub/variant pages link to top ~10 country pages
 const MIN_HUB_COUNTRIES = 3;  // skip a hub whose result set is trivially small
 const MIN_VISA_UNLOCK = 1;    // skip a visa-variant page that unlocks nothing
