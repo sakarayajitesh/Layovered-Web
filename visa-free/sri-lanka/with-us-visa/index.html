@@ -141,6 +141,18 @@ a.cc-name:hover{color:var(--orange)}
 .routing .ic{width:46px;height:46px;border-radius:12px;background:#fff5f0;color:var(--orange);display:grid;place-items:center;font-size:1.2rem}
 .routing .rt b{font-weight:800}
 .routing .rt p{color:var(--muted);font-size:.9rem}
+.hp{position:absolute!important;left:-9999px!important;top:auto;width:1px;height:1px;opacity:0;pointer-events:none}
+.capbar{margin:16px 0 6px;background:#fff7f2;border:1px solid #ffd8c2;border-radius:var(--radius);padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:space-between}
+.capbar-txt{font-size:.95rem;font-weight:600;color:var(--ink)}
+.capbar-txt i{color:var(--orange);margin-right:6px}
+.capbar-txt b{color:var(--orange)}
+.capbar .cap{margin:0;flex:1;min-width:260px;justify-content:flex-end}
+.capbar .cap input{min-width:180px;border:1px solid var(--line)}
+.capbar .cap button{background:var(--orange)}
+.band h3{font-size:1.4rem;font-weight:800;margin:0 0 6px}
+.band p{opacity:.95;font-size:.95rem;line-height:1.5}
+.cap-done{display:flex;align-items:center;gap:10px;font-weight:700;color:#085229;background:#e7faf0;border:1px solid #13ce66;border-radius:12px;padding:16px 18px}
+.cap-done i{color:#13ce66;font-size:1.2rem}
 .routing a{margin-left:auto;color:var(--orange);font-weight:800;font-size:.92rem}
 .body-seo{margin:40px 0 10px;max-width:760px}
 .body-seo h2{font-size:1.25rem;font-weight:800;margin:22px 0 8px}
@@ -243,6 +255,16 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
     </div>
     <button class="go" id="go"><i class="fa-solid fa-earth-asia"></i> Show where I can go</button>
   </section>
+
+  <div class="capbar capture-card">
+    <span class="capbar-txt"><i class="fa-solid fa-plane"></i> Want <b>cheaper flights</b> to these countries? Get early access when we launch:</span>
+    <form class="cap cap-form" method="POST" action="https://8aa0709a.sibforms.com/serve/MUIFANvzE_WNMIw08HnzjHornq6gMwof6cP1rPrKolfe5bh31IfJkq93mzGTJ2t_Xm02kraGlngH1pQhkTs8BgNNK_SxXZt-uT1_CtkoAGxsOBlCi9x8SQ-tcUh4h4DzhL-5VR_PIoaRxns20QxGNM3gNZ2HGP4iB0Umi2ewbGQ8eHD6WRsfAqsvhwLBVOD0udvj636iSRYbQPXbxQ==" target="brevo_sink">
+      <input type="email" name="EMAIL" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
+      <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+      <input type="hidden" name="locale" value="en">
+      <button type="submit">Join</button>
+    </form>
+  </div>
   <div id="results">
 
   <h2 class="group-h"><i class="fa-solid fa-circle-check"></i> Visa-free <span class="gcount">66 destinations</span></h2>
@@ -2323,10 +2345,15 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
   </div>
   </div>
 
-  <div class="routing">
-    <div class="ic"><i class="fa-solid fa-route"></i></div>
-    <div class="rt"><b>Layovered Flights — cheaper routes through your visa-free countries.</b><p>Visa-free flight search that finds you a cheaper way there. Launching soon.</p></div>
-    <a href="/waitlist.html">Join the waitlist →</a>
+  <div class="band capture-card" id="capture">
+    <h3>Get cheaper flights to these countries</h3>
+    <p>We&#39;ll email you the moment Layovered can find you cheaper flights — routed through countries your passport enters visa-free. No spam, just the launch.</p>
+    <form class="cap cap-form" method="POST" action="https://8aa0709a.sibforms.com/serve/MUIFANvzE_WNMIw08HnzjHornq6gMwof6cP1rPrKolfe5bh31IfJkq93mzGTJ2t_Xm02kraGlngH1pQhkTs8BgNNK_SxXZt-uT1_CtkoAGxsOBlCi9x8SQ-tcUh4h4DzhL-5VR_PIoaRxns20QxGNM3gNZ2HGP4iB0Umi2ewbGQ8eHD6WRsfAqsvhwLBVOD0udvj636iSRYbQPXbxQ==" target="brevo_sink">
+      <input type="email" name="EMAIL" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
+      <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+      <input type="hidden" name="locale" value="en">
+      <button type="submit">Join the waitlist</button>
+    </form>
   </div>
   <div class="body-seo">
     <p>A valid US visa can open doors a Sri Lankan passport alone cannot. The checker above shows all 135 destinations you can enter — including 42 extra countries unlocked specifically by your US visa — each with the allowed stay and indicative cost.</p>
@@ -2350,9 +2377,10 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
   <footer>© 2026 Layovered · Visa data is indicative — always confirm requirements for your specific trip in the Layovered app before booking.</footer>
 </div></div>
 
+<iframe name="brevo_sink" title="waitlist" aria-hidden="true" style="display:none;width:0;height:0;border:0"></iframe>
+
 <script>
 var APP_DEEPLINK_BASE="https://layovered.chottu.link/get-app";
-var CAPTURE_ENDPOINT="";
 var NAV={"passport":"sri-lanka","hub":"/visa-free/sri-lanka/","hubs":{"india":"/visa-free/india/","philippines":"/visa-free/philippines/","nigeria":"/visa-free/nigeria/","pakistan":"/visa-free/pakistan/","bangladesh":"/visa-free/bangladesh/","sri-lanka":"/visa-free/sri-lanka/","nepal":"/visa-free/nepal/","egypt":"/visa-free/egypt/","kenya":"/visa-free/kenya/","ghana":"/visa-free/ghana/","indonesia":"/visa-free/indonesia/","vietnam":"/visa-free/vietnam/","ethiopia":"/visa-free/ethiopia/"},"visas":{"us":"/visa-free/sri-lanka/with-us-visa/","schengen":"/visa-free/sri-lanka/with-schengen-visa/","uk":"/visa-free/sri-lanka/with-uk-visa/","canada":"/visa-free/sri-lanka/with-canada-visa/","uae":"/visa-free/sri-lanka/with-uae-visa/"},"active":"us"};
 (function(){
   function track(name,params){try{if(window.gtag)gtag('event',name,params||{});}catch(e){}}
@@ -2384,12 +2412,26 @@ var NAV={"passport":"sri-lanka","hub":"/visa-free/sri-lanka/","hubs":{"india":"/
   }
   var goBtn=document.getElementById('go');
   if(goBtn)goBtn.addEventListener('click',function(){var s=document.getElementById('results')||document.querySelector('.summary');if(s)s.scrollIntoView({behavior:'smooth',block:'start'});});
-  var form=document.getElementById('cap-form');
-  if(form)form.addEventListener('submit',function(e){
-    e.preventDefault();
-    var em=form.querySelector('input[type=email]').value;
-    try{fetch(CAPTURE_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,passport:NAV.passport||null,visa:NAV.active||null})}).catch(function(){});}catch(err){}
-    form.innerHTML='<p style="font-weight:700">Thanks — you\u2019re on the list. Watch your inbox.</p>';
+  // Waitlist capture: forms POST straight to Brevo via the hidden "brevo_sink"
+  // iframe, so the page never navigates. We only show success AFTER Brevo's
+  // endpoint actually responds (iframe 'load'), so a failed post can't fake it.
+  var sink=document.querySelector('iframe[name=brevo_sink]');
+  var pending=null;
+  var capForms=document.querySelectorAll('.cap-form');
+  for(var f=0;f<capForms.length;f++){
+    capForms[f].addEventListener('submit',function(){
+      var hp=this.querySelector('input[name=email_address_check]');
+      if(hp&&hp.value){return;}               // honeypot filled -> bot, let it submit but ignore
+      pending=this;
+      track('waitlist_signup',{passport:NAV.passport||null,visa:NAV.active||null});
+      // no preventDefault: native submit goes to the hidden iframe
+    });
+  }
+  if(sink)sink.addEventListener('load',function(){
+    if(!pending)return;                        // ignore the iframe's initial blank load
+    var card=pending.closest('.capture-card')||pending.parentNode;
+    if(card)card.innerHTML='<div class="cap-done"><i class="fa-solid fa-circle-check"></i> You\u2019re on the list — we\u2019ll email you the moment visa-free routing launches.</div>';
+    pending=null;
   });
 })();
 </script>

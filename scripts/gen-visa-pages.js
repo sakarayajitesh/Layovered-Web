@@ -31,8 +31,10 @@ const DATA_FILE = path.join(ROOT, 'data', 'visa-data.json');
 // the real absolute Branch/Firebase deep link when it's ready. The existing
 // download page harmlessly ignores the ?passport/&country params.
 const APP_DEEPLINK_BASE = 'https://layovered.chottu.link/get-app'; // ChottuLink: opens app (deferred) or store; attributed utm_source=web-checker
-const CAPTURE_ENDPOINT = '';                 // unused while email capture is disabled
-const ENABLE_EMAIL_CAPTURE = false;          // flip to true once an ESP/form endpoint is wired into CAPTURE_ENDPOINT
+// Brevo waitlist form: posts straight to Brevo's public form endpoint (no secret key
+// on the client) via a hidden iframe, so the visitor never leaves the page.
+const BREVO_FORM_ACTION = 'https://8aa0709a.sibforms.com/serve/MUIFANvzE_WNMIw08HnzjHornq6gMwof6cP1rPrKolfe5bh31IfJkq93mzGTJ2t_Xm02kraGlngH1pQhkTs8BgNNK_SxXZt-uT1_CtkoAGxsOBlCi9x8SQ-tcUh4h4DzhL-5VR_PIoaRxns20QxGNM3gNZ2HGP4iB0Umi2ewbGQ8eHD6WRsfAqsvhwLBVOD0udvj636iSRYbQPXbxQ==';
+const ENABLE_EMAIL_CAPTURE = true;           // inline Brevo capture on every checker page
 
 // Passports to build. Wave 1 is live. Wave 2 generates as soon as the data source
 // (VISA_API_URL, or an expanded data/visa-data.json) includes them — any slug the data
@@ -295,6 +297,18 @@ a.cc-name:hover{color:var(--orange)}
 .routing .ic{width:46px;height:46px;border-radius:12px;background:#fff5f0;color:var(--orange);display:grid;place-items:center;font-size:1.2rem}
 .routing .rt b{font-weight:800}
 .routing .rt p{color:var(--muted);font-size:.9rem}
+.hp{position:absolute!important;left:-9999px!important;top:auto;width:1px;height:1px;opacity:0;pointer-events:none}
+.capbar{margin:16px 0 6px;background:#fff7f2;border:1px solid #ffd8c2;border-radius:var(--radius);padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:space-between}
+.capbar-txt{font-size:.95rem;font-weight:600;color:var(--ink)}
+.capbar-txt i{color:var(--orange);margin-right:6px}
+.capbar-txt b{color:var(--orange)}
+.capbar .cap{margin:0;flex:1;min-width:260px;justify-content:flex-end}
+.capbar .cap input{min-width:180px;border:1px solid var(--line)}
+.capbar .cap button{background:var(--orange)}
+.band h3{font-size:1.4rem;font-weight:800;margin:0 0 6px}
+.band p{opacity:.95;font-size:.95rem;line-height:1.5}
+.cap-done{display:flex;align-items:center;gap:10px;font-weight:700;color:#085229;background:#e7faf0;border:1px solid #13ce66;border-radius:12px;padding:16px 18px}
+.cap-done i{color:#13ce66;font-size:1.2rem}
 .routing a{margin-left:auto;color:var(--orange);font-weight:800;font-size:.92rem}
 .body-seo{margin:40px 0 10px;max-width:760px}
 .body-seo h2{font-size:1.25rem;font-weight:800;margin:22px 0 8px}
@@ -394,6 +408,8 @@ ${CSS}
 ${body}
   <footer>© ${YEAR} Layovered · Visa data is indicative — always confirm requirements for your specific trip in the Layovered app before booking.</footer>
 </div></div>
+${ENABLE_EMAIL_CAPTURE ? `
+<iframe name="brevo_sink" title="waitlist" aria-hidden="true" style="display:none;width:0;height:0;border:0"></iframe>` : ''}
 
 ${pageScript(nav)}
 </body>
@@ -406,7 +422,6 @@ ${pageScript(nav)}
 function pageScript(nav) {
   return `<script>
 var APP_DEEPLINK_BASE=${JSON.stringify(APP_DEEPLINK_BASE)};
-var CAPTURE_ENDPOINT=${JSON.stringify(CAPTURE_ENDPOINT)};
 var NAV=${JSON.stringify(nav)};
 (function(){
   function track(name,params){try{if(window.gtag)gtag('event',name,params||{});}catch(e){}}
@@ -438,12 +453,26 @@ var NAV=${JSON.stringify(nav)};
   }
   var goBtn=document.getElementById('go');
   if(goBtn)goBtn.addEventListener('click',function(){var s=document.getElementById('results')||document.querySelector('.summary');if(s)s.scrollIntoView({behavior:'smooth',block:'start'});});
-  var form=document.getElementById('cap-form');
-  if(form)form.addEventListener('submit',function(e){
-    e.preventDefault();
-    var em=form.querySelector('input[type=email]').value;
-    try{fetch(CAPTURE_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,passport:NAV.passport||null,visa:NAV.active||null})}).catch(function(){});}catch(err){}
-    form.innerHTML='<p style="font-weight:700">Thanks — you\\u2019re on the list. Watch your inbox.</p>';
+  // Waitlist capture: forms POST straight to Brevo via the hidden "brevo_sink"
+  // iframe, so the page never navigates. We only show success AFTER Brevo's
+  // endpoint actually responds (iframe 'load'), so a failed post can't fake it.
+  var sink=document.querySelector('iframe[name=brevo_sink]');
+  var pending=null;
+  var capForms=document.querySelectorAll('.cap-form');
+  for(var f=0;f<capForms.length;f++){
+    capForms[f].addEventListener('submit',function(){
+      var hp=this.querySelector('input[name=email_address_check]');
+      if(hp&&hp.value){return;}               // honeypot filled -> bot, let it submit but ignore
+      pending=this;
+      track('waitlist_signup',{passport:NAV.passport||null,visa:NAV.active||null});
+      // no preventDefault: native submit goes to the hidden iframe
+    });
+  }
+  if(sink)sink.addEventListener('load',function(){
+    if(!pending)return;                        // ignore the iframe's initial blank load
+    var card=pending.closest('.capture-card')||pending.parentNode;
+    if(card)card.innerHTML='<div class="cap-done"><i class="fa-solid fa-circle-check"></i> You\\u2019re on the list — we\\u2019ll email you the moment visa-free routing launches.</div>';
+    pending=null;
   });
 })();
 <\/script>`;
@@ -533,23 +562,44 @@ function resultsBlock(pp, list, activeVisa, countryPageSlugs) {
   return out;
 }
 
+// Shared Brevo form fields (email + honeypot + locale). Posts to a hidden iframe
+// named "brevo_sink" so the visitor stays on the page.
+function brevoFields() {
+  return `
+      <input type="email" name="EMAIL" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
+      <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+      <input type="hidden" name="locale" value="en">`;
+}
+
+// Full, prominent capture card (orange band).
 function captureBlock(pp) {
-  const emailBand = ENABLE_EMAIL_CAPTURE ? `
-  <div class="band" id="capture">
-    <h3>Get visa-routing deals for your passport</h3>
-    <p>One email a week: the cheapest flights you can actually book, routed through countries your passport enters visa-free.</p>
-    <form class="cap" id="cap-form">
-      <input type="email" required placeholder="you@email.com" aria-label="Email address">
-      <button type="submit">Get deals</button>
-    </form>
-  </div>` : '';
-  // With email capture off, the routing teaser points to the app instead of the (absent) capture form.
-  const routingCta = `<a href="/waitlist.html">Join the waitlist →</a>`;
-  return `${emailBand}
+  if (!ENABLE_EMAIL_CAPTURE) {
+    return `
   <div class="routing">
     <div class="ic"><i class="fa-solid fa-route"></i></div>
     <div class="rt"><b>Layovered Flights — cheaper routes through your visa-free countries.</b><p>Visa-free flight search that finds you a cheaper way there. Launching soon.</p></div>
-    ${routingCta}
+    <a href="/waitlist.html">Join the waitlist →</a>
+  </div>`;
+  }
+  return `
+  <div class="band capture-card" id="capture">
+    <h3>Get cheaper flights to these countries</h3>
+    <p>We&#39;ll email you the moment Layovered can find you cheaper flights — routed through countries your passport enters visa-free. No spam, just the launch.</p>
+    <form class="cap cap-form" method="POST" action="${BREVO_FORM_ACTION}" target="brevo_sink">${brevoFields()}
+      <button type="submit">Join the waitlist</button>
+    </form>
+  </div>`;
+}
+
+// Compact, high-placement capture bar (sits right under the checker tool).
+function capBar(pp) {
+  if (!ENABLE_EMAIL_CAPTURE) return '';
+  return `
+  <div class="capbar capture-card">
+    <span class="capbar-txt"><i class="fa-solid fa-plane"></i> Want <b>cheaper flights</b> to these countries? Get early access when we launch:</span>
+    <form class="cap cap-form" method="POST" action="${BREVO_FORM_ACTION}" target="brevo_sink">${brevoFields()}
+      <button type="submit">Join</button>
+    </form>
   </div>`;
 }
 
@@ -619,6 +669,7 @@ ${summaryBlock(total, `Your ${nat} passport`, [
     [n.evisa, 'eVisa'],
   ])}
 ${checkerBlock(pp, hubs, null, model.visas)}
+${capBar(pp)}
   <div id="results">
 ${resultsBlock(pp, base, null, model.countryPageSlugs)}
   </div>
@@ -698,6 +749,7 @@ ${summaryBlock(total, `Your ${nat} passport + ${short} visa`, [
     [unlockCount, `unlocked by your ${short} visa`, true],
   ])}
 ${checkerBlock(pp, hubs, visa.slug, model.visas)}
+${capBar(pp)}
   <div id="results">
 ${resultsBlock(pp, list, visa, model.countryPageSlugs)}
   </div>
