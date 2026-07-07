@@ -36,6 +36,13 @@ const APP_DEEPLINK_BASE = 'https://layovered.chottu.link/get-app'; // ChottuLink
 const BREVO_FORM_ACTION = 'https://8aa0709a.sibforms.com/serve/MUIFANvzE_WNMIw08HnzjHornq6gMwof6cP1rPrKolfe5bh31IfJkq93mzGTJ2t_Xm02kraGlngH1pQhkTs8BgNNK_SxXZt-uT1_CtkoAGxsOBlCi9x8SQ-tcUh4h4DzhL-5VR_PIoaRxns20QxGNM3gNZ2HGP4iB0Umi2ewbGQ8eHD6WRsfAqsvhwLBVOD0udvj636iSRYbQPXbxQ==';
 const ENABLE_EMAIL_CAPTURE = true;           // inline Brevo capture on every checker page
 
+// Display-name overrides: fix nonstandard country names for SEO/CTR without
+// changing the URL slug (so already-indexed pages keep their addresses).
+// People search "cape verde", not "cape verde islands".
+const NAME_OVERRIDES = {
+  'Cape Verde Islands': 'Cape Verde',
+};
+
 // Passports to build. Wave 1 is live. Wave 2 generates as soon as the data source
 // (VISA_API_URL, or an expanded data/visa-data.json) includes them — any slug the data
 // source doesn't have is safely skipped with a log line, never a build failure.
@@ -114,6 +121,7 @@ function sanitize(data) {
       countries: (p.countries || []).map(c => {
         const t = {};
         for (const f of TEASER_FIELDS) if (c[f] !== undefined) t[f] = c[f];
+        if (t.name && NAME_OVERRIDES[t.name]) t.name = NAME_OVERRIDES[t.name]; // slug stays the same
         return t;
       }),
     })),
