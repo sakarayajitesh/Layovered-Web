@@ -397,7 +397,7 @@ ${CSS}
       <a href="/about.html" class="nav-link">About us</a>
       <a href="/contact.html" class="nav-link">Contact</a>
       <a href="/visa-free/india/" class="nav-link active">Visa checker</a>
-      <a href="/download.html" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="${esc(APP_DEEPLINK_BASE + '?passport=' + nav.passport)}" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -409,7 +409,7 @@ ${CSS}
   <a href="/about.html" class="nav-link">About us</a>
   <a href="/contact.html" class="nav-link">Contact</a>
   <a href="/visa-free/india/" class="nav-link active">Visa checker</a>
-  <a href="/download.html" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
+  <a href="${esc(APP_DEEPLINK_BASE + '?passport=' + nav.passport)}" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
 </div>
 
 <div class="page"><div class="container">
@@ -552,7 +552,7 @@ function countryCard(pp, c, activeVisa, countryPageSlugs) {
       </div>
       <div class="locked">
         <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-        <a class="open-app" href="${esc(APP_DEEPLINK_BASE)}">Open in app</a>
+        <a class="open-app" href="${esc(APP_DEEPLINK_BASE + '?passport=' + pp.slug + '&country=' + c.slug)}">Open in app</a>
       </div>
     </div>`;
 }
@@ -855,7 +855,7 @@ function countryPage(pp, model, c, visasByCode) {
     </div>
     <div class="locked" style="margin-top:14px">
       <span class="lk"><i class="fa-solid fa-lock"></i> Documents &amp; apply link</span>
-      <a class="open-app" href="${esc(APP_DEEPLINK_BASE)}">Open in app</a>
+      <a class="open-app" href="${esc(APP_DEEPLINK_BASE + '?passport=' + pp.slug + '&country=' + c.slug)}">Open in app</a>
     </div>
   </div>
 ${captureBlock(pp)}
