@@ -53,6 +53,16 @@
           "price": "Free"
         },
         {
+          "code": "BT",
+          "name": "Bhutan",
+          "slug": "bhutan",
+          "region": "ASIA",
+          "access": "visa_free",
+          "unlockedBy": [],
+          "stay": "30 days",
+          "price": "Free"
+        },
+        {
           "code": "DM",
           "name": "Dominica",
           "slug": "dominica",
@@ -93,12 +103,22 @@
           "price": "Free"
         },
         {
+          "code": "HN",
+          "name": "Honduras",
+          "slug": "honduras",
+          "region": "AMERICAS",
+          "access": "visa_free",
+          "unlockedBy": [],
+          "price": "Free"
+        },
+        {
           "code": "JM",
           "name": "Jamaica",
           "slug": "jamaica",
           "region": "CARIBBEAN",
           "access": "visa_free",
           "unlockedBy": [],
+          "stay": "6 months",
           "price": "Free"
         },
         {
@@ -132,6 +152,16 @@
           "price": "Free"
         },
         {
+          "code": "MG",
+          "name": "Madagascar",
+          "slug": "madagascar",
+          "region": "AFRICA",
+          "access": "visa_free",
+          "unlockedBy": [],
+          "stay": "15 days",
+          "price": "Free"
+        },
+        {
           "code": "MY",
           "name": "Malaysia",
           "slug": "malaysia",
@@ -139,7 +169,7 @@
           "access": "visa_free",
           "unlockedBy": [],
           "stay": "30 days",
-          "price": "Free"
+          "price": "6 USD"
         },
         {
           "code": "MU",
@@ -181,15 +211,6 @@
           "price": "Free"
         },
         {
-          "code": "PE",
-          "name": "Peru",
-          "slug": "peru",
-          "region": "AMERICAS",
-          "access": "visa_free",
-          "unlockedBy": [],
-          "price": "Free"
-        },
-        {
           "code": "PH",
           "name": "Philippines",
           "slug": "philippines",
@@ -216,6 +237,7 @@
           "region": "AFRICA",
           "access": "visa_free",
           "unlockedBy": [],
+          "stay": "90 days",
           "price": "Free"
         },
         {
@@ -226,7 +248,7 @@
           "access": "visa_free",
           "unlockedBy": [],
           "stay": "60 days",
-          "price": "Free"
+          "price": "6 USD"
         },
         {
           "code": "TT",
@@ -236,6 +258,16 @@
           "access": "visa_free",
           "unlockedBy": [],
           "stay": "90 days",
+          "price": "Free"
+        },
+        {
+          "code": "VU",
+          "name": "Vanuatu",
+          "slug": "vanuatu",
+          "region": "OCEANIA",
+          "access": "visa_free",
+          "unlockedBy": [],
+          "stay": "30 days",
           "price": "Free"
         },
         {
@@ -254,8 +286,7 @@
           "region": "AFRICA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "30 days",
-          "price": "90 USD"
+          "stay": "30 days"
         },
         {
           "code": "KH",
@@ -274,8 +305,7 @@
           "region": "AFRICA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "45 Days",
-          "price": "30 EUR"
+          "stay": "45 days"
         },
         {
           "code": "ET",
@@ -284,7 +314,6 @@
           "region": "AFRICA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "30 days",
           "price": "122 USD"
         },
         {
@@ -294,7 +323,6 @@
           "region": "ASIA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "30 days",
           "price": "68.2 USD"
         },
         {
@@ -308,34 +336,13 @@
           "price": "78 USD"
         },
         {
-          "code": "KW",
-          "name": "Kuwait",
-          "slug": "kuwait",
-          "region": "MIDDLE EAST",
-          "access": "voa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "9 USD"
-        },
-        {
           "code": "LA",
           "name": "Laos",
           "slug": "laos",
           "region": "ASIA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "30 days",
           "price": "121.75 USD"
-        },
-        {
-          "code": "MG",
-          "name": "Madagascar",
-          "slug": "madagascar",
-          "region": "AFRICA",
-          "access": "voa",
-          "unlockedBy": [],
-          "stay": "15 days",
-          "price": "Free"
         },
         {
           "code": "MV",
@@ -352,9 +359,7 @@
           "slug": "marshall-islands",
           "region": "OCEANIA",
           "access": "voa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "Free"
+          "unlockedBy": []
         },
         {
           "code": "MN",
@@ -363,7 +368,6 @@
           "region": "ASIA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "30 days",
           "price": "111.5 USD"
         },
         {
@@ -377,14 +381,22 @@
           "price": "130 USD"
         },
         {
+          "code": "OM",
+          "name": "Oman",
+          "slug": "oman",
+          "region": "MIDDLE EAST",
+          "access": "voa",
+          "unlockedBy": [],
+          "stay": "14 days"
+        },
+        {
           "code": "PW",
           "name": "Palau Islands",
           "slug": "palau-islands",
           "region": "OCEANIA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "30 days",
-          "price": "Free"
+          "stay": "30 days"
         },
         {
           "code": "RW",
@@ -402,8 +414,7 @@
           "region": "OCEANIA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "90 days",
-          "price": "Free"
+          "stay": "90 days"
         },
         {
           "code": "SA",
@@ -411,9 +422,7 @@
           "slug": "saudi-arabia",
           "region": "MIDDLE EAST",
           "access": "voa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "107 USD"
+          "unlockedBy": []
         },
         {
           "code": "LK",
@@ -423,7 +432,7 @@
           "access": "voa",
           "unlockedBy": [],
           "stay": "30 days",
-          "price": "Free"
+          "price": "15 USD"
         },
         {
           "code": "LC",
@@ -431,9 +440,7 @@
           "slug": "st-lucia",
           "region": "CARIBBEAN",
           "access": "voa",
-          "unlockedBy": [],
-          "stay": "42 days",
-          "price": "Free"
+          "unlockedBy": []
         },
         {
           "code": "VC",
@@ -442,8 +449,7 @@
           "region": "CARIBBEAN",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "90 days",
-          "price": "Free"
+          "stay": "90 days"
         },
         {
           "code": "TZ",
@@ -452,8 +458,7 @@
           "region": "AFRICA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "90 days",
-          "price": "50 USD"
+          "price": "112 USD"
         },
         {
           "code": "TL",
@@ -462,18 +467,24 @@
           "region": "ASIA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "30 days",
-          "price": "30 USD"
+          "stay": "30 days"
         },
         {
-          "code": "VU",
-          "name": "Vanuatu",
-          "slug": "vanuatu",
+          "code": "TM",
+          "name": "Turkmenistan",
+          "slug": "turkmenistan",
+          "region": "ASIA",
+          "access": "voa",
+          "unlockedBy": []
+        },
+        {
+          "code": "TV",
+          "name": "Tuvalu",
+          "slug": "tuvalu",
           "region": "OCEANIA",
           "access": "voa",
           "unlockedBy": [],
-          "stay": "120 days",
-          "price": "Free"
+          "stay": "30 days"
         },
         {
           "code": "AL",
@@ -481,9 +492,7 @@
           "slug": "albania",
           "region": "EUROPE",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "20 USD"
+          "unlockedBy": []
         },
         {
           "code": "AI",
@@ -491,9 +500,7 @@
           "slug": "anguilla",
           "region": "CARIBBEAN",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "220 USD"
+          "unlockedBy": []
         },
         {
           "code": "AG",
@@ -501,9 +508,7 @@
           "slug": "antigua-and-barbuda",
           "region": "CARIBBEAN",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "25 USD"
+          "unlockedBy": []
         },
         {
           "code": "AM",
@@ -511,9 +516,7 @@
           "slug": "armenia",
           "region": "MIDDLE EAST",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "21 days",
-          "price": "31 USD"
+          "unlockedBy": []
         },
         {
           "code": "AU",
@@ -538,9 +541,7 @@
           "slug": "bahamas",
           "region": "CARIBBEAN",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "240 days",
-          "price": "25 USD"
+          "unlockedBy": []
         },
         {
           "code": "BJ",
@@ -549,7 +550,7 @@
           "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": [],
-          "price": "76.79 USD"
+          "price": "81 USD"
         },
         {
           "code": "BW",
@@ -557,9 +558,7 @@
           "slug": "botswana",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "71 USD"
+          "unlockedBy": []
         },
         {
           "code": "BF",
@@ -567,9 +566,7 @@
           "slug": "burkina-faso",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "50 USD"
+          "unlockedBy": []
         },
         {
           "code": "CM",
@@ -577,19 +574,7 @@
           "slug": "cameroon",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "100 USD"
-        },
-        {
-          "code": "TD",
-          "name": "Chad",
-          "slug": "chad",
-          "region": "AFRICA",
-          "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "100 USD"
+          "unlockedBy": []
         },
         {
           "code": "CL",
@@ -597,9 +582,7 @@
           "slug": "chile",
           "region": "AMERICAS",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "Free"
+          "unlockedBy": []
         },
         {
           "code": "CO",
@@ -607,9 +590,15 @@
           "slug": "colombia",
           "region": "AMERICAS",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "Free"
+          "unlockedBy": []
+        },
+        {
+          "code": "CD",
+          "name": "Congo (Dem. Rep.)",
+          "slug": "congo-dem-rep",
+          "region": "AFRICA",
+          "access": "evisa",
+          "unlockedBy": []
         },
         {
           "code": "CI",
@@ -618,7 +607,6 @@
           "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": [],
-          "stay": "90 days",
           "price": "150 USD"
         },
         {
@@ -628,8 +616,7 @@
           "region": "CARIBBEAN",
           "access": "evisa",
           "unlockedBy": [],
-          "stay": "30 days",
-          "price": "33.8 USD"
+          "price": "33.78 USD"
         },
         {
           "code": "DJ",
@@ -637,9 +624,7 @@
           "slug": "djibouti",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "31 days",
-          "price": "50 USD"
+          "unlockedBy": []
         },
         {
           "code": "EC",
@@ -647,9 +632,7 @@
           "slug": "ecuador",
           "region": "AMERICAS",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "Free"
+          "unlockedBy": []
         },
         {
           "code": "EG",
@@ -658,8 +641,7 @@
           "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": [],
-          "stay": "30 days",
-          "price": "25 USD"
+          "price": "84 USD"
         },
         {
           "code": "SV",
@@ -667,9 +649,7 @@
           "slug": "el-salvador",
           "region": "AMERICAS",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "Free"
+          "unlockedBy": []
         },
         {
           "code": "GQ",
@@ -677,9 +657,7 @@
           "slug": "equatorial-guinea",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "100 USD"
+          "unlockedBy": []
         },
         {
           "code": "GA",
@@ -687,9 +665,7 @@
           "slug": "gabon",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "80 USD"
+          "unlockedBy": []
         },
         {
           "code": "GE",
@@ -697,9 +673,7 @@
           "slug": "georgia",
           "region": "EUROPE",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "360 days",
-          "price": "20 USD"
+          "unlockedBy": []
         },
         {
           "code": "GN",
@@ -707,9 +681,7 @@
           "slug": "guinea",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "100 USD"
+          "unlockedBy": []
         },
         {
           "code": "IQ",
@@ -717,9 +689,7 @@
           "slug": "iraq",
           "region": "MIDDLE EAST",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "75 USD"
+          "unlockedBy": []
         },
         {
           "code": "IL",
@@ -735,9 +705,7 @@
           "slug": "japan",
           "region": "ASIA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "Free"
+          "unlockedBy": []
         },
         {
           "code": "KG",
@@ -745,9 +713,7 @@
           "slug": "kyrgyzstan",
           "region": "ASIA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "25 USD"
+          "unlockedBy": []
         },
         {
           "code": "LY",
@@ -755,9 +721,7 @@
           "slug": "libya",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "25 USD"
+          "unlockedBy": []
         },
         {
           "code": "MW",
@@ -765,9 +729,7 @@
           "slug": "malawi",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "75 USD"
+          "unlockedBy": []
         },
         {
           "code": "MR",
@@ -775,9 +737,7 @@
           "slug": "mauritania",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "55 USD"
+          "unlockedBy": []
         },
         {
           "code": "MD",
@@ -785,9 +745,7 @@
           "slug": "moldova",
           "region": "EUROPE",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "60 EUR"
+          "unlockedBy": []
         },
         {
           "code": "MA",
@@ -796,8 +754,7 @@
           "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": [],
-          "stay": "90 days",
-          "price": "17 USD"
+          "price": "133 USD"
         },
         {
           "code": "MZ",
@@ -805,9 +762,7 @@
           "slug": "mozambique",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "65 USD"
+          "unlockedBy": []
         },
         {
           "code": "NG",
@@ -815,9 +770,7 @@
           "slug": "nigeria",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "100 USD"
+          "unlockedBy": []
         },
         {
           "code": "PS",
@@ -825,9 +778,7 @@
           "slug": "palestinian-territory",
           "region": "MIDDLE EAST",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "20 USD"
+          "unlockedBy": []
         },
         {
           "code": "PG",
@@ -835,9 +786,7 @@
           "slug": "papua-new-guinea",
           "region": "OCEANIA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "60 days",
-          "price": "100 USD"
+          "unlockedBy": []
         },
         {
           "code": "RU",
@@ -845,9 +794,7 @@
           "slug": "russian-federation",
           "region": "EUROPE",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "Free"
+          "unlockedBy": []
         },
         {
           "code": "ST",
@@ -855,9 +802,7 @@
           "slug": "sao-tome-and-principe",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "15 days",
-          "price": "Free"
+          "unlockedBy": []
         },
         {
           "code": "RS",
@@ -865,9 +810,7 @@
           "slug": "serbia",
           "region": "EUROPE",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "Free"
+          "unlockedBy": []
         },
         {
           "code": "SL",
@@ -875,9 +818,7 @@
           "slug": "sierra-leone",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "80 USD"
+          "unlockedBy": []
         },
         {
           "code": "SG",
@@ -885,9 +826,7 @@
           "slug": "singapore",
           "region": "ASIA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "42 USD"
+          "unlockedBy": []
         },
         {
           "code": "SO",
@@ -895,19 +834,7 @@
           "slug": "somalia",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "60 USD"
-        },
-        {
-          "code": "ZA",
-          "name": "South Africa",
-          "slug": "south-africa",
-          "region": "AFRICA",
-          "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "26 USD"
+          "unlockedBy": []
         },
         {
           "code": "SS",
@@ -915,9 +842,7 @@
           "slug": "south-sudan",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "100 USD"
+          "unlockedBy": []
         },
         {
           "code": "SR",
@@ -925,9 +850,7 @@
           "slug": "suriname",
           "region": "AMERICAS",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "90 days",
-          "price": "50 USD"
+          "unlockedBy": []
         },
         {
           "code": "TW",
@@ -935,9 +858,7 @@
           "slug": "taiwan-chinese-taipei",
           "region": "ASIA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "Free"
+          "unlockedBy": []
         },
         {
           "code": "TJ",
@@ -946,7 +867,6 @@
           "region": "ASIA",
           "access": "evisa",
           "unlockedBy": [],
-          "stay": "45 days",
           "price": "90 USD"
         },
         {
@@ -974,7 +894,6 @@
           "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": [],
-          "stay": "90 days",
           "price": "111.5 USD"
         },
         {
@@ -983,9 +902,7 @@
           "slug": "ukraine",
           "region": "EUROPE",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "65 USD"
+          "unlockedBy": []
         },
         {
           "code": "AE",
@@ -994,7 +911,6 @@
           "region": "MIDDLE EAST",
           "access": "evisa",
           "unlockedBy": [],
-          "stay": "30 days",
           "price": "187 USD"
         },
         {
@@ -1004,8 +920,15 @@
           "region": "ASIA",
           "access": "evisa",
           "unlockedBy": [],
-          "stay": "30 days",
           "price": "81.5 USD"
+        },
+        {
+          "code": "VE",
+          "name": "Venezuela",
+          "slug": "venezuela",
+          "region": "AMERICAS",
+          "access": "evisa",
+          "unlockedBy": []
         },
         {
           "code": "VN",
@@ -1023,9 +946,7 @@
           "slug": "zambia",
           "region": "AFRICA",
           "access": "evisa",
-          "unlockedBy": [],
-          "stay": "30 days",
-          "price": "50 USD"
+          "unlockedBy": []
         },
         {
           "code": "ZW",
@@ -1034,7 +955,6 @@
           "region": "AFRICA",
           "access": "evisa",
           "unlockedBy": [],
-          "stay": "30 days",
           "price": "65.77 USD"
         },
         {
@@ -1044,7 +964,7 @@
           "region": "ASIA",
           "access": "eta",
           "unlockedBy": [],
-          "stay": "14 days",
+          "stay": "6 months",
           "price": "20 USD"
         },
         {
@@ -1058,13 +978,29 @@
           "price": "74.09 USD"
         },
         {
+          "code": "NZ",
+          "name": "New Zealand",
+          "slug": "new-zealand",
+          "region": "OCEANIA",
+          "access": "eta",
+          "unlockedBy": []
+        },
+        {
           "code": "SC",
           "name": "Seychelles",
           "slug": "seychelles",
           "region": "AFRICA",
           "access": "eta",
           "unlockedBy": [],
-          "price": "10.90 EUR"
+          "price": "87 USD"
+        },
+        {
+          "code": "ZA",
+          "name": "South Africa",
+          "slug": "south-africa",
+          "region": "AFRICA",
+          "access": "eta",
+          "unlockedBy": []
         },
         {
           "code": "KN",
@@ -1267,6 +1203,20 @@
             "SCHENGEN",
             "US",
             "UK"
+          ],
+          "price": "Free"
+        },
+        {
+          "code": "TD",
+          "name": "Chad",
+          "slug": "chad",
+          "region": "AFRICA",
+          "access": "visa_free",
+          "unlockedBy": [
+            "SCHENGEN",
+            "US",
+            "UK",
+            "CA"
           ],
           "price": "Free"
         },
@@ -1560,6 +1510,17 @@
           "price": "Free"
         },
         {
+          "code": "KW",
+          "name": "Kuwait",
+          "slug": "kuwait",
+          "region": "MIDDLE EAST",
+          "access": "visa_free",
+          "unlockedBy": [
+            "AE"
+          ],
+          "price": "Free"
+        },
+        {
           "code": "LV",
           "name": "Latvia",
           "slug": "latvia",
@@ -1714,20 +1675,6 @@
           "price": "Free"
         },
         {
-          "code": "NZ",
-          "name": "New Zealand",
-          "slug": "new-zealand",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "NI",
           "name": "Nicaragua",
           "slug": "nicaragua",
@@ -1752,7 +1699,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -1774,21 +1720,6 @@
           "access": "visa_free",
           "unlockedBy": [
             "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "OM",
-          "name": "Oman",
-          "slug": "oman",
-          "region": "MIDDLE EAST",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
-            "US",
-            "AE",
-            "UK",
-            "CA"
           ],
           "price": "Free"
         },
@@ -1827,6 +1758,20 @@
           "region": "AMERICAS",
           "access": "visa_free",
           "unlockedBy": [
+            "UK",
+            "CA"
+          ],
+          "price": "Free"
+        },
+        {
+          "code": "PE",
+          "name": "Peru",
+          "slug": "peru",
+          "region": "AMERICAS",
+          "access": "visa_free",
+          "unlockedBy": [
+            "SCHENGEN",
+            "US",
             "UK",
             "CA"
           ],
@@ -1997,37 +1942,12 @@
           "price": "Free"
         },
         {
-          "code": "TM",
-          "name": "Turkmenistan",
-          "slug": "turkmenistan",
-          "region": "ASIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN"
-          ],
-          "price": "Free"
-        },
-        {
           "code": "TC",
           "name": "Turks and Caicos Islands",
           "slug": "turks-and-caicos-islands",
           "region": "CARIBBEAN",
           "access": "visa_free",
           "unlockedBy": [
-            "US",
-            "UK",
-            "CA"
-          ],
-          "price": "Free"
-        },
-        {
-          "code": "TV",
-          "name": "Tuvalu",
-          "slug": "tuvalu",
-          "region": "OCEANIA",
-          "access": "visa_free",
-          "unlockedBy": [
-            "SCHENGEN",
             "US",
             "UK",
             "CA"
@@ -2085,16 +2005,6 @@
             "SCHENGEN"
           ],
           "price": "Free"
-        },
-        {
-          "code": "CD",
-          "name": "Congo (Dem. Rep.)",
-          "slug": "congo-dem-rep",
-          "region": "AFRICA",
-          "access": "voa",
-          "unlockedBy": [
-            "UK"
-          ]
         }
       ]
     },
@@ -3664,7 +3574,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -5627,7 +5536,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -7656,7 +7564,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -9613,7 +9520,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -11674,7 +11580,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -13662,7 +13567,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -15662,7 +15566,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -17731,7 +17634,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -19793,7 +19695,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -21862,7 +21763,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -23759,7 +23659,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
@@ -25701,7 +25600,6 @@
             "UK",
             "CA"
           ],
-          "stay": "15 days",
           "price": "Free"
         },
         {
