@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /download.html
 
-Sitemap: https://layovered.app/sitemap.xml
+Sitemap: https://layovered.com/sitemap.xml
