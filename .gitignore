@@ -10,3 +10,4 @@ data/*.export.json
 
 # Internal working docs — never in the public repo
 prototype/
+.sass-cache/
