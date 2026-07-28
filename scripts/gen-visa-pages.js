@@ -405,7 +405,7 @@ ${CSS}
       <a href="/visa-free/india/" class="nav-link active">Visa checker</a>
       <a href="${esc(APP_DEEPLINK_BASE + '?passport=' + nav.passport)}" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -448,7 +448,7 @@ var NAV=${JSON.stringify(nav)};
   var navbar=document.getElementById('navbar');
   if(navbar)window.addEventListener('scroll',function(){navbar.classList.toggle('scrolled',window.scrollY>40);});
   var hb=document.getElementById('hamburger'),mm=document.getElementById('mobileMenu');
-  if(hb&&mm)hb.addEventListener('click',function(){hb.classList.toggle('open');mm.classList.toggle('open');});
+  if(hb&&mm)hb.addEventListener('click',function(){var o=hb.classList.toggle('open');mm.classList.toggle('open');hb.setAttribute('aria-expanded',o);});
 
   var sel=document.getElementById('passport');
   if(sel)sel.addEventListener('change',function(){track('passport_changed',{passport:this.value});var u=NAV.hubs[this.value];window.location=u||NAV.hub;});

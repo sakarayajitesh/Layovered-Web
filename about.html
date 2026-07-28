@@ -802,7 +802,7 @@
                 <a href="visa-free/india/" class="nav-link">Visa checker</a>
                 <a href="https://layovered.chottu.link/get-app" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -992,8 +992,9 @@
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
         hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('open');
+            const open = hamburger.classList.toggle('open');
             mobileMenu.classList.toggle('open');
+            hamburger.setAttribute('aria-expanded', open);
         });
 
         // ── Scroll reveal ──
