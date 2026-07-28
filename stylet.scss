@@ -91,7 +91,10 @@ nav {
 }
 
 .nav-link {
-  padding: 9px 22px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 22px;
   border: 1.5px solid var(--gray-200);
   border-radius: var(--radius-pill);
   text-decoration: none;
@@ -108,8 +111,11 @@ nav {
 }
 
 .nav-cta {
-  padding: 9px 22px;
-  background: var(--orange);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 22px;
+  background: var(--orange-dark);
   border-radius: var(--radius-pill);
   text-decoration: none;
   color: #fff;
@@ -120,7 +126,7 @@ nav {
   box-shadow: var(--shadow-orange);
 
   &:hover {
-    background: var(--orange-dark);
+    background: #C43800;
     transform: translateY(-1px);
   }
 }
@@ -128,9 +134,13 @@ nav {
 .hamburger {
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
   cursor: pointer;
-  padding: 8px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   border: none;
   background: none;
 
@@ -230,7 +240,7 @@ li {
 }
 
 a {
-  color: var(--orange);
+  color: #C43800;
   text-decoration: none;
 }
 
@@ -297,8 +307,8 @@ footer {
 }
 
 .social-link {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 50%;
   display: grid;
