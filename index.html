@@ -1147,6 +1147,12 @@
             font-size: 0.8rem;
             font-weight: 700;
             font-family: var(--font-body);
+            text-decoration: none;
+            transition: background var(--transition);
+        }
+
+        .tour-price .btn-sm:hover {
+            background: var(--orange-dark);
         }
 
         /* ──── DISCOVER SECTION (PASSPORT & VISAS) ──── */
@@ -1829,7 +1835,7 @@
                 <a href="https://layovered.chottu.link/get-app" class="nav-cta" target="_blank">Download app <span class="arrow"
                         style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -2003,7 +2009,7 @@
                         <span>8-Hour Layover Package</span>
                         <div class="tour-price">
                             +₹5000 / person
-                            <span class="btn-sm">Add to flight</span>
+                            <a href="https://layovered.chottu.link/get-app" class="btn-sm" target="_blank">Add to flight</a>
                         </div>
                     </div>
                 </div>
@@ -2226,8 +2232,9 @@
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
         hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('open');
+            const open = hamburger.classList.toggle('open');
             mobileMenu.classList.toggle('open');
+            hamburger.setAttribute('aria-expanded', open);
         });
 
         // ── Scroll reveal ──
