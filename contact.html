@@ -764,7 +764,7 @@
                 <a href="visa-free/india/" class="nav-link">Visa checker</a>
                 <a href="https://layovered.chottu.link/get-app" class="nav-cta" target="_blank">Download app <span class="arrow" style="margin-left: 8px;"><i class="fa-solid fa-arrow-right"></i></span></a>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -797,26 +797,24 @@
                 <div class="method-icon"><i class="fa-regular fa-envelope"></i></div>
                 <div class="method-text">
                     <h3>Email Support</h3>
-                    <a href="mailto:hello@layovered.com">support@layovered.com</a>
+                    <a href="mailto:info@layovered.com">info@layovered.com</a>
                 </div>
             </div>
-
-            <!-- Social Media / X -->
 
             <!-- Instagram Support -->
             <div class="glass-card">
                 <div class="method-icon"><i class="fa-brands fa-instagram"></i></div>
                 <div class="method-text">
                     <h3>Instagram</h3>
-                    <a href="https://www.instagram.com/layovered.com" target="_blank">@layovered.com</a>
+                    <a href="https://www.instagram.com/layovered.app" target="_blank">@layovered.app</a>
                 </div>
             </div>
 
              <div class="glass-card">
-                <div class="method-icon"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="method-icon"><i class="fa-brands fa-facebook-f"></i></div>
                 <div class="method-text">
                     <h3>Facebook</h3>
-                    <a href="https://www.facebook.com/people/Layovered/61577388000364/#" target="_blank">@Layovered_app</a>
+                    <a href="https://www.facebook.com/profile.php?id=61577388000364" target="_blank">@Layovered_app</a>
                 </div>
             </div>
 
@@ -953,8 +951,9 @@
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
         hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('open');
+            const open = hamburger.classList.toggle('open');
             mobileMenu.classList.toggle('open');
+            hamburger.setAttribute('aria-expanded', open);
         });
     </script>
 </body>
