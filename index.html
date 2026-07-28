@@ -21,7 +21,7 @@
     <title>Layovered — Turn Your Layover Into a Vacation | Cheap Flights & Smart Routing</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Save up to 50% on airfare with Layovered. Our AI scans transit rules to find cheap, visa-compliant layover flights and maps micro-vacations in one app.">
+    <meta name="description" content="Save up to 50% on airfare with Layovered. We scan transit rules to find cheap, visa-compliant layover flights and map micro-vacations in one app.">
     <meta name="keywords" content="layover travel, cheap flights, visa-free transit, visa checker, smart flight routing, flight arbitrage, travel app">
     <meta name="author" content="Layovered AI Systems Private Limited">
     <link rel="canonical" href="https://layovered.com/">
@@ -30,7 +30,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://layovered.com/">
     <meta property="og:title" content="Layovered — Turn Your Layover Into a Vacation | Cheap Flights & Smart Routing">
-    <meta property="og:description" content="Save up to 50% on airfare. Our AI scans transit rules to find cheap, visa-compliant layover flights and maps micro-vacations in one app.">
+    <meta property="og:description" content="Save up to 50% on airfare. We scan transit rules to find cheap, visa-compliant layover flights and map micro-vacations in one app.">
     <meta property="og:image" content="https://layovered.com/og-image.png">
     <meta property="og:site_name" content="Layovered">
 
@@ -38,7 +38,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://layovered.com/">
     <meta property="twitter:title" content="Layovered — Turn Your Layover Into a Vacation | Cheap Flights & Smart Routing">
-    <meta property="twitter:description" content="Save up to 50% on airfare. Our AI scans transit rules to find cheap, visa-compliant layover flights and maps micro-vacations in one app.">
+    <meta property="twitter:description" content="Save up to 50% on airfare. We scan transit rules to find cheap, visa-compliant layover flights and map micro-vacations in one app.">
     <meta property="twitter:image" content="https://layovered.com/og-image.png">
 
     <!-- Preconnect Resource Hints for Core Web Vitals -->
@@ -356,21 +356,14 @@
 
         /* ──── HERO ──── */
         .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 140px 5vw 80px;
+            min-height: auto;
+            padding: 140px 5vw 90px;
             position: relative;
             overflow: hidden;
             background: var(--white);
         }
 
         .hero .container {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 60px;
-            align-items: center;
-            width: 100%;
             position: relative;
             z-index: 2;
         }
@@ -378,24 +371,33 @@
         .hero-bg-orb {
             position: absolute;
             border-radius: 50%;
-            filter: blur(80px);
+            filter: blur(90px);
             pointer-events: none;
         }
 
         .orb-1 {
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255, 76, 0, 0.12) 0%, transparent 70%);
-            top: -100px;
-            right: -150px;
+            width: 640px;
+            height: 640px;
+            background: radial-gradient(circle, rgba(255, 76, 0, 0.10) 0%, transparent 70%);
+            top: -180px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .orb-2 {
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(255, 76, 0, 0.07) 0%, transparent 70%);
-            bottom: 0;
+            background: radial-gradient(circle, rgba(255, 76, 0, 0.06) 0%, transparent 70%);
+            bottom: -100px;
             left: -100px;
+        }
+
+        .hero-head {
+            text-align: center;
+            max-width: 820px;
+            margin: 0 auto 56px;
+            position: relative;
+            z-index: 2;
         }
 
         .hero-tag {
@@ -435,12 +437,12 @@
 
         .hero h1 {
             font-family: var(--font-display);
-            font-size: clamp(2.8rem, 4.5vw, 4.8rem);
+            font-size: clamp(2.4rem, 4vw, 3.8rem);
             font-weight: 800;
-            line-height: 1.05;
+            line-height: 1.08;
             letter-spacing: -0.03em;
             color: var(--black);
-            margin-bottom: 28px;
+            margin-bottom: 22px;
             animation: fadeUp 0.8s 0.1s ease both;
         }
 
@@ -462,22 +464,23 @@
         }
 
         .hero-sub {
-            font-size: clamp(1rem, 1.8vw, 1.15rem);
+            font-size: clamp(1rem, 1.8vw, 1.1rem);
             color: var(--gray-600);
             font-weight: 400;
             max-width: 520px;
             line-height: 1.65;
-            margin-bottom: 48px;
+            margin: 0 auto 40px;
             animation: fadeUp 0.8s 0.2s ease both;
         }
 
         .hero-actions {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 16px;
             flex-wrap: wrap;
             animation: fadeUp 0.8s 0.3s ease both;
-            margin-bottom: 56px;
+            margin-bottom: 36px;
         }
 
         .btn-primary {
@@ -536,6 +539,7 @@
         .hero-social-proof {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 16px;
             animation: fadeUp 0.8s 0.4s ease both;
         }
@@ -568,51 +572,270 @@
             font-weight: 700;
         }
 
-        /* ──── FLOATING GLASS CARD ──── */
-        .hero-preview {
+        /* ──── ROUTE COMPARISON ──── */
+        .compare {
             position: relative;
-            display: flex;
-            justify-content: center;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
             align-items: center;
-            perspective: 1000px;
-            animation: fadeUp 1s 0.2s ease both;
+            gap: 20px;
+            max-width: 980px;
+            margin: 0 auto;
         }
 
-        .glass-card {
-            background: rgba(255, 255, 255, 0.45);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            border-radius: 28px;
-            padding: 30px;
-            width: 100%;
-            max-width: 440px;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.06),
-                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        .route-card {
+            border-radius: 24px;
+            padding: 28px;
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity .6s cubic-bezier(.16,1,.3,1), transform .6s cubic-bezier(.16,1,.3,1);
+        }
+
+        .route-card.in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .route-card .kicker {
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .route-card .airports {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .route-card .code {
+            font-size: 1.35rem;
+            font-weight: 800;
+            font-family: var(--font-display);
+            letter-spacing: -0.01em;
+        }
+
+        .route-card .city {
+            font-size: 0.72rem;
+            font-weight: 500;
+        }
+
+        .route-card .path {
             position: relative;
-            transition: all var(--transition);
-            transform: rotateY(-6deg) rotateX(6deg);
-            transform-style: preserve-3d;
-            animation: floatCard 6s ease-in-out infinite;
+            height: 34px;
+            margin-bottom: 16px;
         }
 
-        .glass-card:hover {
-            transform: rotateY(0deg) rotateX(0deg) scale(1.02);
-            box-shadow: 0 40px 80px rgba(255, 76, 0, 0.08);
-            background: rgba(255, 255, 255, 0.55);
+        .route-card .path svg {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
         }
 
-        @keyframes floatCard {
-
-            0%,
-            100% {
-                transform: rotateY(-6deg) rotateX(6deg) translateY(0);
-            }
-
-            50% {
-                transform: rotateY(-3deg) rotateX(3deg) translateY(-12px);
-            }
+        .route-card .plane-ic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
         }
+
+        .route-card .stop-tag {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 6px;
+            font-size: 0.66rem;
+            font-weight: 700;
+            padding: 3px 9px;
+            border-radius: var(--radius-pill);
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity .3s ease .1s;
+        }
+
+        .route-card .path.in .stop-tag {
+            opacity: 1;
+        }
+
+        .route-card .price-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            padding-top: 16px;
+            border-top: 1px solid;
+            margin-top: 30px;
+        }
+
+        .route-card .price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-family: var(--font-display);
+        }
+
+        .route-card .price-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+        }
+
+        .route-card.direct {
+            background: var(--gray-100);
+            border: 1.5px solid var(--gray-200);
+        }
+
+        .route-card.direct .kicker { color: var(--gray-400); }
+        .route-card.direct .code { color: var(--gray-600); }
+        .route-card.direct .city { color: var(--gray-400); }
+
+        .route-card.direct .path::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            height: 0;
+            border-top: 2px solid var(--gray-200);
+            transform: translateY(-50%);
+        }
+
+        .route-card.direct .plane-ic {
+            background: transparent;
+            border-radius: 0;
+            color: var(--gray-400);
+            font-size: 1rem;
+        }
+
+        .route-card.direct .price-row { border-color: var(--gray-200); }
+        .route-card.direct .price { color: var(--gray-600); }
+        .route-card.direct .price-label { color: var(--gray-400); }
+
+        .route-card.smart {
+            background: #fff;
+            border: 1.5px solid rgba(255, 76, 0, 0.3);
+            box-shadow: 0 24px 48px rgba(255, 76, 0, 0.08);
+            position: relative;
+        }
+
+        .route-card.smart .ribbon {
+            position: absolute;
+            top: -13px;
+            left: 26px;
+            background: var(--orange-dark);
+            color: #fff;
+            font-size: 0.66rem;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: var(--radius-pill);
+        }
+
+        .route-card.smart .kicker { color: #C43800; }
+        .route-card.smart .code { color: var(--black); }
+        .route-card.smart .city { color: var(--gray-600); }
+        .route-card.smart .path { height: 44px; }
+
+        .route-card.smart .path .bend {
+            stroke: rgba(255, 76, 0, 0.35);
+            stroke-width: 2;
+            stroke-dasharray: 5 5;
+            fill: none;
+            opacity: 0;
+        }
+
+        .route-card.smart .path.in .bend {
+            opacity: 1;
+            transition: opacity .3s ease;
+        }
+
+        .route-card.smart .plane-ic {
+            background: var(--orange);
+            color: #fff;
+            top: 56%;
+            opacity: 0;
+            transition: left .8s cubic-bezier(.45,0,.2,1), top .8s cubic-bezier(.45,0,.2,1), opacity .3s ease;
+        }
+
+        .route-card.smart .plane-ic.in { opacity: 1; }
+
+        .route-card.smart .stop-tag.visa {
+            background: rgba(20, 168, 59, 0.1);
+            color: #0C7A2A;
+            border: 1px solid rgba(20, 168, 59, 0.2);
+        }
+
+        .route-card.smart .price-row { border-color: rgba(255, 76, 0, 0.15); }
+        .route-card.smart .price { color: var(--black); }
+
+        .route-card.smart .price-label {
+            color: #0C7A2A;
+            opacity: 0;
+            transform: translateY(4px);
+            transition: opacity .4s ease, transform .4s ease;
+        }
+
+        .route-card.smart .price-label.in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .vs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            opacity: 0;
+            transition: opacity .4s ease;
+        }
+
+        .vs.in { opacity: 1; }
+
+        .vs .circle {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--black);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+        }
+
+        .disclaimer {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 0.72rem;
+            color: var(--gray-400);
+        }
+
+        .compare-foot {
+            text-align: center;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            opacity: 0;
+            transition: opacity .5s ease;
+        }
+
+        .compare-foot.in { opacity: 1; }
+        .compare-foot b { color: var(--black); }
 
         @keyframes fadeUp {
             from {
@@ -636,194 +859,6 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
-
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 24px;
-        }
-
-        .passport-badge {
-            background: rgba(0, 0, 0, 0.04);
-            border: 1px solid rgba(0, 0, 0, 0.06);
-            padding: 6px 12px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--gray-600);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .passport-badge i {
-            color: var(--orange);
-        }
-
-        .card-dots {
-            display: flex;
-            gap: 5px;
-        }
-
-        .card-dots span {
-            width: 6px;
-            height: 6px;
-            background: rgba(0, 0, 0, 0.15);
-            border-radius: 50%;
-        }
-
-        .route-visual {
-            background: rgba(255, 255, 255, 0.6);
-            border: 1px solid rgba(0, 0, 0, 0.04);
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
-        }
-
-        .route-airports {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            margin-bottom: 12px;
-        }
-
-        .airport-code {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .airport-code .code {
-            font-size: 1.4rem;
-            font-weight: 800;
-            font-family: var(--font-display);
-            color: var(--black);
-            letter-spacing: -0.01em;
-        }
-
-        .airport-code .city {
-            font-size: 0.75rem;
-            color: var(--gray-600);
-            font-weight: 500;
-        }
-
-        .route-line {
-            flex-grow: 1;
-            margin: 0 15px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .route-line::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background: dashed rgba(0, 0, 0, 0.12);
-        }
-
-        .route-plane {
-            color: var(--orange);
-            font-size: 1rem;
-            background: rgba(255, 255, 255, 0.6);
-            padding: 0 6px;
-            position: relative;
-            z-index: 2;
-            animation: pulsePlane 2s ease-in-out infinite;
-        }
-
-        @keyframes pulsePlane {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.15) translateY(-2px);
-            }
-        }
-
-        .layover-pill {
-            background: rgba(255, 76, 0, 0.08);
-            border: 1px solid rgba(255, 76, 0, 0.15);
-            color: var(--orange);
-            font-size: 0.8rem;
-            font-weight: 700;
-            padding: 6px 12px;
-            border-radius: var(--radius-pill);
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin: 8px 0;
-        }
-
-        .visa-check {
-            background: rgba(20, 168, 59, 0.06);
-            border: 1px solid rgba(20, 168, 59, 0.15);
-            color: var(--green);
-            font-size: 0.85rem;
-            font-weight: 600;
-            padding: 12px 16px;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .visa-check i {
-            font-size: 1.1rem;
-        }
-
-        .card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .price-info {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .price-info .amount {
-            font-size: 1.3rem;
-            font-weight: 800;
-            color: var(--black);
-            font-family: var(--font-display);
-            display: flex;
-        }
-
-        .price-info .savings {
-            font-size: 0.75rem;
-            color: #0C7A2A;
-            font-weight: 700;
-        }
-
-        .card-btn {
-            background: var(--black);
-            color: white;
-            font-size: 0.85rem;
-            font-weight: 700;
-            padding: 12px 20px;
-            border-radius: var(--radius-pill);
-            border: none;
-            cursor: pointer;
-            transition: all var(--transition);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .card-btn:hover {
-            background: var(--orange);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-orange);
         }
 
         /* ──── PARTNERS SECTION ──── */
@@ -1676,39 +1711,14 @@
                 padding: 140px 5vw 80px;
             }
 
-            .hero .container {
+            .compare {
                 grid-template-columns: 1fr;
-                gap: 48px;
+                gap: 14px;
             }
 
-            .hero-tag {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .hero h1 {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .hero-sub {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .hero-actions {
+            .vs {
+                flex-direction: row;
                 justify-content: center;
-            }
-
-            .hero-social-proof {
-                justify-content: center;
-                text-align: left;
-            }
-
-            .glass-card {
-                margin: 0 auto;
-                transform: none;
-                animation: floatCardMobile 6s ease-in-out infinite;
             }
 
             .tours-container {
@@ -1733,18 +1743,6 @@
             .comp-card-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
-            }
-        }
-
-        @keyframes floatCardMobile {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-12px);
             }
         }
 
@@ -1825,6 +1823,18 @@
             width: auto;
             display: block;
         }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-tag, .hero h1, .hero-sub, .hero-actions, .hero-social-proof,
+            .route-card, .route-card .path .stop-tag, .route-card.smart .plane-ic,
+            .route-card.smart .price-label, .vs, .compare-foot {
+                animation-duration: 0.001ms !important;
+                transition-duration: 0.001ms !important;
+            }
+            .hero-tag .dot {
+                animation: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -1864,23 +1874,23 @@
         <div class="hero-bg-orb orb-2"></div>
 
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-head">
                 <div class="hero-tag">
                     <span class="dot"></span>
-                    AI-Powered Smart Flights
+                    Visa-Aware Routing
                 </div>
 
-                <h1>Turn Your <span class="accent">Layover</span><br>Into a Vacation</h1>
+                <h1>Same Trip. <span class="accent">Different Route.</span><br>₹12,000 Cheaper.</h1>
 
-                <p class="hero-sub">Our AI actively maps your visa-free travel options, finds cheaper flights, and books
-                    your complete layover package, all in one app.</p>
+                <p class="hero-sub">We route your flights through countries your passport already enters
+                    visa-free — turning a routine layover into real savings.</p>
 
                 <div class="hero-actions">
                     <a href="https://layovered.chottu.link/get-app" class="btn-primary" target="_blank">
                         Download the app
                         <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
                     </a>
-                    <!-- <a href="#how-it-works" class="btn-secondary">See how it works →</a> -->
+                    <a href="visa-free/india/" class="btn-secondary">Check your passport free</a>
                 </div>
 
                 <div class="hero-social-proof">
@@ -1896,57 +1906,49 @@
                 </div>
             </div>
 
-            <div class="hero-preview">
-                <div class="glass-card">
-                    <div class="card-header">
-                        <div class="passport-badge">
-                            <i class="fa-solid fa-passport"></i> Passport: IND
-                        </div>
-                        <div class="card-dots">
-                            <span></span><span></span><span></span>
-                        </div>
+            <div class="compare" id="compare">
+                <div class="route-card direct" id="cardDirect">
+                    <div class="kicker"><i class="fa-solid fa-plane"></i> Standard flight</div>
+                    <div class="airports">
+                        <div><div class="code">BLR</div><div class="city">Bengaluru</div></div>
+                        <div style="text-align:right"><div class="code">LHR</div><div class="city">London</div></div>
                     </div>
-
-                    <div class="route-visual">
-                        <div class="route-airports">
-                            <div class="airport-code">
-                                <span class="code">BLR</span>
-                                <span class="city">Bengaluru</span>
-                            </div>
-                            <div class="route-line">
-                                <i class="fa-solid fa-plane route-plane"></i>
-                            </div>
-                            <div class="airport-code" style="text-align: right;">
-                                <span class="code">NRT</span>
-                                <span class="city">Tokyo</span>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; justify-content: center;">
-                            <div class="layover-pill">
-                                <i class="fa-solid fa-clock"></i> 8h Layover: Kuala Lumpur (KUL)
-                            </div>
-                        </div>
+                    <div class="path" id="pathDirect">
+                        <div class="plane-ic in"><i class="fa-solid fa-plane"></i></div>
                     </div>
-
-                    <div class="visa-check">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <div>
-                            <div style="font-weight: 700; margin-bottom: 2px;">Visa-Free</div>
-                            <div style="font-size: 0.75rem; color: rgba(20, 168, 59, 0.8);">Legally cleared for entry
-                            </div>
-                        </div>
+                    <div class="price-row">
+                        <span class="price">₹50,000</span>
+                        <span class="price-label">Standard search</span>
                     </div>
+                </div>
 
-                    <div class="card-footer">
-                        <div class="price-info">
-                            <span class="amount">₹20,000</span>
-                            <span class="savings">Saved ₹10,000 (vs Direct)</span>
-                        </div>
-                        <!-- <button class="card-btn">Explore Muscat <i class="fa-solid fa-arrow-right"></i></button> -->
+                <div class="vs" id="vsBadge">
+                    <div class="circle">VS</div>
+                </div>
+
+                <div class="route-card smart" id="cardSmart">
+                    <span class="ribbon">Layovered route</span>
+                    <div class="kicker"><i class="fa-solid fa-bolt"></i> Via visa-free layover</div>
+                    <div class="airports">
+                        <div><div class="code">BLR</div><div class="city">Bengaluru</div></div>
+                        <div style="text-align:right"><div class="code">LHR</div><div class="city">London</div></div>
+                    </div>
+                    <div class="path" id="pathSmart">
+                        <svg viewBox="0 0 300 44" preserveAspectRatio="none">
+                            <path class="bend" d="M0,22 Q150,44 300,22"/>
+                        </svg>
+                        <div class="plane-ic" id="planeSmart" style="left:0"><i class="fa-solid fa-plane"></i></div>
+                        <div class="stop-tag visa" id="stopTag">Visa-free · Doha</div>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">₹38,000</span>
+                        <span class="price-label" id="savedLabel">Saved ₹12,000</span>
                     </div>
                 </div>
             </div>
+
+            <p class="disclaimer">Illustrative example · exact savings vary by date and route</p>
+            <p class="compare-foot" id="compareFoot">Same passport. Same two cities. <b>One extra visa-free stop</b> is the whole difference.</p>
         </div>
     </section>
 
@@ -2139,8 +2141,8 @@
                     <div class="comp-card-header">
                         <span class="comp-pill layovered">Visa-Aware Routing</span>
                         <h3 class="comp-card-title">Passport Smart Search</h3>
-                        <p style="font-size: 0.9rem; color: var(--gray-600); line-height: 1.5;">Our AI scans current
-                            international border rules dynamically matching flights to your specific visas.</p>
+                        <p style="font-size: 0.9rem; color: var(--gray-600); line-height: 1.5;">We scan current
+                            international border rules, dynamically matching flights to your specific visas.</p>
                     </div>
                     <div class="comp-card-compare">
                         <div class="compare-row us">
@@ -2246,6 +2248,58 @@
             mobileMenu.classList.toggle('open');
             hamburger.setAttribute('aria-expanded', open);
         });
+
+        // ── Hero route comparison ──
+        (function () {
+            var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var ids = ['cardDirect', 'vsBadge', 'cardSmart', 'pathSmart', 'planeSmart', 'stopTag', 'savedLabel', 'compareFoot'];
+            var els = {};
+            ids.forEach(function (id) { els[id] = document.getElementById(id); });
+            if (!els.cardDirect) return;
+            var timers = [];
+            function clearAll() { timers.forEach(clearTimeout); timers = []; }
+            function at(ms, fn) { timers.push(setTimeout(fn, reduced ? 0 : ms)); }
+
+            function reset() {
+                els.cardDirect.classList.remove('in');
+                els.vsBadge.classList.remove('in');
+                els.cardSmart.classList.remove('in');
+                els.pathSmart.classList.remove('in');
+                els.planeSmart.classList.remove('in');
+                els.planeSmart.style.left = '0';
+                els.planeSmart.style.top = '';
+                els.stopTag.classList.remove('in');
+                els.savedLabel.classList.remove('in');
+                els.compareFoot.classList.remove('in');
+            }
+
+            function play() {
+                clearAll();
+                reset();
+                void els.cardDirect.offsetWidth;
+
+                at(0, function () { els.cardDirect.classList.add('in'); });
+                at(500, function () { els.vsBadge.classList.add('in'); });
+                at(750, function () {
+                    els.cardSmart.classList.add('in');
+                    els.pathSmart.classList.add('in');
+                });
+                at(1150, function () { els.planeSmart.classList.add('in'); });
+                at(1300, function () {
+                    els.planeSmart.style.left = '46%';
+                    els.planeSmart.style.top = '82%';
+                });
+                at(2150, function () { els.stopTag.classList.add('in'); });
+                at(2700, function () {
+                    els.planeSmart.style.left = '100%';
+                    els.planeSmart.style.top = '50%';
+                });
+                at(3350, function () { els.savedLabel.classList.add('in'); });
+                at(3600, function () { els.compareFoot.classList.add('in'); });
+            }
+
+            window.addEventListener('load', play);
+        })();
 
         // ── Scroll reveal ──
         const observer = new IntersectionObserver((entries) => {
