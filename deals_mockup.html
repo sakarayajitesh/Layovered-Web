@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layovered — Deals mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1F271B; --muted:#4F5B62; --grey:#76858D; --bg:#F4F4F4;
+    --border:#EDEDED; --brand:#FF4C00; --brand-dark:#E04300;
+    --green-text:#009760; --green-bg:rgba(49,175,70,0.15);
+    --brand-tint:rgba(255,76,0,0.06);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Roboto',sans-serif; color:var(--ink); background:#e9e9ea; padding:32px; line-height:1.4;
+       display:flex; gap:40px; flex-wrap:wrap; justify-content:center; align-items:flex-start;}
+  .phone{width:402px; background:#fff; border-radius:28px; overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,.12); border:1px solid var(--border);}
+  .screen-label{width:402px; text-align:center; font-size:13px; color:#666; margin-bottom:10px; font-weight:500;}
+  .col{display:flex; flex-direction:column; align-items:center;}
+
+  .status{display:flex; justify-content:space-between; padding:14px 20px 4px; font-size:14px; font-weight:500;}
+  .apphead{padding:12px 16px 12px; border-bottom:1px solid var(--border);}
+  .apphead .t{font-size:22px; font-weight:500;}
+  .apphead .s{font-size:12px; color:var(--grey); margin-top:3px;}
+
+  .list{padding:14px 16px 20px; display:flex; flex-direction:column; gap:12px;}
+
+  .card{background:#fff; border:1px solid var(--border); border-radius:16px; padding:14px; display:flex; flex-direction:column; gap:11px;}
+
+  .odhead{display:flex; align-items:flex-start; justify-content:space-between;}
+  .odhead .od{display:flex; align-items:center; gap:7px; font-size:16px; font-weight:500;}
+  .odhead .od .arw{color:var(--grey); font-size:13px;}
+  .pct{font-size:13px; font-weight:500; color:var(--green-text); background:var(--green-bg); padding:3px 9px; border-radius:8px; white-space:nowrap;}
+
+  .subrow{display:flex; align-items:center; justify-content:space-between; font-size:12px; color:var(--grey); margin-top:-4px;}
+  .subrow .dep{color:var(--muted);}
+  .subrow .found{display:flex; align-items:center; gap:4px;}
+
+  .opts{display:flex; flex-direction:column; gap:6px;}
+  .opt{display:flex; align-items:center; justify-content:space-between; padding:9px 11px; border-radius:10px;}
+  .opt .lbl{font-size:12px; color:var(--muted);}
+  .opt .amt{font-size:14px; font-weight:500; color:var(--muted);}
+  .opt.usual{background:var(--bg);}
+  .opt.lyv{background:var(--brand-tint); border:1px solid rgba(255,76,0,0.25);}
+  .opt.lyv .lbl{color:var(--ink);}
+  .opt.lyv .lbl .mode{color:var(--brand-dark); font-weight:500;}
+  .opt.lyv .lbl .tag{color:var(--grey);}
+  .opt.lyv .amt{font-size:17px; color:var(--ink);}
+
+  .tags{display:flex; flex-wrap:wrap; gap:6px;}
+  .tag{font-size:11px; font-weight:500; padding:3px 8px; border-radius:6px; display:flex; align-items:center; gap:4px;}
+  .tag.bonus{background:var(--brand-tint); color:var(--brand-dark);}
+  .tag.visa{background:var(--green-bg); color:var(--green-text);}
+  .tag.lay{background:var(--bg); color:var(--muted);}
+
+  /* detail */
+  .dhead{display:flex; align-items:center; gap:12px; padding:14px 16px; border-bottom:1px solid var(--border);}
+  .dhead .bk{font-size:20px;}
+  .dhead .tt{font-size:16px; font-weight:500;}
+  .droute{display:flex; align-items:center; gap:8px; justify-content:center; background:var(--bg); font-size:12px; padding:10px; font-weight:500;}
+  .droute .hub{color:var(--brand-dark);}
+  .droute .vf{color:var(--grey); font-weight:400;}
+  .dsection{padding:16px;}
+  .dtags{display:flex; gap:6px; margin-bottom:12px;}
+  .cmpbox{border:1px solid var(--border); border-radius:16px; overflow:hidden;}
+  .cmprow{display:flex; justify-content:space-between; align-items:center; padding:12px 14px;}
+  .cmprow.usual{background:var(--bg); color:var(--muted); font-size:13px;}
+  .cmprow.usual s{color:var(--grey);}
+  .cmprow.lyv{background:var(--brand-tint);}
+  .cmprow.lyv .lbl{color:var(--brand-dark); font-weight:500; font-size:13px;}
+  .cmprow.lyv .val{font-size:20px; font-weight:500;}
+  .savefull{text-align:center; background:var(--green-bg); color:var(--green-text); font-size:13px; font-weight:500; padding:8px;}
+
+  .fcard{border:1px solid var(--border); border-radius:16px; padding:16px; margin-top:12px; display:flex; flex-direction:column; gap:12px;}
+  .airline{display:flex; align-items:center; gap:8px;}
+  .logo{width:20px; height:20px; border-radius:4px; background:#3A469D; color:#fff; font-size:11px; font-weight:500; display:flex; align-items:center; justify-content:center;}
+  .airline .nm{font-size:14px; font-weight:500;}
+  .dot{width:3px; height:3px; border-radius:50%; background:var(--grey);}
+  .airline .fn{font-size:14px; color:var(--grey);}
+  .leg{display:flex; justify-content:space-between; align-items:flex-start;}
+  .leg .end{display:flex; flex-direction:column;}
+  .leg .d{font-size:12px; color:var(--grey);}
+  .leg .tm{font-size:16px; font-weight:500;}
+  .leg .ap{font-size:14px;}
+  .leg .apc{font-size:12px; color:var(--grey);}
+  .leg .mid{text-align:center; color:var(--grey); font-size:12px; display:flex; flex-direction:column; gap:4px; align-items:center;}
+  .leg .mline{width:90px; height:1px; background:#c9ccce;}
+  .warn{border:1px solid var(--brand); border-radius:16px; padding:16px; display:flex; gap:8px; margin-top:12px;}
+  .warn .ic{color:var(--brand); font-size:16px; flex:none;}
+  .warn .h{font-size:14px; font-weight:500;}
+  .warn .p{font-size:12px; color:var(--grey); margin-top:2px;}
+  .asof{font-size:11px; color:var(--grey); display:flex; justify-content:space-between; margin-top:12px;}
+  .bookbar{margin-top:16px; background:var(--brand); color:#fff; text-align:center; font-size:16px; font-weight:500; padding:13px; border-radius:12px;}
+</style>
+</head>
+<body>
+
+<div class="col">
+  <div class="screen-label">Deals feed — home tab</div>
+  <div class="phone">
+    <div class="status"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9210; &#9636;</span></div>
+    <div class="apphead">
+      <div class="t">Deals</div>
+      <div class="s">Fly the same trip for less &mdash; Layovered mode routes you through a visa-free bonus city</div>
+    </div>
+
+    <div class="list">
+
+      <div class="card">
+        <div class="odhead"><span class="od">Bengaluru <span class="arw">&rarr;</span> San Francisco</span><span class="pct">34% lower</span></div>
+        <div class="subrow"><span class="dep">Departs 12 Sep</span><span class="found">&#8635; found 2h ago</span></div>
+        <div class="opts">
+          <div class="opt usual"><span class="lbl">Normal flight &bull; direct</span><span class="amt">&#8377;92,400</span></div>
+          <div class="opt lyv"><span class="lbl"><span class="mode">Layovered mode</span> <span class="tag">&bull; via Bangkok</span></span><span class="amt">&#8377;61,200</span></div>
+        </div>
+        <div class="tags"><span class="tag lay">&#9992; 12h layover</span><span class="tag bonus">Bonus city</span><span class="tag visa">Visa-free</span></div>
+      </div>
+
+      <div class="card">
+        <div class="odhead"><span class="od">Delhi <span class="arw">&rarr;</span> London</span><span class="pct">22% lower</span></div>
+        <div class="subrow"><span class="dep">Departs 18 Sep</span><span class="found">&#8635; found 5h ago</span></div>
+        <div class="opts">
+          <div class="opt usual"><span class="lbl">Normal flight &bull; direct</span><span class="amt">&#8377;78,000</span></div>
+          <div class="opt lyv"><span class="lbl"><span class="mode">Layovered mode</span> <span class="tag">&bull; via Dubai</span></span><span class="amt">&#8377;60,900</span></div>
+        </div>
+        <div class="tags"><span class="tag lay">&#9992; 8h layover</span><span class="tag bonus">Bonus city</span><span class="tag visa">Visa-free</span></div>
+      </div>
+
+      <div class="card">
+        <div class="odhead"><span class="od">Mumbai <span class="arw">&rarr;</span> Sydney</span><span class="pct">18% lower</span></div>
+        <div class="subrow"><span class="dep">Departs 21 Sep</span><span class="found">&#8635; found 1d ago</span></div>
+        <div class="opts">
+          <div class="opt usual"><span class="lbl">Normal flight &bull; direct</span><span class="amt">&#8377;71,500</span></div>
+          <div class="opt lyv"><span class="lbl"><span class="mode">Layovered mode</span> <span class="tag">&bull; via Kuala Lumpur</span></span><span class="amt">&#8377;58,300</span></div>
+        </div>
+        <div class="tags"><span class="tag lay">&#9992; 10h layover</span><span class="tag bonus">Bonus city</span><span class="tag visa">Visa-free</span></div>
+      </div>
+
+      <div class="card">
+        <div class="odhead"><span class="od">Bengaluru <span class="arw">&rarr;</span> Toronto</span><span class="pct">17% lower</span></div>
+        <div class="subrow"><span class="dep">Departs 24 Sep</span><span class="found">&#8635; found 1d ago</span></div>
+        <div class="opts">
+          <div class="opt usual"><span class="lbl">Normal flight &bull; direct</span><span class="amt">&#8377;88,200</span></div>
+          <div class="opt lyv"><span class="lbl"><span class="mode">Layovered mode</span> <span class="tag">&bull; via Abu Dhabi</span></span><span class="amt">&#8377;72,900</span></div>
+        </div>
+        <div class="tags"><span class="tag lay">&#9992; 9h layover</span><span class="tag bonus">Bonus city</span><span class="tag visa">Visa-free</span></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="screen-label">Deal detail</div>
+  <div class="phone">
+    <div class="status"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9210; &#9636;</span></div>
+    <div class="dhead"><span class="bk">&larr;</span><span class="tt">Deal details</span></div>
+    <div class="droute"><span>Bengaluru</span><span style="color:var(--brand-dark)">&rarr;</span><span class="hub">Bangkok</span><span class="vf">(visa-free)</span><span style="color:var(--brand-dark)">&rarr;</span><span>San Francisco</span></div>
+
+    <div class="dsection">
+      <div class="dtags"><span class="tag lay">&#9992; 12h layover</span><span class="tag bonus">Bonus city</span><span class="tag visa">Visa-free</span></div>
+
+      <div class="cmpbox">
+        <div class="cmprow usual"><span>Normal flight &mdash; direct</span><s>&#8377;92,400</s></div>
+        <div class="cmprow lyv"><span class="lbl">Layovered mode &mdash; via Bangkok</span><span class="val">&#8377;61,200</span></div>
+        <div class="savefull">34% lower + Bangkok as a bonus city</div>
+      </div>
+
+      <div class="fcard">
+        <div class="airline"><div class="logo">6E</div><span class="nm">IndiGo</span><span class="dot"></span><span class="fn">6E 129</span></div>
+        <div class="leg">
+          <div class="end"><div class="d">Tue, 12 Sep</div><div class="tm">1:40 AM</div><div class="ap">Bengaluru</div><div class="apc">BLR, T2</div></div>
+          <div class="mid"><span>28h 30m</span><span class="mline"></span><span>1 layover</span></div>
+          <div class="end" style="text-align:right; align-items:flex-end;"><div class="d">Wed, 13 Sep</div><div class="tm">9:00 PM</div><div class="ap">San Francisco</div><div class="apc">SFO</div></div>
+        </div>
+      </div>
+
+      <div class="warn">
+        <span class="ic">&#9992;</span>
+        <div>
+          <div class="h">Bonus city: 12h in Bangkok &mdash; visa-free for your Indian passport</div>
+          <div class="p">Step out and explore the city. Two separate tickets (self-transfer) &mdash; collect bags and re-check in at Bangkok. We guarantee the connection.</div>
+        </div>
+      </div>
+
+      <div class="asof"><span>Price confirmed as of 12 Aug, 9:20 AM</span><span>Re-checked at booking</span></div>
+
+      <div class="bookbar">Book for &#8377;61,200</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
