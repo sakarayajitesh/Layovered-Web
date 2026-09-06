@@ -263,7 +263,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
   </section>
 
   <div class="capbar capture-card">
-    <span class="capbar-txt"><i class="fa-solid fa-plane"></i> Want <b>cheaper flights</b> to these countries? Get early access when we launch:</span>
+    <span class="capbar-txt"><i class="fa-solid fa-plane"></i> Want <b>cheaper flights</b> to these countries? Get alerts when we find cheap routes:</span>
     <form class="cap cap-form" method="POST" action="https://8aa0709a.sibforms.com/serve/MUIFANvzE_WNMIw08HnzjHornq6gMwof6cP1rPrKolfe5bh31IfJkq93mzGTJ2t_Xm02kraGlngH1pQhkTs8BgNNK_SxXZt-uT1_CtkoAGxsOBlCi9x8SQ-tcUh4h4DzhL-5VR_PIoaRxns20QxGNM3gNZ2HGP4iB0Umi2ewbGQ8eHD6WRsfAqsvhwLBVOD0udvj636iSRYbQPXbxQ==" target="brevo_sink">
       <input type="email" name="EMAIL" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
       <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
@@ -2365,12 +2365,12 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding:24px 0;color:var
 
   <div class="band capture-card" id="capture">
     <h3>Get cheaper flights to these countries</h3>
-    <p>We&#39;ll email you the moment Layovered can find you cheaper flights — routed through countries your passport enters visa-free. No spam, just the launch.</p>
+    <p>Layovered is live. Get alerts when we find cheap flights — routed through countries your passport enters visa-free. No spam.</p>
     <form class="cap cap-form" method="POST" action="https://8aa0709a.sibforms.com/serve/MUIFANvzE_WNMIw08HnzjHornq6gMwof6cP1rPrKolfe5bh31IfJkq93mzGTJ2t_Xm02kraGlngH1pQhkTs8BgNNK_SxXZt-uT1_CtkoAGxsOBlCi9x8SQ-tcUh4h4DzhL-5VR_PIoaRxns20QxGNM3gNZ2HGP4iB0Umi2ewbGQ8eHD6WRsfAqsvhwLBVOD0udvj636iSRYbQPXbxQ==" target="brevo_sink">
       <input type="email" name="EMAIL" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
       <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
       <input type="hidden" name="locale" value="en">
-      <button type="submit">Join the waitlist</button>
+      <button type="submit">Get deal alerts</button>
     </form>
   </div>
   <div class="body-seo">
@@ -2448,7 +2448,7 @@ var NAV={"passport":"vietnam","hub":"/visa-free/vietnam/","hubs":{"india":"/visa
   if(sink)sink.addEventListener('load',function(){
     if(!pending)return;                        // ignore the iframe's initial blank load
     var card=pending.closest('.capture-card')||pending.parentNode;
-    if(card)card.innerHTML='<div class="cap-done"><i class="fa-solid fa-circle-check"></i> You\u2019re on the list — we\u2019ll email you the moment visa-free routing launches.</div>';
+    if(card)card.innerHTML='<div class="cap-done"><i class="fa-solid fa-circle-check"></i> You\u2019re on the list — we\u2019ll email you when we find cheap visa-free routes to your countries.</div>';
     pending=null;
   });
 })();

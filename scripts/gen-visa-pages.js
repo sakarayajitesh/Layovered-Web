@@ -485,7 +485,7 @@ var NAV=${JSON.stringify(nav)};
   if(sink)sink.addEventListener('load',function(){
     if(!pending)return;                        // ignore the iframe's initial blank load
     var card=pending.closest('.capture-card')||pending.parentNode;
-    if(card)card.innerHTML='<div class="cap-done"><i class="fa-solid fa-circle-check"></i> You\\u2019re on the list — we\\u2019ll email you the moment visa-free routing launches.</div>';
+    if(card)card.innerHTML='<div class="cap-done"><i class="fa-solid fa-circle-check"></i> You\\u2019re on the list — we\\u2019ll email you when we find cheap visa-free routes to your countries.</div>';
     pending=null;
   });
 })();
@@ -591,16 +591,16 @@ function captureBlock(pp) {
     return `
   <div class="routing">
     <div class="ic"><i class="fa-solid fa-route"></i></div>
-    <div class="rt"><b>Layovered Flights — cheaper routes through your visa-free countries.</b><p>Visa-free flight search that finds you a cheaper way there. Launching soon.</p></div>
-    <a href="/waitlist.html">Join the waitlist →</a>
+    <div class="rt"><b>Layovered Flights — cheaper routes through your visa-free countries.</b><p>Visa-free flight search that finds you a cheaper way there. Live now.</p></div>
+    <a href="${APP_DEEPLINK_BASE}" target="_blank">Download the app →</a>
   </div>`;
   }
   return `
   <div class="band capture-card" id="capture">
     <h3>Get cheaper flights to these countries</h3>
-    <p>We&#39;ll email you the moment Layovered can find you cheaper flights — routed through countries your passport enters visa-free. No spam, just the launch.</p>
+    <p>Layovered is live. Get alerts when we find cheap flights — routed through countries your passport enters visa-free. No spam.</p>
     <form class="cap cap-form" method="POST" action="${BREVO_FORM_ACTION}" target="brevo_sink">${brevoFields()}
-      <button type="submit">Join the waitlist</button>
+      <button type="submit">Get deal alerts</button>
     </form>
   </div>`;
 }
@@ -610,7 +610,7 @@ function capBar(pp) {
   if (!ENABLE_EMAIL_CAPTURE) return '';
   return `
   <div class="capbar capture-card">
-    <span class="capbar-txt"><i class="fa-solid fa-plane"></i> Want <b>cheaper flights</b> to these countries? Get early access when we launch:</span>
+    <span class="capbar-txt"><i class="fa-solid fa-plane"></i> Want <b>cheaper flights</b> to these countries? Get alerts when we find cheap routes:</span>
     <form class="cap cap-form" method="POST" action="${BREVO_FORM_ACTION}" target="brevo_sink">${brevoFields()}
       <button type="submit">Join</button>
     </form>
